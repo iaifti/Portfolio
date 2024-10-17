@@ -344,12 +344,9 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stacks elements on smaller screens */
+  }
 }
-.item {
-  flex: 1 1 300px; /* Adjusts item width depending on available space */
-}
-
 
