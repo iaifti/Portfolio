@@ -7,7 +7,7 @@
 }
 body{
   font-family: 'Signika', verdana;
-  background-color: #3a3a3a;
+  background-color: #000f19;
 }
 /* Navbar */
 .navBar {
@@ -25,10 +25,7 @@ body{
   color: #ffffff;
 }
 .logoBar{
-  color:rgba(255, 200, 0, 0.836) ;
-}
-.yellow-text{
-  color: rgba(255, 200, 0, 0.836);
+  color:#4FB3BF ;
 }
 
 .nav-links {
@@ -50,15 +47,15 @@ body{
 }
 
 .nav-links a:hover {
-  color: rgba(255, 200, 0, 0.836);
+  color: #4FB3BF;
   text-decoration: 2px underline;
-  text-decoration-color: rgb(184, 144, 23);
+  text-decoration-color: #ffffef;
 }
 /* General styles for the home section */
 /* Styling the social buttons container */
 .social-buttons {
   display: flex;
-  gap: 15px; /* Space between buttons */
+  gap: 10px; /* Space between buttons */
   justify-content: center; /* Centering the buttons */
   margin-top: 20px; /* Space above buttons */
 }
@@ -96,7 +93,7 @@ body{
 
 .home {
   color: #fffaf9;
-  background: linear-gradient(120deg, rgba(255, 200, 0, 0.836), #f08a2b, #f8f8f7);
+  background: linear-gradient(120deg, #87CEFA, #006097a1,  #003153);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
   display: flex;
@@ -106,13 +103,14 @@ body{
   padding: 30px;
   background-color: #f0f0f0;
 }
-.yellowh1{
-  color: #2b2b2b;
+.blueh1{
+  color: #000f19;
+  /* text-shadow: 0px 0px 5px 2px rgb(255, 255, 255); */
 }
 .homeDetails{
   padding: 5px;
-  background-color: rgba(255, 200, 0, 0.836);
-  color: #2b2b2b;
+  background-color: #f8f8f7;
+  color: #000f19;
 }
 .pDescripDetails{
   text-align: justify;
@@ -245,7 +243,7 @@ body{
   margin: 10px;
   font-size: 1rem;
   padding: 5px;
-  background-color: rgba(255, 200, 0, 0.836);
+  background-color: #4FB3BF;
 }
 
 .exh3{
@@ -269,7 +267,7 @@ body{
 .skillsh3{
   font-size: 1rem;
   padding: 5px;
-  background-color: rgba(255, 200, 0, 0.836);
+  background-color: #4FB3BF;
 }
 
 .project-grid {
@@ -277,7 +275,7 @@ body{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 30px;
-  background-color: rgba(255, 200, 0, 0.836);
+  background-color: #4FB3BF;
 }
 
 /* About Section */
@@ -301,7 +299,7 @@ body{
 #contact {
   padding: 40px;
   text-align: center;
-  background-color: #151414;
+  background-color: #000f19;
 }
 
 #contact h2 {
@@ -325,7 +323,7 @@ body{
 
 .contact button {
   padding: 10px 20px;
-  background-color: rgba(255, 200, 0, 0.836);
+  background-color: #4FB3BF;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -344,9 +342,9 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .container {
-      flex-direction: column; /* Stacks elements on smaller screens */
+      flex-direction: column; 
   }
-}
+} */
 
