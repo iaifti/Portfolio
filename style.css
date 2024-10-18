@@ -94,7 +94,8 @@ body{
 .home {
   color: #fffaf9;
   background: linear-gradient(120deg, #87CEFA, #006097a1,  #003153);
-  background-size: 200% 200%;
+  background-size: cover;
+  background-repeat: no-repeat;
   animation: gradientAnimation 10s ease infinite;
   display: flex;
   justify-content: center;
@@ -342,9 +343,9 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
-/* @media screen and (max-width: 768px) {
-  .container {
-      flex-direction: column; 
+@media screen and (max-width: 600px) {
+  .navBar {
+    float: none;
+    width: 100%;
   }
-} */
-
+}
