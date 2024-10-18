@@ -349,3 +349,8 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 700px) {
+  .navBar, .head, .blueh1 {   
+    flex-direction: column;
+  }
+}
