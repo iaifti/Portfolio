@@ -11,9 +11,7 @@ body{
 }
 /* Navbar */
 .navBar {
-  /* background-image: url("sectonDesign1.jpg"); */
-  background-position: 100%;
-  font-size:1.3em;
+  font-size:1.2em;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -64,7 +62,7 @@ body{
 .social-btn {
   display: block;
   padding: 5px 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
   border-radius: 15px;
   text-decoration: none;
@@ -104,6 +102,26 @@ body{
   padding: 30px;
   background-color: #f0f0f0;
 }
+
+
+/* Text details */
+#details {
+  flex: 1;
+  text-align: auto;
+}
+
+/* Styles for the heading and paragraph */
+.h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#details p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color:rgb(255, 255, 255);
+}
+
 .blueh1{
   color: #000f19;
   /* text-shadow: 0px 0px 5px 2px rgb(255, 255, 255); */
@@ -114,9 +132,19 @@ body{
   color: #000f19;
 }
 .pDescripDetails{
-  text-align: justify;
+  text-align: center;
   font-size: 15px;
 }
+
+/* Content wrapper */
+.content {
+  display: block;
+  justify-content: space-between; /* Ensures space between text and photo */
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; /* Restricts the max width */
+  }
 
 /* Background animation */
 @keyframes gradientAnimation {
@@ -199,35 +227,6 @@ body{
 100% {
   transform: translate(0, 0);
 }
-}
-
-
-
-/* Content wrapper */
-.content {
-  display: flex;
-  justify-content: space-between; /* Ensures space between text and photo */
-  align-items: center;
-  width: 100%;
-  max-width: 1200px; /* Restricts the max width */
-  }
-
-/* Text details */
-#details {
-  flex: 1;
-  text-align: auto;
-}
-
-/* Styles for the heading and paragraph */
-.h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-#details p {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color:rgb(255, 255, 255);
 }
 
 .experiences{
@@ -350,7 +349,7 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  .navBar, .head, .blueh1 {   
+  body {   
     flex-direction: column;
   }
 }
