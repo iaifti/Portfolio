@@ -8,7 +8,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
       });
     });
   });
-  
+
   // Simple form validation
   document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
