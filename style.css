@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #66796B;
+  background-color: #011F26;
   font-family: 'Signika', Verdana;
   overflow-x: hidden;
 }
@@ -29,11 +29,11 @@ body {
 }
 
 .logo {
-  color: #66796B;
+  color: #011F26;
 }
 
 .logoBar {
-  color: #BA8E7A;
+  color: #D94D1A;
 }
 
 .nav-links {
@@ -47,14 +47,14 @@ body {
 }
 
 .nav-links a {
-  color: #66796B;
+  color: #011F26;
   text-decoration: solid;
   font-weight: bold;
   padding: 10px;
 }
 
 .nav-links a:hover {
-  color: #BA8E7A;
+  color: #D94D1A;
   text-decoration: 2px underline;
   text-decoration-color: #ffffef;
 }
@@ -66,7 +66,8 @@ body {
   align-items: center;
   height: 100vh; /* Full viewport height */
   padding: 30px;
-  background: linear-gradient(120deg, #D4C2AD, #EFDFCC, #D7A184); /* Gradient background */
+  background: linear-gradient(120deg, #3B8C8C,#A7EBF2, #3B8C8C); /* Gradient background */
+  background-size: 200% 200%;
   background-repeat: no-repeat;
   color: #fffaf9;
   position: relative;
@@ -140,13 +141,13 @@ body {
 }
 
 .blueh1 {
-  color: #66796B;
+  color: #011F26;
 }
 
 .homeDetails {
   padding: 5px;
   background-color: #f8f8f7;
-  color: #66796B;
+  color: #011F26;
 }
 
 .pDescripDetails {
@@ -179,7 +180,7 @@ body {
   margin: 10px;
   font-size: 1rem;
   padding: 5px;
-  background-color: #BA8E7A;
+  background-color: #D94D1A;
 }
 
 .exh3 {
@@ -204,7 +205,7 @@ body {
 .skillsh3 {
   font-size: 1rem;
   padding: 5px;
-  background-color: #BA8E7A;
+  background-color: #D94D1A;
 }
 
 /* Project Grid */
@@ -213,7 +214,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 30px;
-  background-color: #BA8E7A;
+  background-color: #D94D1A;
 }
 
 /* About, Projects, and Contact Sections */
@@ -238,7 +239,7 @@ body {
 #contact {
   padding: 40px;
   text-align: center;
-  background-color: #66796B;
+  background-color: #011F26;
 }
 
 #contact h2 {
@@ -262,7 +263,7 @@ body {
 
 .contact button {
   padding: 10px 20px;
-  background-color: #BA8E7A;
+  background-color: #D94D1A;
   color: #fff;
   border: none;
   border-radius: 5px;
