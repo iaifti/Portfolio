@@ -336,6 +336,7 @@ footer {
   }
 
   .tools{
+    size: 20px;
     flex-direction: column;
   }
   
