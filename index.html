@@ -3,167 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Portfolio</title>
-  
+
+  <!-- Fonts and Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-  </head>
-
+</head>
 <body>
+
   <header class="navBar" id="navBar">
-
     <div class="logo" id="logo">Portfolio <span class="logoBar">||</span> Md Istiaq Ahmed</div>
-
-      <div id="buttons">
+    <div id="buttons">
       <ul class="nav-links">
-          <li><a href="#projects" ><i class="fa-solid fa-code" style="color: #BA8E7A"></i>Projects</a></li>
-          <li><a href="#experiences"><i class="fa-solid fa-briefcase" style="color: #BA8E7A"></i>Experience</a></li>
-          <li><a href="#about"><i class="fa-solid fa-person" style="color: #BA8E7A"></i>About Me</a></li>
-          <li><a href="#contact"><i class="fa-solid fa-address-book" style="color: #BA8E7A"></i>Contact</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-code" style="color: #EE6B4D"></i>Projects</a></li>
+          <li><a href="#experiences"><i class="fa-solid fa-briefcase" style="color: #EE6B4D"></i>Experience</a></li>
+          <li><a href="#about"><i class="fa-solid fa-person" style="color: #EE6B4D"></i>About Me</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-address-book" style="color: #EE6B4D"></i>Contact</a></li>
         </ul>
-        </div>
+    </div>
   </header>
 
-    <section id="displaySection">
-      <section id="home" class="home">
-        <div class="content">
-          <div id="details">
-            <h1 class="h1">Hi, I am<span class="blueh1"> Md Istiaq Ahmed</span></h1>
-            <p>Digital Marketing | <span class="homeDetails">Software Engineer</span> | Web Development<br> 
-              <span class="pDescripDetails">I create innovative, data-driven solutions to enhance user experience and drive business growth.</span>
-            </p>
-          </div>
+  <section id="displaySection">
+    <!-- Home Section with Particles.js -->
+    <section id="home" class="home">
+      <div id="particles-js"></div> <!-- Particles container -->
+      <div class="content">
+        <div id="details">
+          <h1 class="h1">Hi, I am<span class="blueh1"> Md Istiaq Ahmed</span></h1>
+          <p>Digital Marketing | <span class="homeDetails">Software Engineer</span> | Web Development<br> 
+            <span class="pDescripDetails">I create innovative, data-driven solutions to enhance user experience and drive business growth.</span>
+          </p>
+        </div>
       
-          <!-- Social Media Buttons -->
-          <div class="social-buttons">
-            <a href="https://www.linkedin.com/in/ahmedmdistiaq" target="_blank" class="social-btn linkedin">
-              <i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/iaifti" target="_blank" class="social-btn github">
-              <i class="fab fa-github"></i> GitHub</a>
-              <a href="_Resume.pdf" target="_blank" class="social-btn _Resume">
-                <i class="fa-solid fa-paperclip"></i>Resume</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="experiences" class="experiences">
-          <h2 data-aos="fade-down"><i class="fa-solid fa-briefcase" style="color: #BA8E7A"></i>Experiences</h2>
-          
-          <div class="experiences-list">
-            <div class="experiences1" data-aos="fade-up" data-aos-delay="100">
-              <h3>SEMO || <span class="exh3">Dining Services</span></h3>
-              <p class="description1">
-                  As a Student Supervisor, I effectively managed a diverse team of over 
-                  15 full- and part-time employees, leading to a 20% improvement in operational 
-                  efficiency. By promptly addressing operational challenges, I successfully 
-                  reduced service delays by 30%, significantly enhancing guest satisfaction and 
-                  contributing to a 15% increase in positive reviews. Additionally, I adapted 
-                  to various software tools for inventory management and scheduling, streamlining 
-                  processes and ensuring a smooth workflow.
-              </p>
-            </div>
-            
-            <div class="experiences1" data-aos="fade-right" data-aos-delay="200">
-              <h3>SEMO || <span class="exh3">Tutorial Program</span></h3>
-              <p class="description1">
-                  As a tutor in the Learning Assistant Program at SEMO, I supported 
-                  students in developing their coding skills in Python and Java. I 
-                  guided learners in Unix and Linux, resulting in a 25% improvement 
-                  in their practical application of these systems. Additionally, I 
-                  assisted students in advanced mathematics and statistics, employing 
-                  innovative teaching methods to make complex subjects more accessible 
-                  and engaging. My commitment to fostering a positive learning environment contributed to the overall academic success of my students.
-              </p>
-            </div>
-        
-            <div class="experiences1" data-aos="fade-left" data-aos-delay="300">
-              <h3>SEMO || <span class="exh3">Recreation Services</span></h3>
-              <p class="description1">
-                  As a Front Desk/Activity Attendant at SEMO Recreational Services, 
-                  I served as the first point of contact for visitors, enhancing 
-                  satisfaction through proactive communication and strong customer service. 
-                  I improved the guest experience by streamlining facility operations, 
-                  ensuring smooth day-to-day activities. Additionally, I maintained 
-                  a safe environment, contributing to a positive and secure atmosphere 
-                  for all visitors.
-              </p>
-            </div>
-          </div>
-        </section>
-        
-    
-
-      <section id="projects" data-aos="fade-up" class="projects">
-      <h2><i class="fa-solid fa-code" style="color: #BA8E7A"></i>My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>A full-stack web app built with React and Node.js.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>An AI-based tool for real-time feedback using Python and TensorFlow.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project 3</h3>
-          <p>A portfolio website showcasing responsive design.</p>
+        <!-- Social Media Buttons -->
+        <div class="social-buttons">
+          <a href="https://www.linkedin.com/in/ahmedmdistiaq" target="_blank" class="social-btn linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/iaifti" target="_blank" class="social-btn github">
+            <i class="fab fa-github"></i> GitHub</a>
+          <a href="_Resume.pdf" target="_blank" class="social-btn _Resume">
+            <i class="fa-solid fa-paperclip"></i>Resume</a>
         </div>
       </div>
-      </section>
+    </section>
+  </section>
 
-      <section id="about" data-aos="fade-up" class="about">
-      <h2><i class="fa-solid fa-person"  style="color: #BA8E7A"></i>About Me</h2>
-      <p data-aos="fade-down">I am a passionate and driven full-stack developer, software engineer, 
-          and digital marketing specialist with a strong foundation in Computer Science. 
-          My expertise spans across multiple domains, including web development, 
-          data-driven solutions, and creating dynamic, user-friendly applications. 
-          Currently pursuing a Computer Science major, I continuously challenge myself 
-          to enhance my skills and take on new projects.
-          I have a diverse range of experiences, from working as a Front Desk/Activity 
-          Attendant for SEMO Recreational Services to tutoring students in Computer 
-          Science and Mathematics. Through these roles, I’ve developed excellent 
-          communication, problem-solving, and leadership skills, allowing me to thrive 
-          in both technical and collaborative environments.<br><br>
-          
-          I'm also actively co-founding a company that will offer software development 
-          services on a contract basis, combining my strong technical foundation with an 
-          entrepreneurial mindset. I love building innovative tools, such as LazyProf, 
-          an auto-grading platform recognized by my university's Computer Science department 
-          for improving grading efficiency. My portfolio showcases a blend of creativity 
-          and technical expertise, with a commitment to providing impactful, data-driven results.<br><br>
-          
-          In my free time, I enjoy learning new frameworks, exploring full-stack projects, 
-          and contributing to open-source communities. With a strong desire to continuously 
-          improve and educate others, I'm always looking for opportunities to apply my skills 
-          in meaningful and challenging ways.
-          </p>
-      </section>
+  
+  <section id="experiences" class="experiences">
+    <h2 data-aos="fade-down"><i class="fa-solid fa-briefcase" style="color: #EE6B4D"></i>Experiences</h2>
+    
+    <div class="experiences-list">
+      <div class="experiences1" data-aos="fade-up" data-aos-delay="100">
+        <h3>SEMO || <span class="exh3">Dining Services</span></h3>
+        <p class="description1">
+            As a Student Supervisor, I effectively managed a diverse team of over 
+            15 full- and part-time employees, leading to a 20% improvement in operational 
+            efficiency. By promptly addressing operational challenges, I successfully 
+            reduced service delays by 30%, significantly enhancing guest satisfaction and 
+            contributing to a 15% increase in positive reviews. Additionally, I adapted 
+            to various software tools for inventory management and scheduling, streamlining 
+            processes and ensuring a smooth workflow.
+        </p>
+      </div>
+      
+      <div class="experiences1" data-aos="fade-right" data-aos-delay="200">
+        <h3>SEMO || <span class="exh3">Tutorial Program</span></h3>
+        <p class="description1">
+            As a tutor in the Learning Assistant Program at SEMO, I supported 
+            students in developing their coding skills in Python and Java. I 
+            guided learners in Unix and Linux, resulting in a 25% improvement 
+            in their practical application of these systems. Additionally, I 
+            assisted students in advanced mathematics and statistics, employing 
+            innovative teaching methods to make complex subjects more accessible 
+            and engaging. My commitment to fostering a positive learning environment contributed to the overall academic success of my students.
+        </p>
+      </div>
+  
+      <div class="experiences1" data-aos="fade-left" data-aos-delay="300">
+        <h3>SEMO || <span class="exh3">Recreation Services</span></h3>
+        <p class="description1">
+            As a Front Desk/Activity Attendant at SEMO Recreational Services, 
+            I served as the first point of contact for visitors, enhancing 
+            satisfaction through proactive communication and strong customer service. 
+            I improved the guest experience by streamlining facility operations, 
+            ensuring smooth day-to-day activities. Additionally, I maintained 
+            a safe environment, contributing to a positive and secure atmosphere 
+            for all visitors.
+        </p>
+      </div>
+    </div>
+  </section>
+  
 
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" id="name" required>
-        <input type="email" placeholder="Your Email" id="email" required>
-        <textarea placeholder="Your Message" id="message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      </section>
 
-    <footer>
-        <p>&copy; 2024 Md Istiaq Ahmed. All rights reserved.</p>
-    </footer>
+<section id="projects" data-aos="fade-up" class="projects">
+  <h2><i class="fa-solid fa-code" style="color: #EE6B4D"></i>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>A full-stack web app built with React and Node.js.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>An AI-based tool for real-time feedback using Python and TensorFlow.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 3</h3>
+      <p>A portfolio website showcasing responsive design.</p>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="index.js"></script>
+<section id="about" data-aos="fade-up" class="about">
+  <h2><i class="fa-solid fa-person"  style="color: #EE6B4D"></i>About Me</h2>
+    <p data-aos="fade-down">I am a passionate and driven full-stack developer, software engineer, 
+        and digital marketing specialist with a strong foundation in Computer Science. 
+        My expertise spans across multiple domains, including web development, 
+        data-driven solutions, and creating dynamic, user-friendly applications. 
+        Currently pursuing a Computer Science major, I continuously challenge myself 
+        to enhance my skills and take on new projects.
+        I have a diverse range of experiences, from working as a Front Desk/Activity 
+        Attendant for SEMO Recreational Services to tutoring students in Computer 
+        Science and Mathematics. Through these roles, I’ve developed excellent 
+        communication, problem-solving, and leadership skills, allowing me to thrive 
+        in both technical and collaborative environments.<br><br>
+        
+        I'm also actively co-founding a company that will offer software development 
+        services on a contract basis, combining my strong technical foundation with an 
+        entrepreneurial mindset. I love building innovative tools, such as LazyProf, 
+        an auto-grading platform recognized by my university's Computer Science department 
+        for improving grading efficiency. My portfolio showcases a blend of creativity 
+        and technical expertise, with a commitment to providing impactful, data-driven results.<br><br>
+        
+        In my free time, I enjoy learning new frameworks, exploring full-stack projects, 
+        and contributing to open-source communities. With a strong desire to continuously 
+        improve and educate others, I'm always looking for opportunities to apply my skills 
+        in meaningful and challenging ways.
+      </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" id="name" required>
+    <input type="email" placeholder="Your Email" id="email" required>
+    <textarea placeholder="Your Message" id="message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <footer>
+    <p>&copy; 2024 Md Istiaq Ahmed. All rights reserved.</p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="particles.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
