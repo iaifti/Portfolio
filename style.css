@@ -334,4 +334,9 @@ footer {
   .project-card{
     flex-direction: column;
   }
+
+  .tools{
+    flex-direction: column;
+  }
+  
 }
