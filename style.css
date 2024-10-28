@@ -336,7 +336,7 @@ footer {
   }
 
   .tools img{
-    size: 20px;
+    height: auto;
     flex-direction: column;
   }
   
