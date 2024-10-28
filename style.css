@@ -182,6 +182,18 @@ body {
   line-height: 1.6;
 }
 
+.tools{
+  padding: 50px;    
+  text-align: center;
+}
+
+.tools h2{
+  margin-bottom: 40px;
+}
+.tools img{
+  height: 100px;
+}
+
 /* Project Section */
 .projects {
   padding: 50px;
