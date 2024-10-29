@@ -235,11 +235,11 @@ body {
   text-align: justify;
 }
 #btn-Link{
-  gap: 2px;
+  gap: 5px;
   color: #f8f8f7;
   margin-top: 20px;
   display: flex;
-  padding: 2px 5px;
+  padding: 4px 6px;
   font-family: 'Signika';
   font-size: 15px;
   background-color: #d4513c;
