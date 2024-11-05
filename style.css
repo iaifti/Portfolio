@@ -236,16 +236,21 @@ body {
   text-align: justify;
 }
 #btn-Link{
+  cursor: pointer;
+  align-items: right;
   gap: 5px;
   color: #f8f8f7;
-  margin-top: 20px;
-  display: flex;
   padding: 4px 6px;
   font-family: 'Signika';
   font-size: 15px;
   background-color: #d4513c;
   border: none;
   border-radius: 5px;
+}
+
+#btn-Link:hover{
+
+  background-color: #e6421e;
 }
 
 /* About Section */
