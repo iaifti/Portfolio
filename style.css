@@ -350,7 +350,7 @@ footer {
     flex-direction: column;
   }
   
-  .connect-Linkedin, .connect-Github, .connect-Instagram, .connect-Gmail {
+  .connect-Youtube, .connect-Linkedin, .connect-Github, .connect-Instagram, .connect-Gmail {
     font-size: 20px;
     margin: 0 5px;
   }
