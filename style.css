@@ -343,9 +343,7 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
-  body{
-    overflow: hidden;
-  }
+
   .navBar {
     flex-direction: column;
     align-items: flex-start;
