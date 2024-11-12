@@ -14,17 +14,15 @@ body {
 
 /* Navbar */
 .navBar {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
-  font-size: 1.4em;
-  font-weight: bold;
+  background: rgba(41, 50, 65, 0.8);
+  backdrop-filter: blur(10px);
   z-index: 100;
 }
 
@@ -255,7 +253,7 @@ body {
   align-items: right;
   gap: 5px;
   color: #f8f8f7;
-  padding: 4px 6px;
+  padding: 4px 12px;
   font-family: 'Signika';
   font-size: 15px;
   background-color: #d4513c;
@@ -343,30 +341,16 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
-
-  .navBar {
-    flex-direction: column;
-  }
-
   .h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-
+  .about h2,
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  .project-card,
   .experiences-list {
     flex-direction: column;
-  }
-
-  .project-card{
-    flex-direction: column;
-  }
-
-  .tools img{
-    height: 20px;
-    flex-direction: column;
-  }
-  
-  .connect-Youtube, .connect-Linkedin, .connect-Github, .connect-Instagram, .connect-Gmail {
-    font-size: 20px;
-    margin: 0 5px;
+    gap: 10px;
   }
 }
