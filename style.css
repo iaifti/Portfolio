@@ -28,10 +28,7 @@ body {
 
 .logo {
   color: #f8f8f7;
-}
-
-.logoBar {
-  color: #EE6B4D;
+  font-size: 1.5em;
 }
 
 .nav-links {
