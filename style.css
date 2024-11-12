@@ -338,6 +338,9 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
+  .nav-links{
+    grid-template-columns: auto;
+  }
   .h1 {
     font-size: 1.8rem;
   }
