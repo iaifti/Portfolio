@@ -1,11 +1,8 @@
-// Initialize AOS animations
-AOS.init();
-
 // Initialize particles.js
 particlesJS('particles-js', {
   particles: {
     number: {
-      value: 300,
+      value: 600,
       density: {
         enable: true,
         value_area: 800
@@ -91,27 +88,19 @@ particlesJS('particles-js', {
   retina_detect: true
 });
 
-// Smooth Scrolling for navigation
-document.querySelectorAll('.nav-links a').forEach(anchor => {
+// Smooth Scrolling for navigation links
+document.querySelectorAll('.nav-link').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+      e.preventDefault(); // Prevent default anchor behavior
+      const targetId = this.getAttribute('href').substring(1); // Get the target id from href (e.g., "#home" -> "home")
+      const targetElement = document.getElementById(targetId); // Get the target element by id
+
+      if (targetElement) {
+          // Scroll to the target element smoothly
+          targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start' // Align the section to the top of the viewport
+          });
+      }
   });
-});
-
-// Simple form validation
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  if (name === '' || email === '' || message === '') {
-    alert('Please fill out all fields.');
-  } else {
-    alert('Message sent successfully!');
-  }
 });
