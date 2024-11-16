@@ -1,249 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <link rel="icon" href="portfolio_Logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-  <!-- Fonts and Stylesheets -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
+
+    <link rel="stylesheet" href="style.css">
+      
+    <title>Portfolio</title>
 </head>
 <body>
-
-  <header class="navBar" id="navBar">
-    <div class="logo" id="logo">Portfolio</div>
-    <div id="buttons">
-      <ul class="nav-links">
-          <li><a href="#projects"><i class="fa-solid fa-code" style="color: #EE6B4D"></i> Projects</a></li>
-          <li><a href="#experiences"><i class="fa-solid fa-briefcase" style="color: #EE6B4D"></i> Experience</a></li>
-          <li><a href="#about"><i class="fa-solid fa-person" style="color: #EE6B4D"></i> About Me</a></li>
-          <li><a href="#contact"><i class="fa-solid fa-address-book" style="color: #EE6B4D"></i> Contact</a></li>
-        </ul>
-    </div>
-  </header>
-
-  <section id="displaySection">
-    <!-- Home Section with Particles.js -->
-    <section id="home" class="home">
-      <div id="particles-js"></div> <!-- Particles container -->
-      <div class="content">
-        <div id="details">
-          <h1 class="h1">Hi, I am<span class="blueh1"> Md Istiaq Ahmed</span></h1>
-          <p>Digital Marketing | <span class="homeDetails">Software Engineer</span> | Web Development<br><br>
-            <span class="pDescripDetails">I create innovative, data-driven solutions to enhance user experience and drive business growth.</span>
-          </p>
-        </div>
-      
-        <!-- Social Media Buttons -->
-        <div class="social-buttons">
-          <a href="https://www.linkedin.com/in/ahmedmdistiaq" target="_blank" class="social-btn linkedin">
-            <i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/iaifti" target="_blank" class="social-btn github">
-            <i class="fab fa-github"></i> GitHub</a>
-          <a href="_Resume.pdf" target="_blank" class="social-btn _Resume">
-            <i class="fa-solid fa-paperclip"></i>Resume</a>
-        </div>
-      </div>
-    </section>
-  </section>
-
-  
-  <section id="experiences" class="experiences">
-    <h2 data-aos="fade-down"><i class="fa-solid fa-briefcase" style="color: #EE6B4D"></i> Experiences</h2>
     
-    <div class="experiences-list">
-      <div class="experiences1" data-aos="fade-up" data-aos-delay="100">
-        <h3>SEMO || <span class="exh3">Dining Services</span></h3>
-        <p class="description1">
-            As a Student Supervisor, I effectively managed a diverse team of over 
-            15 full- and part-time employees, leading to a 20% improvement in operational 
-            efficiency. By promptly addressing operational challenges, I successfully 
-            reduced service delays by 30%, significantly enhancing guest satisfaction and 
-            contributing to a 15% increase in positive reviews. Additionally, I adapted 
-            to various software tools for inventory management and scheduling, streamlining 
-            processes and ensuring a smooth workflow.
-        </p>
-      </div>
-      
-      <div class="experiences1" data-aos="fade-right" data-aos-delay="200">
-        <h3>SEMO || <span class="exh3">Tutorial Program</span></h3>
-        <p class="description1">
-            As a tutor in the Learning Assistant Program at SEMO, I supported 
-            students in developing their coding skills in Python and Java. I 
-            guided learners in Unix and Linux, resulting in a 25% improvement 
-            in their practical application of these systems. Additionally, I 
-            assisted students in advanced mathematics and statistics, employing 
-            innovative teaching methods to make complex subjects more accessible 
-            and engaging. My commitment to fostering a positive learning environment contributed to the overall academic success of my students.
-        </p>
-      </div>
-  
-      <div class="experiences1" data-aos="fade-left" data-aos-delay="300">
-        <h3>SEMO || <span class="exh3">Recreation Services</span></h3>
-        <p class="description1">
-            As a Front Desk/Activity Attendant at SEMO Recreational Services, 
-            I served as the first point of contact for visitors, enhancing 
-            satisfaction through proactive communication and strong customer service. 
-            I improved the guest experience by streamlining facility operations, 
-            ensuring smooth day-to-day activities. Additionally, I maintained 
-            a safe environment, contributing to a positive and secure atmosphere 
-            for all visitors.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="tools" data-aos="fade-down">
-    <h2><i class="fa-solid fa-screwdriver-wrench" style="color: #EE6B4D"></i> Tools I have expertise in...</h2>
-    <div class="tools-icons" data-aos="fade-right" data-aos-delay="200">
-      <p align="center">
-        <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=git,vscode,typescript,c,cpp,python,cs,html" /><br><br>
-          <img src="https://skillicons.dev/icons?i=css,java,javascript,bootstrap,react,nextjs,nodejs,mysql" /><br><br>
-          <img src="https://skillicons.dev/icons?i=ruby,github,vercel,aws,eclipse,linux,docker" />
-        </a>
-      </p>
-    </div>
-  </section>
-
-
-  <section id="projects" data-aos="fade-up" class="projects">
-      <h2><i class="fa-solid fa-code" style="color: #EE6B4D"></i> My Projects</h2>
-
-     
-      <div class="project-grid">
-
-        <div class="project-card" data-aos="fade-right" data-aos-delay="200">
-          <h3>Drum
-            <a href="https://gocrazydrumkit.vercel.app/" target="_blank">
-              <button type="button" id="btn-Link">
-                  <i class="fa-solid fa-link"></i>Link
-              </button>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 
+        border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 
+          me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-3">Portfolio</span>
           </a>
-          </h3>
-          <p>Created an interactive JavaScript drum kit that mimics the experience of a real drum set. This project includes:
-  
-            4 Tom Drums for varied, resonant tones
-            Snare Drum for sharp, crisp backbeats 
-            Kick-Bass to provide a deep, driving beat 
-            Crash Cymbal for impactful, high-pitched accents 
-            
-            Each sound can be activated by clicks or keypresses, allowing users to experiment with 
-            rhythms and create custom beats. This project showcases my JavaScript skills in sound integration 
-            and event handling, bringing a creative, hands-on musical experience to the web.</p>
-  
-        </div>
-  
-        <div class="project-card" data-aos="fade-right" data-aos-delay="200">
-          <h3>LazyProf
-            <button type="submit" id="btn-Link"><i class="fa-solid fa-link"></i>Link</button>
-          </h3>
-          <p>Lazy Prof is an innovative feature designed to simplify academic planning and 
-            resource management for students. It allows students to streamline study habits 
-            by aggregating critical course information, lecture summaries, study materials, 
-            and assignment due dates from professors and other classmates. By centralizing 
-            this data, Lazy Prof helps students access key resources and reminders in one place, 
-            reducing the need for manual tracking across multiple sources. This feature aims to 
-            improve study efficiency and make academic management less time-consuming, allowing 
-            students to focus on learning rather than organizing.</p>
+    
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-danger"><i class="bi bi-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link text-danger"><i class="bi bi-briefcase"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link text-danger"><i class="bi bi-code-slash"></i> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-danger"><i class="bi bi-person-lines-fill"></i> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-danger"><i class="bi bi-file-earmark-person"></i> About</a>
+            </li>
+          </ul>
+          
+        </header>
+      </div>
+    
+      <div id="home" class="hero px-4 py-5 my-5 text-center">
+        <div id="particles-js"></div>
+        <div class="heroBody">
+          <h1 class="display-5 fw-bold text-body-emphasis">Hi, I am <span class="text-danger">Istiaq Ahmed</span></h1>
+          <div class="col-lg-5 mx-auto">
+            <p class="lead mb-4">Digital Marketing | <span class="bg-danger text-white">Software Engineer</span> | Web Development <br>
+              I create innovative, data-driven solutions to enhance user experience and drive business growth</p>
+            <div class="d-grid gap-1 d-sm-flex justify-content-sm-center">
+              <a href="https://www.linkedin.com/in/ahmedmdistiaq" target="_blank"><button type="button" class="btn btn-primary btn-sm px-2 gap-3 ">
+                  <i class="bi bi-linkedin"></i>
+                  LinkedIn</button></a>
+                  <a href="https://github.com/iaifti" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm px-2 gap-3">
+                  <i class="bi bi-github"></i>
+                  gitHub
+                </button></a>
 
+                <a href="_Resume.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary btn-sm px-2 gap-3">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  Resume
+                </button></a>
+            </div>
+          </div>
         </div>
+      </div>
         
-        <div class="project-card" data-aos="fade-right" data-aos-delay="300">
-          <h3>Analysis of the Impact of COVID-19 Pandemic on Housing Stability
-            <a href="Covid-19Impact.docx" target="_blank">
-              <button type="button" id="btn-Link">
-                  <i class="fa-solid fa-link"></i>Link
-              </button>
-          </a>
-          </h3>
-          <p>This project demonstrates the use of data analysis methods such as hypothesis testing, 
-            correlation analysis, and data visualization. It involved collecting raw data, followed 
-            by data cleaning and organization in Excel, and conducting an in-depth statistical analysis. 
-            Part of this analysis was to interpret patterns and trends that could guide decision-making, 
-            even when findings were inconsistent with initial assumptions.
+        
+      <div id="experience" class="experiences-list px-4 py-5 my-5">
+          <h2 data-aos="fade-down" class="text-center"><i class="bi bi-briefcase"></i> Experiences</h2>
 
-            The project focused on examining the relationship between the "Percent Likelihood of Eviction 
-            or Foreclosure" and the "Percent Unable to Pay Energy Bill" during the COVID-19 pandemic. 
-            Data was gathered over four weeks across all 50 U.S. states. The results indicated no meaningful 
-            correlation, showing a near-zero correlation coefficient and no clear pattern.</p>
-        </div>
+          <div class="experiences-cards">
+            <div class="experiences1" data-aos="fade-up" data-aos-delay="100">
+              <h3>SEMO || <span class="bg-danger text-white">Dining Services</span></h3>
+              <p class="description1">
+                <ul>
+                  <span class="headText"> As a Student Supervisor, I effectively managed a diverse team of over 
+                  15 full- and part-time employees.</span>
+                  <li>Leading to a 20% improvement in operational 
+                  efficiency.</li>
+                  <li>By promptly addressing operational challenges, I successfully 
+                  reduced service delays by 30%, significantly enhancing guest satisfaction and 
+                  contributing to a 15% increase in positive reviews.</li> 
+                  <li>Additionally, I adapted 
+                  to various software tools for inventory management and scheduling, streamlining 
+                  processes and ensuring a smooth workflow.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
 
-        <div class="project-card" data-aos="fade-right" data-aos-delay="400">
-          <h3>PassWord Generator
-            <a href="https://basicpasswordgen.vercel.app/" target="_blank">
-              <button type="button" id="btn-Link">
-                  <i class="fa-solid fa-link"></i>Link
-              </button>
-          </a>
-          </h3>
-          <p>A password generator is a tool designed to create secure, random passwords that enhance user account protection. 
-            It generates complex passwords by combining uppercase and lowercase letters, numbers, 
-            and special characters, making them difficult to guess or crack. Password generators 
-            are often customizable, allowing users to set specific parameters like password length 
-            and character types based on security needs. These tools help users avoid common pitfalls, 
-            such as using easily guessable information or repeated passwords, by producing unique and 
-            robust credentials for each account.</p>
+          <div class="experiences-cards">
+            <div class="experiences2" data-aos="fade-right" data-aos-delay="200">
+              <h3>SEMO || <span class="bg-danger text-white">Tutorial Program</span></h3>
+              <p class="description1">
+                  <ul></ul>
+                  <li>As a tutor in the Learning Assistant Program at SEMO, I supported 
+                  students in developing their coding skills in Python and Java.</li>
+                  <li>I guided learners in Unix and Linux, resulting in a 25% improvement 
+                  in their practical application of these systems.</li> 
+                <li>Additionally, I assisted students in advanced mathematics and statistics, employing 
+                  innovative teaching methods to make complex subjects more accessible 
+                  and engaging. My commitment to fostering a positive learning environment contributed to the overall academic success of my students.
+                </li>
+                </ul>
+                </p>
+            </div>
+          </div>
+        
+          <div class="experiences-cards">
+              <div class="experiences3" data-aos="fade-left" data-aos-delay="300">
+                <h3>SEMO || <span class="bg-danger text-white">Recreation Services</span></h3>
+                <p class="description1">
+                  <ul>
+                    <li>As a Front Desk/Activity Attendant at SEMO Recreational Services, 
+                    I served as the first point of contact for visitors, enhancing 
+                    satisfaction through proactive communication and strong customer service.</li>
+
+                    <li>I improved the guest experience by streamlining facility operations, 
+                    ensuring smooth day-to-day activities.</li>
+                    
+                  <li>Additionally, I maintained a safe environment, contributing to a positive and secure atmosphere 
+                    for all visitors.</li>
+                  </ul>
+                </p>
+              </div>
+          </div>
+      </div>
+
+      
+      <div class="tools px-4 py-5 my-5 text-center">
+        <h2 class="mb-5"><i class="fa-solid fa-screwdriver-wrench"></i> Tools I have expertise in...</h2>
+        <div class="tools-icons" data-aos="fade-right" data-aos-delay="200">
+          <p align="center">
+            <a href="https://skillicons.dev">
+              <img src="https://skillicons.dev/icons?i=git" />
+              <img src="https://skillicons.dev/icons?i=vscode" />
+              <img src="https://skillicons.dev/icons?i=typescript" />
+              <img src="https://skillicons.dev/icons?i=c" />
+              <img src="https://skillicons.dev/icons?i=cpp" />
+              <img src="https://skillicons.dev/icons?i=python" />
+              <img src="https://skillicons.dev/icons?i=cs" />
+              <img src="https://skillicons.dev/icons?i=html" />
+              <br><br>
+              <img src="https://skillicons.dev/icons?i=css" />
+              <img src="https://skillicons.dev/icons?i=java" />
+              <img src="https://skillicons.dev/icons?i=javascript" />
+              <img src="https://skillicons.dev/icons?i=bootstrap" />
+              <img src="https://skillicons.dev/icons?i=react" />
+              <img src="https://skillicons.dev/icons?i=nextjs" />
+              <img src="https://skillicons.dev/icons?i=nodejs" />
+              <img src="https://skillicons.dev/icons?i=postgresql" />
+              <br><br>
+              <img src="https://skillicons.dev/icons?i=tailwind" />
+              <img src="https://skillicons.dev/icons?i=ruby" />
+              <img src="https://skillicons.dev/icons?i=github" />
+              <img src="https://skillicons.dev/icons?i=vercel" />
+              <img src="https://skillicons.dev/icons?i=aws" />
+              <img src="https://skillicons.dev/icons?i=jquery" />
+              <img src="https://skillicons.dev/icons?i=linux" />
+              <img src="https://skillicons.dev/icons?i=docker" />
+            </a>
+          </p>
         </div>
       </div>
-    </section>
 
-    <section id="about" data-aos="fade-up" data-aos-delay="200" class="about">
-      <h2><i class="fa-solid fa-person"  style="color: #EE6B4D"></i> About Me</h2>
-      <p data-aos="fade-down" data-aos-delay="400">I am a passionate and driven full-stack developer, software engineer, 
-          and digital marketing specialist with a strong foundation in Computer Science. 
-          My expertise spans across multiple domains, including web development, 
-          data-driven solutions, and creating dynamic, user-friendly applications. 
-          Currently pursuing a Computer Science major, I continuously challenge myself 
-          to enhance my skills and take on new projects.
-          I have a diverse range of experiences, from working as a Front Desk/Activity 
-          Attendant for SEMO Recreational Services to tutoring students in Computer 
-          Science and Mathematics. Through these roles, I’ve developed excellent 
-          communication, problem-solving, and leadership skills, allowing me to thrive 
-          in both technical and collaborative environments.<br><br>
-          
-          I'm also actively co-founding a company that will offer software development 
-          services on a contract basis, combining my strong technical foundation with an 
-          entrepreneurial mindset. I love building innovative tools, such as LazyProf, 
-          an auto-grading platform recognized by my university's Computer Science department 
-          for improving grading efficiency. My portfolio showcases a blend of creativity 
-          and technical expertise, with a commitment to providing impactful, data-driven results.<br><br>
-          
-          In my free time, I enjoy learning new frameworks, exploring full-stack projects, 
-          and contributing to open-source communities. With a strong desire to continuously 
-          improve and educate others, I'm always looking for opportunities to apply my skills 
-          in meaningful and challenging ways.
-          </p>
-    </section>
 
-    <section id="contact" class="contact">
-      <h2 data-aos="fade-down" data-aos-delay="100"><i class="fa-solid fa-address-book" style="color: #EE6B4D"></i> Contact Me</h2>
-      <a href="https://www.youtube.com/@iFish0315" target="_blank" class="connect-Youtube" data-aos="fade-right" data-aos-delay="600">
-        <i class="fa-brands fa-youtube"></i></a>
-      <a href="https://www.linkedin.com/in/ahmedmdistiaq" target="_blank" class="connect-Linkedin" data-aos="fade-right" data-aos-delay="500">
-        <i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/iaifti" target="_blank" class="connect-Github" data-aos="fade-right" data-aos-delay="400">
-        <i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/iftii._/" target="_blank" class="connect-Instagram" data-aos="fade-right" data-aos-delay="300">
-        <i class="fab fa-instagram"></i></a>
-      <a href="https://mail.google.com/mail/u/0/#inbox/" target="_blank" class="connect-Gmail"data-aos="fade-right" data-aos-delay="200">
-        <i class="fa-regular fa-envelope"></i></a>     
+      <div data-aos="fade-up" class="projects text-center">
+        <h2><i class="bi bi-code-slash"></i> My Projects</h2>
+  
+       
+        <div  id="projects" class="project-grid">
+  
+          <div class="project-card" data-aos="fade-right" data-aos-delay="200">
+            <h3>Drum
+              <a href="https://gocrazydrumkit.vercel.app/" target="_blank">
+                <button type="button" id="btn-Link">
+                    <i class="fa-solid fa-link"></i>Link
+                </button>
+            </a>
+            </h3>
+            <p class="flex-wrap">Created an interactive JavaScript drum kit that mimics the experience of a real drum set. This project includes:
+              <ul>
+                <li>4 Tom Drums for varied, resonant tones</li>
+                <li>Snare Drum for sharp, crisp backbeats </li>
+                <li>Kick-Bass to provide a deep, driving beat </li>
+                <li>Crash Cymbal for impactful, high-pitched accents </li>
+                <br>
+              
+              Each sound can be activated by clicks or keypresses, allowing users to experiment with 
+              rhythms and create custom beats. This project showcases my JavaScript skills in sound integration 
+              and event handling, bringing a creative, hands-on musical experience to the web.</p>
+            </ul>
+          </div>
+    
+          <div class="project-card" data-aos="fade-left" data-aos-delay="200">
+            <h3>LazyProf
+              <button type="submit" id="btn-Link"><i class="fa-solid fa-link"></i>Link</button>
+            </h3>
+            <p>Lazy Prof is an innovative feature designed to simplify academic planning and 
+              resource management for students. It allows students to streamline study habits 
+              by aggregating critical course information, lecture summaries, study materials, 
+              and assignment due dates from professors and other classmates. By centralizing 
+              this data, Lazy Prof helps students access key resources and reminders in one place, 
+              reducing the need for manual tracking across multiple sources. This feature aims to 
+              improve study efficiency and make academic management less time-consuming, allowing 
+              students to focus on learning rather than organizing.</p> 
+          </div>
+          
+          <div class="project-card" data-aos="fade-right" data-aos-delay="300">
+            <h3>Analysis of the Impact of COVID-19 Pandemic on Housing Stability
+              <a href="Covid-19Impact.docx" target="_blank">
+                <button type="button" id="btn-Link">
+                    <i class="fa-solid fa-link"></i>Link
+                </button>
+            </a>
+            </h3>
+            <p>This project demonstrates the use of data analysis methods such as hypothesis testing, 
+              correlation analysis, and data visualization. 
+              <ul>
+              <li>It involved collecting raw data, followed 
+              by data cleaning and organization in Excel, and conducting an in-depth statistical analysis.</li>
+
+              <li>Part of this analysis was to interpret patterns and trends that could guide decision-making, 
+              even when findings were inconsistent with initial assumptions.</li>
+  
+              The project focused on examining the relationship between the "Percent Likelihood of Eviction 
+              or Foreclosure" and the "Percent Unable to Pay Energy Bill" during the COVID-19 pandemic. 
+              Data was gathered over four weeks across all 50 U.S. states.
+              </ul>
+            </p>
+          </div>
+  
+          <div class="project-card" data-aos="fade-left" data-aos-delay="400">
+            <h3>PassWord Generator
+              <a href="https://basicpasswordgen.vercel.app/" target="_blank">
+                <button type="button" id="btn-Link">
+                    <i class="fa-solid fa-link"></i>Link
+                </button>
+            </a>
+            </h3>
+            <p>A password generator is a tool designed to create secure, random passwords that enhance user account protection.
+              <ul> 
+              <li>It generates complex passwords by combining uppercase and lowercase letters, numbers, 
+              and special characters, making them difficult to guess or crack.</li> 
+              <li>Password generators are often customizable, allowing users to set specific parameters like password length 
+              and character types based on security needs.</li> 
+              These tools help users avoid common pitfalls, such as using easily guessable information or repeated passwords, by producing unique and 
+              robust credentials for each account.
+              </ul>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <section id="about" data-aos="fade-up" data-aos-delay="200" class="about px-4 py-5 my-5 text-center">
+        <h2><i class="bi bi-file-earmark-person"></i> About Me</h2>
+        <p data-aos="fade-down" data-aos-delay="400">I am a passionate and driven software engineer, web developer, 
+            and digital marketing specialist with a strong foundation in Computer Science. 
+            My expertise spans across multiple domains, including web development, 
+            data-driven solutions, and creating dynamic, user-friendly applications. 
+            Currently pursuing a Computer Science major, I continuously challenge myself 
+            to enhance my skills and take on new projects.
+            I have a diverse range of experiences, from working as a Front Desk/Activity 
+            Attendant for SEMO Recreational Services to tutoring students in Computer 
+            Science and Mathematics. Through these roles, I’ve developed excellent 
+            communication, problem-solving, and leadership skills, allowing me to thrive 
+            in both technical and collaborative environments.<br><br>
+            
+            I'm also actively co-founding a company that will offer software development 
+            services on a contract basis, combining my strong technical foundation with an 
+            entrepreneurial mindset. I love building innovative tools, such as LazyProf, 
+            an auto-grading platform recognized by my university's Computer Science department 
+            for improving grading efficiency. My portfolio showcases a blend of creativity 
+            and technical expertise, with a commitment to providing impactful, data-driven results.<br><br>
+            
+            In my free time, I enjoy learning new frameworks, exploring full-stack projects, 
+            and contributing to open-source communities. With a strong desire to continuously 
+            improve and educate others, I'm always looking for opportunities to apply my skills 
+            in meaningful and challenging ways.
+            </p>
       </section>
+  
+      <div id="contact" class="contact text-center">
+        <h2 data-aos="fade-down" data-aos-delay="100"><i class="bi bi-person-lines-fill"></i> Contact Me</h2>
+        <div>
+        <a href="https://www.youtube.com/@iFish0315" target="_blank" class="connect-Youtube" data-aos="fade-right" data-aos-delay="600">
+          <i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/ahmedmdistiaq" target="_blank" class="connect-Linkedin" data-aos="fade-right" data-aos-delay="500">
+          <i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/iaifti" target="_blank" class="connect-Github" data-aos="fade-right" data-aos-delay="400">
+          <i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/iftii._/" target="_blank" class="connect-Instagram" data-aos="fade-right" data-aos-delay="300">
+          <i class="fab fa-instagram"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox/" target="_blank" class="connect-Gmail"data-aos="fade-right" data-aos-delay="200">
+          <i class="fa-regular fa-envelope"></i></a>     
+        </div>
+      </div>
+  
+    <footer>
+      <p>&copy; 2024 Md Istiaq Ahmed. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2024 Md Istiaq Ahmed. All rights reserved.</p>
-  </footer>
-
-    <!-- External Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="particles.js"></script>
+    <script>
+      AOS.init(); // Initializes the animations
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="app.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
