@@ -103,4 +103,10 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
           });
       }
   });
+<<<<<<< HEAD
 });
+=======
+});
+
+
+>>>>>>> eca153450a7e3557a2932f40a5d33024d48b8772
