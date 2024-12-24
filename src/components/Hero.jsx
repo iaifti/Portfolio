@@ -41,7 +41,7 @@ const Hero = () => (
         </p>
       </div>
 
-      <div className="md:hidden my-8">
+      <div className="md:hidden mt-8">
         <a
           href="https://www.linkedin.com/in/ahmedmdistiaq/"
           target="_blank"
