@@ -24,6 +24,7 @@ module.exports = {
       signika: ['Signika'],
       nunito: ['Nunito'],
       overpass: ['Overpass'],
+      charm: ['Charm'],
     },
   },
   plugins: [],

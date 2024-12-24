@@ -1,22 +1,51 @@
 import React from "react";
 import Header from "./Header";
-import Istiaq from "../assets/istiaq.jpg";
+import Istiaq from "../assets/istiaqremovebg.png";
 
 const Hero = () => (
-  <div className="font-nunito bg-gradient-to-tr from-orange via-offwhite to-white min-h-screen flex flex-col pt-4">
+  <div className="font-nunito bg-gradient-to-br from-orange via-offwhite to-white min-h-screen flex flex-col pt-4">
     <Header />
-    <div className="flex-1 container mx-auto flex flex-col-reverse items-center px-6 py-12 md:flex-row md:justify-between md:py-24">
-      <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center">
-        <img src={Istiaq} alt="Portrait of Istiaq" className="w-3/4 md:w-2/3 h-auto rounded-lg shadow-lg" />
-      </div>
-      <div className="flex flex-col items-center text-center md:items-start md:text-left md:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-medium uppercase text-navy">
-          Into the Coding Realm.
+    <div className="flex-1 container mx-auto flex flex-col md:flex-row items-center px-10 pt-10 md:py-0 relative">
+      <div className="md:w-1/2 flex flex-col md:pl-20">
+        <h2 className="font-charm text-3xl md:text-8xl font-extrabold text-navy">
+          I am Istiaq Ahmed!
         </h2>
-        <p className="mt-4 md:text-md lg:text-xl">
-          Hi, I am Istiaq. I am a <span className="bg-navy text-offwhite p-1 rounded-lg">Software engineer</span>. I have a passion for coding and I love to solve problems.
+      </div>
+
+      <div className="mt-4 md:mt-0 md:w-1/2 flex justify-center md:justify-end">
+        <img
+          src={Istiaq}
+          alt="Portrait of Istiaq"
+          className="w-2/3 md:w-screen h-auto"
+          style={{
+            maskImage: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%)",
+            WebkitMaskImage: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20%)",
+            objectFit: "cover"
+          }}
+        />
+      </div>
+
+      <div className="hidden md:w-1/3 md:flex flex-col items-end md:pr-24 mt-4 md:pt-60 ">
+        <p className="font-overpass md:text-md lg:text-xl flex flex-col gap-1">
+          <span className="bg-navy text-offwhite p-1 rounded-sm">
+            Software engineer
+          </span>
+          <span className="bg-navy text-offwhite p-1 rounded-sm">
+            Web Developer
+          </span>
+          <span className="bg-navy text-offwhite p-1 rounded-sm">
+            Digital Marketing
+          </span>
         </p>
-        <div className="mt-8">
+      </div>
+    </div>
+  </div>
+);
+
+export default Hero;
+
+{
+  /* <div className="mt-8">
           <a
             href="https://www.linkedin.com/in/ahmedmdistiaq/"
             target="_blank"
@@ -25,10 +54,5 @@ const Hero = () => (
           >
             Get in Touch
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-export default Hero;
+        </div> */
+}

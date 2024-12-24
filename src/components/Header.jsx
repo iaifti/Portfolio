@@ -9,37 +9,57 @@ const Header = () => {
   };
 
   return (
-    <nav className="block w-full max-w-screen-lg px-4 py-2 font-overpass mx-auto bg-none lg:px-8">
-      <div className="container flex flex-wrap items-center justify-between mx-auto text-slate-800">
+    <nav className="block w-full max-w-screen-lg px-4 pt-2 font-overpass mx-auto bg-none lg:px-8">
+      <div className="container flex items-center justify-between mx-auto text-slate-800">
+        {/* Logo */}
         <a
           href="#"
-          className="mr-4 block cursor-pointer py-1.5 text-base text-navy font-semibold sm:text-lg md:text-xl lg:text-2xl transition transform hover:-translate-y-1"
+          className="mr-4 font-charm block cursor-pointer py-1.5 text-base text-navy font-semibold sm:text-lg md:text-xl lg:text-2xl transition transform hover:-translate-y-1"
         >
-          Md Istiaq Ahmed
+          Ahmed.
         </a>
 
-        <div className={`hidden lg:block ${isMenuOpen ? "block" : "lg:block"}`}>
-          <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
-            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+        {/* Center Navigation Links */}
+        <div className="hidden lg:flex flex-1 justify-center">
+          <ul className="flex gap-6">
+            <li className="text-slate-600">
               <a
                 href="#projects"
-                className="flex items-center sm:text-lg md:text-xl hover:text-orange hover:underline"
+                className="sm:text-sm md:text-md hover:text-orange hover:underline"
               >
                 Projects
               </a>
             </li>
-            <li className="flex items-center p-1 gap-x-2 text-navy sm:text-lg md:text-xl hover:text-orange hover:underline">
-              <a href="#experience">Experience</a>
+            <li className="text-navy">
+              <a
+                href="#experience"
+                className="sm:text-sm md:text-md hover:text-orange hover:underline"
+              >
+                Experience
+              </a>
             </li>
-            <li className="flex items-center p-1 gap-x-2 text-navy sm:text-lg md:text-xl hover:text-orange hover:underline">
-              <a href="#about">About</a>
-            </li>
-            <li className="flex items-center p-1 gap-x-2 text-navy sm:text-lg md:text-xl hover:text-orange hover:underline">
-              <a href="#contact">Connect</a>
+            <li className="text-navy">
+              <a
+                href="#about"
+                className="sm:text-sm md:text-md hover:text-orange hover:underline"
+              >
+                About
+              </a>
             </li>
           </ul>
         </div>
 
+        {/* Connect Link on the Right */}
+        <div className="hidden lg:block">
+          <a
+            href="#contact"
+            className="p-1 text-navy sm:text-sm md:text-md hover:text-orange hover:underline"
+          >
+            Connect
+          </a>
+        </div>
+
+        {/* Hamburger Menu for Mobile */}
         <HB toggleMenu={toggleMenu} />
       </div>
 
@@ -47,7 +67,7 @@ const Header = () => {
       <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col items-center gap-4 py-4 text-center bg-slate-200">
           <li>
-            <a href="#" className="text-navy hover:text-orange font-semibold">
+            <a href="#projects" className="text-navy hover:text-orange font-semibold">
               Projects
             </a>
           </li>

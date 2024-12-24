@@ -6,7 +6,7 @@ const About = () => {
 
   <section id="about" className="py-20 font-nunito bg-navy bg-opacity-20">
     <h2 className="text-center text-4xl font-bold mb-10 hover:text-orange">About Me</h2>
-    <p className="max-w-4xl mx-auto text-2xl leading-10 text-gray-700">
+    <p className="max-w-4xl px-10 md:mx-auto text-md md:text-2xl leading-10 text-gray-700">
       I am a passionate and driven <span className="bg-orange bg-opacity-40 rounded-md px-1">Software engineer</span>, web developer, and digital marketing specialist 
       with a strong foundation in Computer Science. My expertise spans across multiple domains, 
       including web development, data-driven solutions, and creating dynamic, user-friendly applications. 

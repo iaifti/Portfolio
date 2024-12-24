@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="py-20 bg-gradient-to-br from-orange via-offwhite to-white bg-opacity-20">
+      <div id="projects" className="pb-20 pt-32 bg-gradient-to-tr from-orange via-offwhite to-white bg-opacity-20 ">
         <h1
           className="text-3xl font-nunito md:text-4xl font-bold text-navy text-center hover:text-orange"
           data-aos="fade-up"
@@ -28,7 +28,7 @@ const Projects = () => {
         </h1>
 
         {/* First Row */}
-        <div className="flex flex-col mx-auto font-signika md:flex-row gap-20 items-center justify-center mt-10">
+        <div className="flex flex-col mx-auto font-signika md:flex-row gap-28 items-center justify-center mt-10">
           <div
             className="group relative w-80 h-56 overflow-hidden rounded-lg shadow-lg"
             data-aos="zoom-in"
@@ -118,7 +118,7 @@ const Projects = () => {
         </div>
 
         {/* Second Row */}
-        <div className="flex flex-col items-center mt-10">
+        <div className="flex flex-col items-center mt-20">
           <div
             className="group relative w-80 h-56 overflow-hidden rounded-lg shadow-lg"
             data-aos="flip-left"
