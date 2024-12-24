@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HB from "../components/hb";
+// import { FaCode } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,19 +22,19 @@ const Header = () => {
 
         {/* Center Navigation Links */}
         <div className="hidden lg:flex flex-1 justify-center">
-          <ul className="flex gap-6">
-            <li className="text-slate-600">
+          <ul className="flex gap-12">
+            <li className="text-navy">
               <a
                 href="#projects"
-                className="sm:text-sm md:text-md hover:text-orange hover:underline"
+                className="sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
               >
-                Projects
+             Projects
               </a>
             </li>
             <li className="text-navy">
               <a
                 href="#experience"
-                className="sm:text-sm md:text-md hover:text-orange hover:underline"
+                className="sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
               >
                 Experience
               </a>
@@ -41,7 +42,7 @@ const Header = () => {
             <li className="text-navy">
               <a
                 href="#about"
-                className="sm:text-sm md:text-md hover:text-orange hover:underline"
+                className="sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
               >
                 About
               </a>
@@ -53,7 +54,7 @@ const Header = () => {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="p-1 text-navy sm:text-sm md:text-md hover:text-orange hover:underline"
+            className="p-1 text-navy sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
           >
             Connect
           </a>
