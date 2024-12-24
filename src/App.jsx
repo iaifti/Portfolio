@@ -6,6 +6,7 @@ import Tran from "./components/transition";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 // import Tools from "./components/tools";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       {/* <Tools /> */}
       <About />
       <Contact />
+      <Footer />
     </>
   );
 };

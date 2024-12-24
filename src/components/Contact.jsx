@@ -67,6 +67,57 @@ const Contact = () => {
           <i className="fas fa-envelope"></i>
         </a>
       </div>
+      <div className="max-w-md mx-auto font-overpass bg-offwhite p-6 rounded-lg shadow-md mt-10 md:mt-20 sm:p-10">
+        <h1 className="font-signika md:text-xl mb-5">Thank you for visiting!</h1>
+        <form action="/submit" method="POST" className="space-y-4">
+          <div>
+            <label for="name" className="block text-sm font-medium text-navy">
+              Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="mt-1 block w-full border-b-[1px] bg-orange bg-opacity-5 border-orange rounded-md shadow-sm focus:ring-orange focus:border-orange sm:text-sm"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" className="block text-sm font-medium text-navy">
+              Email:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="mt-1 block w-full bg-orange bg-opacity-5 border-b-[1px] border-orange rounded-md shadow-sm focus:ring-orange focus:border-orange sm:text-sm"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="message"
+              className="block text-sm font-medium text-navy"
+            >
+              Message:
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              className="mt-1 block w-full bg-orange bg-opacity-5 border-b-[1px] border-orange rounded-md shadow-sm focus:ring-orange focus:border-orange sm:text-sm"
+              ></textarea>
+          </div>
+          <div>
+            <button
+              type="submit"
+              className="w-1/3 bg-orange text-navy py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
