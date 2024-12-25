@@ -43,12 +43,12 @@ const Hero = () => (
         </p>
       </div>
 
-      <div className="md:hidden mt-8 mb-*">
+      <div className="md:hidden mt-20">
         <a
           href="https://www.linkedin.com/in/ahmedmdistiaq/"
           target="_blank"
           rel="noreferrer"
-          className="inline-block px-4 py-2 text-sm md:text-lg font-medium text-navy border-2 border-gray-600 rounded md:px-6 md:py-3 hover:bg-orange shadow-2xl"
+          className="btn animate-bounce inline-block px-4 py-2 text-sm md:text-lg font-medium text-navy border-2 border-gray-600 rounded md:px-6 md:py-3 hover:bg-orange shadow-2xl"
         >
           Get in Touch
         </a>
