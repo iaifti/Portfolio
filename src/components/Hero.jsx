@@ -5,15 +5,15 @@ import Istiaq from "../assets/istiaqremovebg.png";
 const Hero = () => (
   <div className="font-nunito bg-gradient-to-br from-orange via-offwhite to-white min-h-screen flex flex-col pt-4">
     <Header />
-    <div className="flex-1 container mx-auto flex flex-col md:flex-row items-center px-10 pt-10 md:py-0 relative">
+    <div className="flex-1 container mx-auto flex flex-col md:flex-row items-center px-10 pt-10 md:py-0 relative z-10">
       <div className="flex flex-row">
-        <div className="mt-20 md:w-1/2 flex md:pl-20">
-          <h2 className="font-charm text-3xl md:text-8xl font-extrabold text-navy">
+        <div className="mt-20 flex md:pl-20">
+          <h2 className="font-charm text-4xl md:text-7xl font-extrabold text-navy">
             I am Istiaq Ahmed!
           </h2>
         </div>
 
-        <div className=" md:mt-0 md:w-1/2 flex justify-center md:justify-end">
+        <div className=" md:mr-36 md:mt-0 md:w-1/2 flex justify-center md:justify-end z-0">
           <img
             src={Istiaq}
             alt="Portrait of Istiaq"
@@ -29,8 +29,8 @@ const Hero = () => (
         </div>
       </div>
 
-      <div className="hidden md:w-1/3 md:flex flex-col items-end md:pr-24 mt-4 md:pt-60 ">
-        <p className="font-overpass md:text-md lg:text-xl flex flex-col gap-1">
+      <div className="hidden md:w-1/3 md:flex flex-col items-end md:pr-10 mt-4 md:pt-60 ">
+        <p className="font-overpass md:text-sm lg:text-lg flex flex-col gap-1">
           <span className="bg-navy text-offwhite p-1 rounded-sm">
             Software engineer
           </span>
