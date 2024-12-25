@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="font-nunito py-20 bg-navy bg-opacity-20 text-center"
+      className="font-nunito py-20 bg-navy bg-opacity-15 text-center"
     >
       <h2
         className="text-3xl font-bold mb-10 hover:text-orange"
@@ -61,7 +61,7 @@ const Contact = () => {
         </a>
         <a
           href="mailto:mdistiaqahmed0@gmail.com"
-          className="text-5xl text-gmail hover:scale-125 transition-transform duration-300 hover:text-green-500"
+          className="text-5xl text-gray-400 hover:scale-125 transition-transform duration-300 hover:text-black"
           data-aos="flip-left"
         >
           <i className="fas fa-envelope"></i>
