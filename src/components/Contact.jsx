@@ -68,8 +68,8 @@ const Contact = () => {
         </a>
       </div>
       <div className="max-w-md mx-auto font-overpass bg-offwhite p-6 rounded-lg shadow-md mt-10 md:mt-20 sm:p-10">
-        <h1 className="font-signika md:text-xl mb-5">Thank you for visiting!</h1>
-        <form action="/submit" method="POST" className="space-y-4">
+        <h1 className="font-caveat font-extrabold md:text-2xl mb-5">Thank you for visiting!</h1>
+        {/* <form action="/submit" method="POST" className="space-y-4">
           <div>
             <label for="name" className="block text-sm font-medium text-navy">
               Name:
@@ -116,7 +116,15 @@ const Contact = () => {
               Submit
             </button>
           </div>
-        </form>
+        </form> */}
+        <div className="mt-10">
+          <h4 className="font-overpass font-medium text-md md:text-lg py-5">I am open to</h4>
+          <p className="flex justify-evenly">
+            <span className="font-signika text-md text-sm px-2 border border-orange rounded-xl">Full-time</span>
+            <span className="font-signika text-md  text-sm px-2 border border-orange rounded-xl">Internship</span>
+            <span className="font-signika text-md  text-sm px-2 border border-orange rounded-xl">Fellowship</span>
+          </p>
+        </div>
       </div>
     </div>
   );

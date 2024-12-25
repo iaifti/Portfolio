@@ -4,8 +4,8 @@ const About = () => {
 
   return (
 
-  <section id="about" className="py-20 font-nunito bg-navy bg-opacity-20">
-    <h2 className="text-center md:text-4xl lg:6xl font-bold mb-10 hover:text-orange">About Me</h2>
+  <section id="about" className="py-20 font-nunito bg-gradient-to-b from-white via-yellow-300/35 to-offwhite">
+    <h2 className="text-center md:text-4xl lg:6xl font-bold mb-10 uppercase hover:text-orange">About Me</h2>
     <p className="max-w-4xl px-10 font-signika font-light md:mx-auto text-md md:text-xl lg:text-2xl lg:leading-relaxed leading-10 text-gray-700">
       I am a passionate and driven <span className="bg-orange bg-opacity-40 rounded-md px-1">Software engineer</span>, web developer, and digital marketing specialist 
       with a strong foundation in Computer Science. My expertise spans across multiple domains, 

@@ -15,13 +15,13 @@ const Header = () => {
         {/* Logo */}
         <a
           href="#"
-          className="mr-4 font-charm block cursor-pointer py-1.5 text-base text-navy font-semibold sm:text-lg md:text-xl lg:text-2xl transition transform hover:-translate-y-1"
+          className="mr-4 font-caveat block cursor-pointer py-1.5 text-base text-navy font-semibold sm:text-lg md:text-xl lg:text-2xl transition transform hover:-translate-y-1"
         >
           Ahmed.
         </a>
 
         {/* Center Navigation Links */}
-        <div className="hidden lg:flex flex-1 justify-center">
+        <div className="hidden font-signika lg:flex flex-1 justify-center">
           <ul className="flex gap-12">
             <li className="text-navy">
               <a
@@ -54,7 +54,7 @@ const Header = () => {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="p-1 text-navy sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
+            className="p-1 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
           >
             Connect
           </a>
@@ -66,7 +66,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-        <ul className="flex flex-col items-center gap-4 py-4 text-center bg-slate-200">
+        <ul className="flex flex-col items-center gap-4 py-4 text-center bg-none">
           <li>
             <a href="#projects" className="text-navy hover:text-orange font-semibold">
               Projects

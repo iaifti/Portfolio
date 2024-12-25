@@ -19,18 +19,18 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="pb-20 mt-* md:pt-32 bg-gradient-to-tr from-orange via-offwhite to-white bg-opacity-20 ">
+      <div id="projects" className="pb-20 md:pt-40 bg-gradient-to-t from-white via-gray-300/35 to-white">
         <h1
-          className="text-3xl font-nunito md:text-4xl font-bold text-navy text-center hover:text-orange"
+          className="text-3xl md:text-5xl font-league tracking-wide uppercase pb-14 font-bold hover:text-navy text-center text-navy"
           data-aos="fade-up"
         >
-          Projects
+          Some of my works
         </h1>
 
         {/* First Row */}
-        <div className="flex flex-col mx-auto font-signika md:flex-row gap-28 items-center justify-center mt-10">
+        <div className="flex flex-col mx-auto md:mb-20 font-signika md:flex-row gap-16 md:gap-28 items-center justify-center mt-10">
           <div
-            className="group relative w-80 h-56 overflow-hidden rounded-lg shadow-lg"
+            className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="zoom-in"
           >
             {/* Image */}
@@ -41,8 +41,8 @@ const Projects = () => {
             />
             {/* Overlay Content */}
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              <h2 className="text-white text-lg font-bold">Lazy Prof</h2>
-              <p className="text-orange text-sm mt-2 text-center px-4">
+              <h2 className="text-white text-lg md:text-xl font-signika font-bold">Lazy Prof</h2>
+              <p className="text-white text-sm md:text-md mt-2 text-center px-10">
                 LazyProf is a free auto-grader tool for computer science
                 assignments, blending automated and manual feedback to
                 streamline grading and ensure detailed responses. Key features
@@ -60,7 +60,7 @@ const Projects = () => {
           </div>
 
           <div
-            className="group relative w-80 h-56 overflow-hidden rounded-lg shadow-lg"
+            className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="fade-up"
           >
             {/* Image */}
@@ -71,10 +71,10 @@ const Projects = () => {
             />
             {/* Overlay Content */}
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 className="text-white text-lg font-bold">
+              <h2 className="text-white text-lg md:text-xl font-signika font-bold">
                 Analysis of the Impact of COVID-19
               </h2>
-              <p className="text-orange text-sm mt-2 text-center px-4">
+              <p className="text-white text-sm md:text-md mt-2 text-center px-10">
                 This project applied data analysis techniques, including
                 hypothesis testing, correlation analysis, and visualization, to
                 explore trends in COVID-19 housing and energy insecurity. It
@@ -90,20 +90,26 @@ const Projects = () => {
             </a>
           </div>
 
-          <div
-            className="group relative w-80 h-56 overflow-hidden rounded-lg shadow-lg"
+        </div>
+
+        {/* Second Row */}
+        <div className="flex flex-col mx-auto font-signika md:flex-row gap-16 md:gap-28 items-center justify-center mt-10">
+
+          
+        <div
+            className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="flip-left"
           >
             {/* Image */}
             <img
               src={Drum}
               alt="Card Image"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-125"
+              className="w-full h-full object-fit transition-transform duration-500 group-hover:scale-125"
             />
             {/* Overlay Content */}
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-              <h2 className="text-white text-lg font-bold">Drum Kit</h2>
-              <p className="text-orange text-sm mt-2 text-center px-4">
+              <h2 className="text-white text-lg md:text-xl font-signika font-bold">Drum Kit</h2>
+              <p className="text-white text-sm md:text-md mt-2 text-center px-10">
                 Each sound can be activated by clicks or keypresses, allowing
                 users to experiment with rhythms and create custom beats. This
                 project showcases my JavaScript skills in sound integration and
@@ -111,30 +117,27 @@ const Projects = () => {
                 to the web.
               </p>
             </div>
-            <div className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100">
+            <a href="https://gocrazydrumkit.vercel.app/" className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100">
               <button className="px-2 py-1"> <FaExternalLinkAlt /></button>
-            </div>
+            </a>
           </div>
-        </div>
 
-        {/* Second Row */}
-        <div className="flex flex-col items-center mt-20">
           <div
-            className="group relative w-80 h-56 overflow-hidden rounded-lg shadow-lg"
+            className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="flip-left"
           >
             {/* Image */}
             <img
               src={pass}
               alt="Card Image"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-125"
+              className="w-full h-full object-fit transition-transform duration-500 group-hover:scale-125"
             />
             {/* Overlay Content */}
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h2 className="text-white text-lg font-bold">
+              <h2 className="text-white text-lg md:text-xl font-signika font-bold">
                 Password Generator
               </h2>
-              <p className="text-orange text-sm mt-2 text-center px-4">
+              <p className="text-white text-sm md:text-md mt-2 text-center px-10">
                 A password generator creates secure, random passwords by
                 combining uppercase and lowercase letters, numbers, and special
                 characters. It allows customization of length and character
