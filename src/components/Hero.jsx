@@ -3,7 +3,7 @@ import Header from "./Header";
 import Istiaq from "../assets/istiaqremovebg.png";
 
 const Hero = () => (
-  <div className="font-nunito bg-gradient-to-br from-orange via-offwhite to-white min-h-screen flex flex-col pt-4">
+  <div className="font-nunito bg-gradient-to-br from-orange via-offwhite to-white min-h-screen flex flex-col pt-4 mb-*">
     <Header />
     <div className="flex-1 container mx-auto flex flex-col md:flex-row items-center px-10 pt-10 md:py-0 relative z-10">
       <div className="flex flex-row">
@@ -43,7 +43,7 @@ const Hero = () => (
         </p>
       </div>
 
-      <div className="md:hidden mt-8 mb-0">
+      <div className="md:hidden mt-8 mb-*">
         <a
           href="https://www.linkedin.com/in/ahmedmdistiaq/"
           target="_blank"

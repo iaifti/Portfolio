@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="pb-20 md:pt-32 bg-gradient-to-tr from-orange via-offwhite to-white bg-opacity-20 ">
+      <div id="projects" className="pb-20 mt-* md:pt-32 bg-gradient-to-tr from-orange via-offwhite to-white bg-opacity-20 ">
         <h1
           className="text-3xl font-nunito md:text-4xl font-bold text-navy text-center hover:text-orange"
           data-aos="fade-up"
