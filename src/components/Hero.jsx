@@ -80,7 +80,7 @@ const Hero = () => (
           </p>
         </div>
         <a
-          href="https://www.linkedin.com/in/ahmedmdistiaq/"
+          href={resume}
           target="_blank"
           rel="noreferrer"
           className="btn animate-bounce mt-8 lg:mt-12 flex gap-2 px-5 py-3 text-base lg:text-lg font-medium text-navy border-2 border-gray-600 rounded hover:bg-orange/55 shadow-2xl"

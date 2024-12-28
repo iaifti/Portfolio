@@ -14,20 +14,23 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="font-nunito py-20 bg-navy bg-opacity-15 text-center"
+      className="font-nunito py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
     >
       <h2
-        className="text-3xl font-bold mb-10 hover:text-orange"
+        className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-10 hover:text-orange"
         data-aos="zoom-in"
       >
-        Contact Me
+        Feel free to connect with me
       </h2>
-      <div className="flex justify-center space-x-10" data-aos="fade-right">
+      <div
+        className="flex flex-wrap justify-center space-x-2 sm:space-x-6 lg:space-x-10 gap-y-6"
+        data-aos="fade-right"
+      >
         <a
           href="https://www.youtube.com/@iFish0315"
           target="_blank"
           rel="noreferrer"
-          className="text-5xl text-youtube hover:scale-125 transition-transform duration-300"
+          className="text-4xl sm:text-5xl text-youtube hover:scale-125 transition-transform duration-300"
           data-aos="flip-left"
         >
           <i className="fab fa-youtube"></i>
@@ -36,7 +39,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/ahmedmdistiaq"
           target="_blank"
           rel="noreferrer"
-          className="text-5xl text-linkedin hover:scale-125 transition-transform duration-300 hover:text-blue-500"
+          className="text-4xl sm:text-5xl text-linkedin hover:scale-125 transition-transform duration-300 hover:text-blue-500"
           data-aos="flip-left"
         >
           <i className="fab fa-linkedin"></i>
@@ -45,7 +48,7 @@ const Contact = () => {
           href="https://github.com/iaifti"
           target="_blank"
           rel="noreferrer"
-          className="text-5xl text-github hover:scale-125 transition-transform duration-300 hover:text-gray-600"
+          className="text-4xl sm:text-5xl text-github hover:scale-125 transition-transform duration-300 hover:text-gray-600"
           data-aos="flip-left"
         >
           <i className="fab fa-github"></i>
@@ -54,75 +57,37 @@ const Contact = () => {
           href="https://www.instagram.com/iftii._/"
           target="_blank"
           rel="noreferrer"
-          className="text-5xl text-instagram hover:scale-125 transition-transform duration-300 hover:text-pink-400"
+          className="text-4xl sm:text-5xl text-instagram hover:scale-125 transition-transform duration-300 hover:text-pink-400"
           data-aos="flip-left"
         >
           <i className="fab fa-instagram"></i>
         </a>
         <a
           href="mailto:mdistiaqahmed0@gmail.com"
-          className="text-5xl text-gray-400 hover:scale-125 transition-transform duration-300 hover:text-black"
+          className="text-4xl sm:text-5xl text-gray-400 hover:scale-125 transition-transform duration-300 hover:text-black"
           data-aos="flip-left"
         >
           <i className="fas fa-envelope"></i>
         </a>
       </div>
-      <div className="max-w-md mx-auto font-overpass bg-offwhite p-6 rounded-lg shadow-md mt-10 md:mt-20 sm:p-10">
-        <h1 className="font-caveat font-extrabold md:text-2xl mb-5">Thank you for visiting!</h1>
-        {/* <form action="/submit" method="POST" className="space-y-4">
-          <div>
-            <label for="name" className="block text-sm font-medium text-navy">
-              Name:
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="mt-1 block w-full border-b-[1px] bg-orange bg-opacity-5 border-orange rounded-md shadow-sm focus:ring-orange focus:border-orange sm:text-sm"
-              required
-            />
-          </div>
-          <div>
-            <label for="email" className="block text-sm font-medium text-navy">
-              Email:
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="mt-1 block w-full bg-orange bg-opacity-5 border-b-[1px] border-orange rounded-md shadow-sm focus:ring-orange focus:border-orange sm:text-sm"
-              required
-            />
-          </div>
-          <div>
-            <label
-              for="message"
-              className="block text-sm font-medium text-navy"
-            >
-              Message:
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              className="mt-1 block w-full bg-orange bg-opacity-5 border-b-[1px] border-orange rounded-md shadow-sm focus:ring-orange focus:border-orange sm:text-sm"
-              ></textarea>
-          </div>
-          <div>
-            <button
-              type="submit"
-              className="w-1/3 bg-orange text-navy py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
-            >
-              Submit
-            </button>
-          </div>
-        </form> */}
+      <div className="max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
+        <h1 className="font-caveat font-extrabold text-xl md:text-2xl lg:text-3xl mb-5">
+          Thank you for visiting!
+        </h1>
         <div className="mt-10">
-          <h4 className="font-overpass font-medium text-md md:text-lg py-5">I am open to</h4>
-          <p className="flex justify-evenly">
-            <span className="font-signika text-md text-sm px-2 border border-orange rounded-xl">Full-time</span>
-            <span className="font-signika text-md  text-sm px-2 border border-orange rounded-xl">Internship</span>
-            <span className="font-signika text-md  text-sm px-2 border border-orange rounded-xl">Fellowship</span>
+          <h4 className="font-overpass font-medium text-md sm:text-lg py-5">
+            I am open to
+          </h4>
+          <p className="flex flex-wrap justify-center gap-2">
+            <span className="font-signika text-sm sm:text-md px-2 py-1 border border-orange rounded-xl">
+              Full-time
+            </span>
+            <span className="font-signika text-sm sm:text-md px-2 py-1 border border-orange rounded-xl">
+              Internship
+            </span>
+            <span className="font-signika text-sm sm:text-md px-2 py-1 border border-orange rounded-xl">
+              Fellowship
+            </span>
           </p>
         </div>
       </div>
