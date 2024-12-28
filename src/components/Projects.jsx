@@ -28,7 +28,7 @@ const Projects = () => {
         </h1>
 
         {/* First Row */}
-        <div className="flex flex-col mx-auto md:mb-20 font-signika md:flex-row gap-16 md:gap-28 items-center justify-center mt-10">
+        <div className="flex flex-col mx-auto md:mb-20 font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="zoom-in"
@@ -93,7 +93,7 @@ const Projects = () => {
         </div>
 
         {/* Second Row */}
-        <div className="flex flex-col mx-auto font-signika md:flex-row gap-16 md:gap-28 items-center justify-center mt-10">
+        <div className="flex flex-col mx-auto font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
 
           
         <div
