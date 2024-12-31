@@ -5,7 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
       colors: {
         navy:'#14213d',
         orange:'#fca311',

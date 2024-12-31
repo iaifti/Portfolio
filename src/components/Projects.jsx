@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="pb-20 md:pt-40 bg-gradient-to-t from-white via-gray-300/35 to-white">
+      <div id="projects" className="pb-20 md:pt-40 bg-gradient-to-b from-white via-gray-300/35 to-navy/10">
         <h1
           className="text-3xl md:text-5xl font-league tracking-wide uppercase pb-14 font-bold hover:text-navy text-center text-navy"
           data-aos="fade-up"
@@ -52,7 +52,7 @@ const Projects = () => {
               </p>
             </div>
             <a
-              href=""
+              href="https://github.com/TyBoye/lazyprof"
               className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
             >
               <button className="px-2 py-1"> <FaExternalLinkAlt /></button>
