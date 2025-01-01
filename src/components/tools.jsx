@@ -46,7 +46,7 @@ const Tools = () => {
                 <img
                   src={`https://skillicons.dev/icons?i=${tool.src}`}
                   alt={tool.alt}
-                  className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-28 lg:h-28"
+                  className="w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-28 lg:h-28"
                 />
               </div>
             ))}
