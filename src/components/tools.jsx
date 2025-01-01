@@ -1,94 +1,57 @@
 import React from "react";
 
 const Tools = () => {
+  const tools = [
+    { src: "react", alt: "React" },
+    { src: "express", alt: "Express" },
+    { src: "tailwind", alt: "Tailwind CSS" },
+    { src: "html", alt: "HTML" },
+    { src: "javascript", alt: "JavaScript" },
+    { src: "java", alt: "Java" },
+    { src: "python", alt: "Python" },
+    { src: "linux", alt: "Linux" },
+    { src: "docker", alt: "Docker" },
+    { src: "git", alt: "Git" },
+    { src: "github", alt: "GitHub" },
+    { src: "jquery", alt: "jQuery" },
+    { src: "vscode", alt: "VS Code" },
+    { src: "css", alt: "CSS" },
+    { src: "mongodb", alt: "MongoDB" },
+    { src: "nodejs", alt: "Node.js" },
+    { src: "cpp", alt: "C++" },
+    { src: "aws", alt: "AWS" },
+  ];
+
+  // Split tools into 3 rows
+  const rows = [tools.slice(0, 6), tools.slice(6, 12), tools.slice(12)];
+
   return (
-    <div className="font-nunito justify-center items-center">
-      <h1 className="text-center mb-6 text-4xl">Tools</h1>
+    <div className="font-nunito justify-center items-center py-8 md:py-12 mx-5 md:mx-auto max-w-7xl">
+      <h1 className="text-center font-league tracking-wide uppercase mb-12 text-2xl sm:text-3xl md:text-4xl font-bold">
+        Things I use for my projects
+      </h1>
 
-      <div className="flex flex-col justify-center items-center gap-2">
-        <div className="flex flex-wrap justify-center gap-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=react" alt="React" />
-            </div>
+      <div className="flex flex-col gap-6 w-full">
+        {/* Map through rows */}
+        {rows.map((row, rowIndex) => (
+          <div
+            key={rowIndex}
+            className="flex flex-wrap justify-center gap-4 md:gap-6"
+          >
+            {row.map((tool) => (
+              <div
+                key={tool.src}
+                className="flex flex-col items-center transition-transform duration-300 hover:scale-110"
+              >
+                <img
+                  src={`https://skillicons.dev/icons?i=${tool.src}`}
+                  alt={tool.alt}
+                  className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-28 lg:h-28"
+                />
+              </div>
+            ))}
           </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=java" alt="Java" />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=python" alt="Python" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=linux" alt="Linux" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=docker" alt="Docker" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=git" alt="Git" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center transition-transform duration-300 hover:scale-125 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
-            <div className="text-9xl mb-4">
-              <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
