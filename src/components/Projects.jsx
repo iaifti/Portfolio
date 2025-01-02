@@ -63,7 +63,7 @@ const Projects = () => {
               />
             </p>
             <a
-              href="https://github.com/TyBoye/lazyprof"
+              href="https://github.com/iaifti/LazyProf"
               className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
             >
               <button className="px-2 py-1">
