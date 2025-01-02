@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SiGmail } from 'react-icons/si';
 
 const Contact = () => {
   useEffect(() => {
@@ -64,10 +65,10 @@ const Contact = () => {
         </a>
         <a
           href="mailto:mdistiaqahmed0@gmail.com"
-          className="text-4xl sm:text-5xl text-gray-400 hover:scale-125 transition-transform duration-300 hover:text-black"
+          className="text-4xl sm:text-5xl text-green-900 hover:scale-125 transition-transform duration-300 hover:text-black"
           data-aos="flip-left"
         >
-          <i className="fas fa-envelope"></i>
+          <SiGmail />
         </a>
       </div>
       <div className="max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
