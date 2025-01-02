@@ -20,10 +20,11 @@ const Tools = () => {
     { src: "nodejs", alt: "Node.js" },
     { src: "cpp", alt: "C++" },
     { src: "aws", alt: "AWS" },
+    { src: "postman", alt: "PostMan" },
   ];
 
   // Split tools into 3 rows
-  const rows = [tools.slice(0, 6), tools.slice(6, 12), tools.slice(12)];
+  const rows = [tools.slice(0, 7), tools.slice(7, 13), tools.slice(13)];
 
   return (
     <div className="font-nunito justify-center items-center py-8 md:py-12 mx-5 md:mx-auto max-w-7xl">
@@ -41,12 +42,12 @@ const Tools = () => {
             {row.map((tool) => (
               <div
                 key={tool.src}
-                className="flex flex-col items-center transition-transform duration-300 hover:scale-110"
+                className="flex flex-col items-center transition-transform duration-300 hover:scale-125"
               >
                 <img
                   src={`https://skillicons.dev/icons?i=${tool.src}`}
                   alt={tool.alt}
-                  className="w-6 h-6 sm:w-12 sm:h-12 md:w-24 md:h-24 lg:w-28 lg:h-28"
+                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-24 md:h-24 lg:w-28 lg:h-28"
                 />
               </div>
             ))}

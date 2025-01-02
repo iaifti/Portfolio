@@ -19,7 +19,10 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="pb-20 md:pt-40 bg-gradient-to-b from-white via-gray-300/35 to-navy/10">
+      <div
+        id="projects"
+        className="pb-20 md:pt-40 bg-gradient-to-b from-white via-gray-300/35 to-navy/10"
+      >
         <h1
           className="text-3xl md:text-5xl font-league tracking-wide uppercase pb-14 font-bold hover:text-navy text-center text-navy"
           data-aos="fade-up"
@@ -41,7 +44,9 @@ const Projects = () => {
             />
             {/* Overlay Content */}
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              <h2 className="text-white text-lg md:text-xl font-signika font-bold">Lazy Prof</h2>
+              <h2 className="text-white text-lg md:text-xl font-signika font-bold">
+                Lazy Prof
+              </h2>
               <p className="text-white text-sm md:text-md mt-2 text-center px-10">
                 LazyProf is a free auto-grader tool for computer science
                 assignments, blending automated and manual feedback to
@@ -51,11 +56,20 @@ const Projects = () => {
                 on-demand testing.
               </p>
             </div>
+            <p className="absolute bottom-0 left-2 p-1 bg-none opacity-100 flex gap-3">
+              <img
+                src="https://skillicons.dev/icons?i=react,express,nodejs,mongodb,postman,tailwind"
+                className="w-40"
+              />
+            </p>
             <a
               href="https://github.com/TyBoye/lazyprof"
               className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
             >
-              <button className="px-2 py-1"> <FaExternalLinkAlt /></button>
+              <button className="px-2 py-1">
+                {" "}
+                <FaExternalLinkAlt />
+              </button>
             </a>
           </div>
 
@@ -86,17 +100,17 @@ const Projects = () => {
               href={doc}
               className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
             >
-              <button className="px-2 py-1"> <FaExternalLinkAlt /></button>
+              <button className="px-2 py-1">
+                {" "}
+                <FaExternalLinkAlt />
+              </button>
             </a>
           </div>
-
         </div>
 
         {/* Second Row */}
         <div className="flex flex-col mx-auto font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
-
-          
-        <div
+          <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="flip-left"
           >
@@ -108,7 +122,9 @@ const Projects = () => {
             />
             {/* Overlay Content */}
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-              <h2 className="text-white text-lg md:text-xl font-signika font-bold">Drum Kit</h2>
+              <h2 className="text-white text-lg md:text-xl font-signika font-bold">
+                Drum Kit
+              </h2>
               <p className="text-white text-sm md:text-md mt-2 text-center px-10">
                 Each sound can be activated by clicks or keypresses, allowing
                 users to experiment with rhythms and create custom beats. This
@@ -117,8 +133,20 @@ const Projects = () => {
                 to the web.
               </p>
             </div>
-            <a href="https://gocrazydrumkit.vercel.app/" className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100">
-              <button className="px-2 py-1"> <FaExternalLinkAlt /></button>
+            <p className="absolute bottom-0 left-2 p-1 bg-none opacity-100 flex gap-3">
+              <img
+                src="https://skillicons.dev/icons?i=html,css,javascript,vercel"
+                className="w-24"
+              />
+            </p>
+            <a
+              href="https://gocrazydrumkit.vercel.app/"
+              className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
+            >
+              <button className="px-2 py-1">
+                {" "}
+                <FaExternalLinkAlt />
+              </button>
             </a>
           </div>
 
@@ -144,12 +172,21 @@ const Projects = () => {
                 types for enhanced security.
               </p>
             </div>
+            <p className="absolute bottom-0 left-2 p-1 bg-none opacity-100 flex gap-3">
+              <img
+                src="https://skillicons.dev/icons?i=html,css,javascript,vercel"
+                className="w-24"
+              />
+            </p>
             <div className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100">
               <a
                 href="https://basicpasswordgen.vercel.app/"
                 className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
               >
-                <button className="px-2 py-1"> <FaExternalLinkAlt /></button>
+                <button className="px-2 py-1">
+                  {" "}
+                  <FaExternalLinkAlt />
+                </button>
               </a>
             </div>
           </div>
