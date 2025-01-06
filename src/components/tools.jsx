@@ -38,11 +38,16 @@ const Tools = () => {
           <div
             key={rowIndex}
             className="flex flex-wrap justify-center gap-4 md:gap-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            // Add a delay for each row to create staggered animations
           >
             {row.map((tool) => (
               <div
                 key={tool.src}
                 className="flex flex-col items-center transition-transform duration-300 hover:scale-125"
+                data-aos="flip-left"
+                data-aos-duration="1300"
               >
                 <img
                   src={`https://skillicons.dev/icons?i=${tool.src}`}

@@ -1,16 +1,7 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { SiGmail } from 'react-icons/si';
 
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 900, // Animation duration
-      easing: "ease-in-out", // Animation easing
-      once: true, // Run animation only once
-    });
-  }, []);
 
   return (
     <div
@@ -20,12 +11,14 @@ const Contact = () => {
       <h2
         className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-10 hover:text-orange"
         data-aos="zoom-in"
+        data-aos-duration="1000"
       >
         Feel free to connect with me
       </h2>
       <div
         className="flex flex-wrap justify-center space-x-2 sm:space-x-6 lg:space-x-10 gap-y-6"
         data-aos="fade-right"
+        data-aos-duration="1900"
       >
         <a
           href="https://www.youtube.com/@iFish0315"
@@ -33,6 +26,7 @@ const Contact = () => {
           rel="noreferrer"
           className="text-4xl sm:text-5xl text-youtube hover:scale-125 transition-transform duration-300"
           data-aos="flip-left"
+          data-aos-duration="1600"
         >
           <i className="fab fa-youtube"></i>
         </a>
@@ -42,6 +36,7 @@ const Contact = () => {
           rel="noreferrer"
           className="text-4xl sm:text-5xl text-linkedin hover:scale-125 transition-transform duration-300 hover:text-blue-500"
           data-aos="flip-left"
+          data-aos-duration="1300"
         >
           <i className="fab fa-linkedin"></i>
         </a>
@@ -51,6 +46,7 @@ const Contact = () => {
           rel="noreferrer"
           className="text-4xl sm:text-5xl text-github hover:scale-125 transition-transform duration-300 hover:text-gray-600"
           data-aos="flip-left"
+          data-aos-duration="1000"
         >
           <i className="fab fa-github"></i>
         </a>
@@ -60,6 +56,7 @@ const Contact = () => {
           rel="noreferrer"
           className="text-4xl sm:text-5xl text-instagram hover:scale-125 transition-transform duration-300 hover:text-pink-400"
           data-aos="flip-left"
+          data-aos-duration="800"
         >
           <i className="fab fa-instagram"></i>
         </a>
@@ -67,6 +64,7 @@ const Contact = () => {
           href="mailto:mdistiaqahmed0@gmail.com"
           className="text-4xl sm:text-5xl text-green-900 hover:scale-125 transition-transform duration-300 hover:text-black"
           data-aos="flip-left"
+          data-aos-duration="500"
         >
           <SiGmail />
         </a>

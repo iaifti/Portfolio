@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import Drum from "../assets/drum.png";
 import Lazy from "../assets/Lazy.png";
 import stat from "../assets/stat.jpg";
@@ -9,13 +7,6 @@ import pass from "../assets/password.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 100,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
 
   return (
     <>
@@ -34,7 +25,8 @@ const Projects = () => {
         <div className="flex flex-col mx-auto md:mb-20 font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
-            data-aos="zoom-in"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           >
             {/* Image */}
             <img
@@ -75,7 +67,8 @@ const Projects = () => {
 
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
-            data-aos="fade-up"
+            data-aos="fade-right"
+            data-aos-duration="1100"
           >
             {/* Image */}
             <img
@@ -112,7 +105,8 @@ const Projects = () => {
         <div className="flex flex-col mx-auto font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
-            data-aos="flip-left"
+            data-aos="fade-up-left"
+            data-aos-duration="1200"
           >
             {/* Image */}
             <img
@@ -152,7 +146,8 @@ const Projects = () => {
 
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
-            data-aos="flip-left"
+            data-aos="fade-up-right"
+            data-aos-duration="1300"
           >
             {/* Image */}
             <img

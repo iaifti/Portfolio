@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import Header from './components/Header';
 import Hero from "./components/Hero";
 import Experiences from "./components/Experiences";
@@ -24,5 +26,10 @@ const App = () => {
     </>
   );
 };
+
+
+AOS.init();
+AOS.refresh();
+
 
 export default App;
