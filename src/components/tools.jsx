@@ -7,6 +7,7 @@ const Tools = () => {
     { src: "tailwind", alt: "Tailwind CSS" },
     { src: "html", alt: "HTML" },
     { src: "javascript", alt: "JavaScript" },
+    { src: "figma", alt: "Figma" },
     { src: "java", alt: "Java" },
     { src: "python", alt: "Python" },
     { src: "linux", alt: "Linux" },
@@ -19,12 +20,14 @@ const Tools = () => {
     { src: "mongodb", alt: "MongoDB" },
     { src: "nodejs", alt: "Node.js" },
     { src: "cpp", alt: "C++" },
+    { src: "bootstrap", alt: "Bootstrap" },
+    { src: "c", alt: "C" },
     { src: "aws", alt: "AWS" },
     { src: "postman", alt: "PostMan" },
   ];
 
   // Split tools into 3 rows
-  const rows = [tools.slice(0, 7), tools.slice(7, 13), tools.slice(13)];
+  const rows = [tools.slice(0, 7), tools.slice(7, 14), tools.slice(15)];
 
   return (
     <div className="font-nunito justify-center items-center py-8 md:py-12 mx-5 md:mx-auto max-w-7xl">
@@ -32,7 +35,7 @@ const Tools = () => {
         Things I use for my projects
       </h1>
 
-      <div className="flex flex-col gap-6 w-full">
+      <div className="flex flex-col md:gap-10 gap-6 w-full">
         {/* Map through rows */}
         {rows.map((row, rowIndex) => (
           <div

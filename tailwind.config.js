@@ -5,6 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'loop-scroll': 'loop-scroll 30s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       colors: {
         navy:'#14213d',
         orange:'#fca311',

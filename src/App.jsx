@@ -10,6 +10,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Tools from "./components/tools";
+// import Carousel from "./components/carousel";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       {/* <Header /> */}
       <Hero />
       {/* <Tran /> */}
+      {/* <Carousel /> */}
       <Projects />
       <Experiences />
       <Tools />
