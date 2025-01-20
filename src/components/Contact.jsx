@@ -9,14 +9,14 @@ const Contact = () => {
       className="font-nunito py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
     >
       <h2
-        className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-10 hover:text-orange"
+        className="text-lg sm:text-xl lg:text-2xl font-bold mb-10 hover:text-orange"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
         Feel free to connect with me
       </h2>
       <div
-        className="flex flex-wrap justify-center space-x-2 sm:space-x-6 lg:space-x-10 gap-y-6"
+        className="flex flex-wrap justify-center space-x-2 sm:space-x-6 lg:space-x-8 gap-y-6"
         data-aos="fade-right"
         data-aos-duration="1900"
       >

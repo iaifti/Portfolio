@@ -18,7 +18,7 @@ const Experiences = () => {
               </div>
             </div>
             <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Customer Service Representative
+              Office Assistant
             </div>
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
@@ -33,7 +33,6 @@ const Experiences = () => {
               </ul>
             </div>
           </div>
-          <hr className="border-t border-gray-300" />
           {/* Row 2 */}
           <div className="grid grid-cols-1 p-4 lg:grid-cols-3 gap-6 lg:gap-8 items-center bg-orange/10 hover:rounded-xl">
             <div className="flex items-center gap-4">
@@ -43,7 +42,7 @@ const Experiences = () => {
               </div>
             </div>
             <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Tutor
+              CS Tutor
             </div>
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
@@ -56,7 +55,6 @@ const Experiences = () => {
               </ul>
             </div>
           </div>
-          <hr className="border-t border-gray-300" />
           {/* Row 3 */}
           <div className="grid grid-cols-1 p-4 lg:grid-cols-3 gap-6 lg:gap-8 items-center bg-orange/10 hover:rounded-xl">
             <div className="flex items-center gap-4">
@@ -66,7 +64,7 @@ const Experiences = () => {
               </div>
             </div>
             <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Dining Services Supervisor
+              Student Supervisor
             </div>
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
