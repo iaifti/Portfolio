@@ -15,7 +15,7 @@ const Header = () => {
         {/* Logo */}
         <a
           href="#"
-          className="mr-4 font-caveat block cursor-pointer py-1.5 text-base text-navy font-semibold sm:text-lg md:text-xl lg:text-2xl transition transform hover:-translate-y-1"
+          className="mr-4 font-caveat block cursor-pointer py-1.5 text-base text-navy font-semibold sm:text-lg md:text-xl lg:text-2xl transition transform hover:scale-110 duration-200"
         >
           Ahmed.
         </a>
@@ -26,15 +26,15 @@ const Header = () => {
             <li className="text-navy">
               <a
                 href="#projects"
-                className="sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
+                className="px-3 py-2 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange/10 hover:bg-opacity-30 rounded-lg transition-all duration-200"
               >
-             Projects
+                Projects
               </a>
             </li>
             <li className="text-navy">
               <a
                 href="#experience"
-                className="sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
+                className="px-3 py-2 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange/10 hover:bg-opacity-30 rounded-lg transition-all duration-200"
               >
                 Experience
               </a>
@@ -42,7 +42,7 @@ const Header = () => {
             <li className="text-navy">
               <a
                 href="#about"
-                className="sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
+                className="px-3 py-2 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange/10 hover:bg-opacity-30 rounded-lg transition-all duration-200"
               >
                 About
               </a>
@@ -54,7 +54,7 @@ const Header = () => {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="p-1 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange hover:bg-opacity-30 hover:p-2 hover:rounded-lg "
+            className="px-3 py-2 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange/10 hover:bg-opacity-30  rounded-lg transition-all transform hover:scale-110 duration-200"
           >
             Connect
           </a>
@@ -68,22 +68,34 @@ const Header = () => {
       <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col items-center gap-4 py-4 text-center bg-none">
           <li>
-            <a href="#projects" className="text-navy hover:text-orange font-semibold">
+            <a
+              href="#projects"
+              className="text-navy hover:text-orange font-semibold"
+            >
               Projects
             </a>
           </li>
           <li>
-            <a href="#experience" className="text-navy hover:text-orange font-semibold">
+            <a
+              href="#experience"
+              className="text-navy hover:text-orange font-semibold"
+            >
               Experience
             </a>
           </li>
           <li>
-            <a href="#about" className="text-navy hover:text-orange font-semibold">
+            <a
+              href="#about"
+              className="text-navy hover:text-orange font-semibold"
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#contact" className="text-navy hover:text-orange font-semibold">
+            <a
+              href="#contact"
+              className="text-navy hover:text-orange font-semibold"
+            >
               Connect
             </a>
           </li>

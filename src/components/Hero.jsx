@@ -19,9 +19,20 @@ const Hero = () => (
             Istiaq Ahmed
           </h2>
           <p className="hidden lg:block mt-6 font-manrope font-bold text-base lg:text-lg xl:text-xl">
+            <span className="block text-navy py-1">
+              Co-Founder at{" "}
+              <span className="text-[#cb4a3a] font-extrabold cursor-pointer">
+                <a
+                  href="https://www.cran-us.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CRAN
+                </a>
+              </span>
+            </span>
             <span className="block text-navy py-1">Software Engineer</span>
             <span className="block text-navy py-1">FullStack Developer</span>
-            <span className="block text-navy py-1">DevOps Engineer</span>
           </p>
         </div>
       </div>
