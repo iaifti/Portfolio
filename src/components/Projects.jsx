@@ -30,7 +30,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-16 lg:pb-32 md:pt-40 bg-white to-navy/20">
+    <div id="projects" className="pb-16 pt-10 lg:pb-32 md:pt-40 bg-white to-navy/20">
       <h1 className="text-3xl md:text-6xl font-poppins uppercase pb-10 md:pb-20 font-bold hover:text-navy text-center text-navy">
         Work Studio
       </h1>
@@ -66,7 +66,7 @@ const Projects = () => {
                   href={proj.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-orange text-white px-4 py-2 rounded hover:bg-navy transition"
+                  className="bg-yellow-300/35 text-white px-4 py-2 rounded hover:bg-navy transition"
                 >
                   Learn More <FaExternalLinkAlt className="inline ml-1" />
                 </a>
