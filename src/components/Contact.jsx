@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="font-nunito py-10 lg:py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
+      className="font-nunito py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
     >
       <h2
         className="text-lg sm:text-xl lg:text-2xl font-bold mb-10 hover:text-orange"
@@ -69,7 +69,7 @@ const Contact = () => {
           <SiGmail />
         </a>
       </div>
-      <div className="max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
+      <div className="hidden md:flex max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
         <h1 className="font-caveat font-extrabold text-xl md:text-2xl lg:text-3xl mb-5">
           Thank you for visiting!
         </h1>

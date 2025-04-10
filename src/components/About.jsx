@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-10 lg:py-20 font-nunito bg-gradient-to-b from-white via-yellow-300/35 to-offwhite"
+      className="py-10 mt-10 lg:mt-4 lg:py-20 font-nunito bg-gradient-to-b from-white via-yellow-300/35 to-offwhite"
     >
       <h2 className="text-center font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-10 uppercase">
         About Me
       </h2>
-      <p className="max-w-4xl px-10 font-signika font-light md:mx-auto text-md md:text-xl lg:text-2xl lg:leading-relaxed leading-10 text-gray-700">
+      <p className="max-w-4xl px-10 pb-10 font-signika font-light md:mx-auto text-md md:text-xl lg:text-2xl lg:leading-relaxed leading-10 text-gray-700">
         <span
           data-aos="fade-in"
           data-aos-duration="1000"

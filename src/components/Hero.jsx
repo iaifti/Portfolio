@@ -11,14 +11,14 @@ const Hero = () => (
       {/* Left Side */}
       <div className="lg:w-1/3 flex flex-col items-center lg:items-center text-center lg:text-left">
         <div className="mt-12 lg:mt-0">
-          <h2 className="font-league text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-semibold tracking-widest text-navy">
+          <h2 className="font-poppins text-3xl sm:text-4xl lg:text-6xl  font-semibold text-navy">
             <span className="text-lg sm:text-xl font-signika font-thin tracking-normal">
               Meet
             </span>
             <br />
             Istiaq Ahmed
           </h2>
-          <p className="hidden lg:block mt-6 font-manrope font-bold text-base lg:text-lg xl:text-xl">
+          <p className="hidden lg:block mt-6 font-overpass font-bold text-base lg:text-lg xl:text-xl">
             <span className="block text-navy py-1">
               Co-Founder at{" "}
               <span className="text-[#cb4a3a] font-extrabold cursor-pointer">
@@ -84,7 +84,7 @@ const Hero = () => (
           </div>
         </div>
         <div className="mt-6 lg:hidden text-center">
-          <p className="font-manrope font-bold text-base sm:text-lg">
+          <p className="font-overpass font-bold text-base sm:text-lg">
           <span className="block text-navy py-1">
               Co-Founder at{" "}
               <span className="text-[#cb4a3a] font-extrabold cursor-pointer">

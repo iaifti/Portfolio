@@ -10,27 +10,30 @@ const Projects = () => {
       img: Lazy,
       title: "Lazy Prof",
       desc: "LazyProf is a free auto-grader tool for computer science assignments with automated test cases, personalized feedback, and secure sandbox testing.",
-      tech: "https://skillicons.dev/icons?i=react,express,nodejs,mongodb,postman,tailwind",
+      tech: ["react", "express", "nodejs", "mongodb", "postman", "tailwind"],
       link: "https://github.com/iaifti/LazyProf",
     },
     {
       img: Drum,
       title: "Drum Kit",
       desc: "A fun interactive drum kit that responds to both clicks and keyboard events, showcasing JavaScript sound integration and event handling.",
-      tech: "https://skillicons.dev/icons?i=html,css,javascript,vercel,figma,jndn",
+      tech: ["html", "css", "javascript", "vercel", "figma"],
       link: "https://gocrazydrumkit.vercel.app/",
     },
     {
       img: pass,
       title: "Password Generator",
       desc: "Generates secure, random passwords with options for length and character types for enhanced online safety.",
-      tech: "https://skillicons.dev/icons?i=html,css,javascript,vercel,figma,jndn",
+      tech: ["html", "css", "javascript", "vercel", "figma"],
       link: "https://basicpasswordgen.vercel.app/",
     },
   ];
 
   return (
-    <div id="projects" className="pb-16 pt-10 lg:pb-32 md:pt-40 bg-white to-navy/20">
+    <div
+      id="projects"
+      className="pb-16 pt-10 lg:pb-32 md:pt-40 bg-white to-navy/20"
+    >
       <h1 className="text-3xl md:text-6xl font-poppins uppercase pb-10 md:pb-20 font-bold hover:text-navy text-center text-navy">
         Work Studio
       </h1>
@@ -44,7 +47,16 @@ const Projects = () => {
             data-aos-duration="1000"
           >
             {/* Tech Stack Above */}
-            <img src={proj.tech} className="w-44" />
+            <div className="flex flex-wrap justify-center gap-2 mb-2">
+              {proj.tech.map((tech, i) => (
+                <img
+                  key={i}
+                  src={`https://skillicons.dev/icons?i=${tech}`}
+                  alt={tech}
+                  className="w-8 h-8 md:w-10 md:h-10"
+                />
+              ))}
+            </div>
 
             {/* Card */}
             <div
