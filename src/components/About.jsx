@@ -34,7 +34,7 @@ const About = () => {
 
         <span
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1200"
           data-aos-easing="ease-in-out"
         >
           My expertise spans across multiple domains, including web development,
@@ -47,7 +47,7 @@ const About = () => {
         <br />
         <span
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1400"
           data-aos-easing="ease-in-out"
         >
           In my free time, I enjoy learning new frameworks, exploring full-stack
