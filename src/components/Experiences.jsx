@@ -1,19 +1,58 @@
 import React from "react";
-import { FaUsers, FaCode, FaUtensils } from "react-icons/fa";
+import { FaUsers, FaCode, FaUtensils, FaLaptopCode } from "react-icons/fa";
 
 const Experiences = () => {
   return (
-    <div className="bg-gradient-to-b from-navy/10 to-white font-signika pt-20 pb-16">
+    <div
+      id="experience"
+      className="bg-white font-signika pt-10 md:pt-20 pb-16"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-league tracking-wide uppercase pb-10 font-bold text-center mb-12">
-          Working Experiences
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-poppins uppercase pb-5 md:pb-10 font-bold text-center mb-12">
+          Professional Experiences
         </h2>
-        <div className="space-y-10 p-4">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 gap-6 lg:gap-8">
+          <div
+            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="flex items-center gap-4">
+              <FaLaptopCode className="text-xl sm:text-2xl text-6" />
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold">Cran US LLC</div>
+            </div>
+            <div className="font-semibold text-sm sm:text-base lg:text-lg">
+              Software Engineer & Co-Founder
+            </div>
+            <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
+              <ul className="space-y-1 list-disc pl-6">
+                <li>
+                  Led Full-Cycle Development of Custom Web Solutions for Local
+                  Businesses
+                </li>
+                <li>
+                  Integrated Agile Development Practices & Client Collaboration
+                  into Project Workflow
+                </li>
+                <li>
+                  Built and Scaled a Community-Focused Tech Startup from the
+                  Ground Up
+                </li>
+              </ul>
+            </div>
+          </div>
+
           {/* Row 1 */}
-          <div className="grid grid-cols-1 p-4 lg:grid-cols-3 gap-6 lg:gap-8 items-center bg-orange/10 hover:rounded-xl">
+          <div
+            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
             <div className="flex items-center gap-4">
               <FaUsers className="text-xl sm:text-2xl text-6" />
-              <div className="text-sm sm:text-base lg:text-lg">
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
                 SEMO Recreation Center
               </div>
             </div>
@@ -33,21 +72,27 @@ const Experiences = () => {
               </ul>
             </div>
           </div>
+
           {/* Row 2 */}
-          <div className="grid grid-cols-1 p-4 lg:grid-cols-3 gap-6 lg:gap-8 items-center bg-orange/10 hover:rounded-xl">
+          <div
+            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
             <div className="flex items-center gap-4">
               <FaCode className="text-xl sm:text-2xl text-6" />
-              <div className="text-sm sm:text-base lg:text-lg">
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
                 SEMO Tutorial Program
               </div>
             </div>
             <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              CS Tutor
+              Computer Science Tutor
             </div>
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
-                <li>Supported students in coding with Python and Java.</li>
-                <li>Improved Unix and Linux skills by 25%.</li>
+                <li>Supported students with basic Python and Java.</li>
+                <li>Improved Unix and Linux skills.</li>
                 <li>
                   Simplified advanced math and statistics concepts for better
                   understanding.
@@ -56,25 +101,28 @@ const Experiences = () => {
             </div>
           </div>
           {/* Row 3 */}
-          <div className="grid grid-cols-1 p-4 lg:grid-cols-3 gap-6 lg:gap-8 items-center bg-orange/10 hover:rounded-xl">
+          <div
+            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+            data-aos-easing="ease-in-out"
+          >
             <div className="flex items-center gap-4">
               <FaUtensils className="text-xl sm:text-2xl text-6" />
-              <div className="text-sm sm:text-base lg:text-lg">
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
                 SEMO Dining Services
               </div>
             </div>
             <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Student Supervisor
+              Supervisor
             </div>
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
                 <li>
                   Managed a team of 15 employees, improving operational
-                  efficiency by 20%.
+                  efficiency
                 </li>
-                <li>
-                  Reduced service delays by 30%, enhancing guest satisfaction.
-                </li>
+                <li>Reduced service delay enhancing guest satisfaction.</li>
                 <li>
                   Streamlined inventory management and scheduling with software
                   tools.

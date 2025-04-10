@@ -7,7 +7,7 @@ import resume from "../assets/_Resume.pdf";
 const Hero = () => (
   <div className="font-nunito bg-gradient-to-b from-offwhite via-yellow-300/35 to-white min-h-screen flex flex-col pt-4 mb-8">
     <Header />
-    <div className="flex-1 container mx-auto flex flex-col lg:flex-row items-center px-6 md:px-10 py-10 lg:py-0 relative z-10">
+    <div className="flex-1 container mx-auto flex flex-col lg:flex-row items-center px-6 md:px-10 py-0 relative z-10">
       {/* Left Side */}
       <div className="lg:w-1/3 flex flex-col items-center lg:items-center text-center lg:text-left">
         <div className="mt-12 lg:mt-0">
@@ -85,7 +85,18 @@ const Hero = () => (
         </div>
         <div className="mt-6 lg:hidden text-center">
           <p className="font-manrope font-bold text-base sm:text-lg">
-            <span className="block text-navy py-1">Entreprenuer</span>
+          <span className="block text-navy py-1">
+              Co-Founder at{" "}
+              <span className="text-[#cb4a3a] font-extrabold cursor-pointer">
+                <a
+                  href="https://www.cran-us.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CRAN
+                </a>
+              </span>
+            </span>
             <span className="block text-navy py-1">FullStack Developer</span>
             <span className="block text-navy py-1">Software Engineer</span>
           </p>

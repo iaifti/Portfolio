@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="font-nunito py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
+      className="font-nunito py-10 lg:py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
     >
       <h2
         className="text-lg sm:text-xl lg:text-2xl font-bold mb-10 hover:text-orange"
@@ -24,7 +24,7 @@ const Contact = () => {
           href="https://www.youtube.com/@iFish0315"
           target="_blank"
           rel="noreferrer"
-          className="text-4xl sm:text-5xl text-youtube hover:scale-125 transition-transform duration-300"
+          className="text-3xl sm:text-5xl text-youtube hover:scale-125 transition-transform duration-300"
           data-aos="flip-left"
           data-aos-duration="1600"
         >
@@ -34,7 +34,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/ahmedmdistiaq"
           target="_blank"
           rel="noreferrer"
-          className="text-4xl sm:text-5xl text-linkedin hover:scale-125 transition-transform duration-300 hover:text-blue-500"
+          className="text-3xl sm:text-5xl text-linkedin hover:scale-125 transition-transform duration-300 hover:text-blue-500"
           data-aos="flip-left"
           data-aos-duration="1300"
         >
@@ -44,7 +44,7 @@ const Contact = () => {
           href="https://github.com/iaifti"
           target="_blank"
           rel="noreferrer"
-          className="text-4xl sm:text-5xl text-github hover:scale-125 transition-transform duration-300 hover:text-gray-600"
+          className="text-3xl sm:text-5xl text-github hover:scale-125 transition-transform duration-300 hover:text-gray-600"
           data-aos="flip-left"
           data-aos-duration="1000"
         >
@@ -54,7 +54,7 @@ const Contact = () => {
           href="https://www.instagram.com/iftii._/"
           target="_blank"
           rel="noreferrer"
-          className="text-4xl sm:text-5xl text-instagram hover:scale-125 transition-transform duration-300 hover:text-pink-400"
+          className="text-3xl sm:text-5xl text-instagram hover:scale-125 transition-transform duration-300 hover:text-pink-400"
           data-aos="flip-left"
           data-aos-duration="800"
         >
@@ -62,7 +62,7 @@ const Contact = () => {
         </a>
         <a
           href="mailto:mdistiaqahmed0@gmail.com"
-          className="text-4xl sm:text-5xl text-green-900 hover:scale-125 transition-transform duration-300 hover:text-black"
+          className="text-3xl sm:text-5xl text-green-900 hover:scale-125 transition-transform duration-300 hover:text-black"
           data-aos="flip-left"
           data-aos-duration="500"
         >

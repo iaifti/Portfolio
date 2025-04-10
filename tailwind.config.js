@@ -36,6 +36,7 @@ module.exports = {
       charm: ['Charm'],
       caveat: ['Caveat'],
       league: ['League Gothic'],
+      poppins: ['Poppins'],
     },
   },
   plugins: [],

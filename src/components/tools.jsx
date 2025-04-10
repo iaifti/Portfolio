@@ -30,9 +30,9 @@ const Tools = () => {
   const rows = [tools.slice(0, 7), tools.slice(7, 14), tools.slice(15)];
 
   return (
-    <div className="font-nunito justify-center items-center py-8 md:py-12 mx-5 md:mx-auto max-w-7xl">
-      <h1 className="text-center font-league tracking-wide uppercase mb-12 text-2xl sm:text-3xl md:text-4xl font-bold">
-        Things I use for my projects
+    <div className="font-nunito justify-center items-center py-4 md:py-16 mx-5 md:mx-auto max-w-7xl">
+      <h1 className="text-center font-poppins uppercase mb-10 md:mb-20 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold">
+        What I work with
       </h1>
 
       <div className="flex flex-col md:gap-10 gap-6 w-full">
@@ -40,7 +40,7 @@ const Tools = () => {
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className="flex flex-wrap justify-center gap-4 md:gap-6"
+            className="flex flex-wrap justify-center gap-2 md:gap-6"
             data-aos="fade-up"
             data-aos-duration="1000"
             // Add a delay for each row to create staggered animations
@@ -55,7 +55,7 @@ const Tools = () => {
                 <img
                   src={`https://skillicons.dev/icons?i=${tool.src}`}
                   alt={tool.alt}
-                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-24 md:h-24 lg:w-28 lg:h-28"
+                  className="w-8 h-8 sm:w-9 sm:h-19 md:w-16 md:h-16 lg:w-24 lg:h-24"
                 />
               </div>
             ))}
