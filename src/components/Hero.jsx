@@ -74,9 +74,9 @@ const Hero = () => (
         </div>
         <div className="mt-6 lg:hidden text-center">
           <p className="font-manrope font-bold text-base sm:text-lg">
-            <span className="block text-navy py-1">Software Engineer</span>
+            <span className="block text-navy py-1">Entreprenuer</span>
             <span className="block text-navy py-1">FullStack Developer</span>
-            <span className="block text-navy py-1">DevOps Engineer</span>
+            <span className="block text-navy py-1">Software Engineer</span>
           </p>
         </div>
         <a
@@ -85,7 +85,7 @@ const Hero = () => (
           rel="noreferrer"
           className="btn animate-bounce mt-8 lg:mt-12 flex gap-2 px-5 py-3 text-base lg:text-lg font-medium text-navy border-2 border-gray-600 rounded hover:bg-orange/55 shadow-2xl"
         >
-          <HiDownload  className="text-2xl"/> Resume
+          <HiDownload className="text-2xl" /> Resume
         </a>
       </div>
     </div>

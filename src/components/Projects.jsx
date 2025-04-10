@@ -7,7 +7,6 @@ import pass from "../assets/password.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
-
   return (
     <>
       <div
@@ -64,45 +63,7 @@ const Projects = () => {
               </button>
             </a>
           </div>
-
-          <div
-            className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
-            data-aos="fade-right"
-            data-aos-duration="1100"
-          >
-            {/* Image */}
-            <img
-              src={stat}
-              alt="Card Image"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            {/* Overlay Content */}
-            <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 className="text-white text-lg md:text-xl font-signika font-bold">
-                Analysis of the Impact of COVID-19
-              </h2>
-              <p className="text-white text-sm md:text-md mt-2 text-center px-10">
-                This project applied data analysis techniques, including
-                hypothesis testing, correlation analysis, and visualization, to
-                explore trends in COVID-19 housing and energy insecurity. It
-                analyzed the relationship between eviction risk and energy bill
-                nonpayment across all U.S. states over four weeks.
-              </p>
-            </div>
-            <a
-              href={doc}
-              className="absolute bottom-0 right-0 p-1 bg-orange hover:bg-navy hover:text-white opacity-0 group-hover:opacity-100"
-            >
-              <button className="px-2 py-1">
-                {" "}
-                <FaExternalLinkAlt />
-              </button>
-            </a>
-          </div>
-        </div>
-
-        {/* Second Row */}
-        <div className="flex flex-col mx-auto font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
+          
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
             data-aos="fade-up-left"
@@ -143,6 +104,12 @@ const Projects = () => {
               </button>
             </a>
           </div>
+          
+        </div>
+
+        {/* Second Row */}
+        <div className="flex flex-col mx-auto font-signika md:flex-row gap-10 md:gap-28 items-center justify-center mt-10">
+          
 
           <div
             className="group relative w-80 h-56 md:w-1/3 md:h-80 overflow-hidden rounded-lg md:rounded-3xl shadow-2xl"
