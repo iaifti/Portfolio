@@ -11,7 +11,7 @@ const About = () => {
       </h2>
       <p className="max-w-4xl px-10 font-signika font-light md:mx-auto text-md md:text-xl lg:text-2xl lg:leading-relaxed leading-10 text-gray-700">
         <span
-          data-aos="fade-right"
+          data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
@@ -33,7 +33,7 @@ const About = () => {
         <br />
 
         <span
-          data-aos="fade-right"
+          data-aos="fade-in"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out"
         >
@@ -46,7 +46,7 @@ const About = () => {
         <br />
         <br />
         <span
-          data-aos="fade-right"
+          data-aos="fade-in"
           data-aos-duration="1400"
           data-aos-easing="ease-in-out"
         >
