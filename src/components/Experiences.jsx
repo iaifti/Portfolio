@@ -3,10 +3,7 @@ import { FaUsers, FaCode, FaUtensils, FaLaptopCode } from "react-icons/fa";
 
 const Experiences = () => {
   return (
-    <div
-      id="experience"
-      className="bg-white font-signika pt-10 md:pt-20 pb-16"
-    >
+    <div id="experience" className="bg-white font-signika pt-10 md:pt-20 pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-poppins uppercase pb-5 md:pb-10 font-bold text-center mb-12">
           Professional Experiences
@@ -20,7 +17,9 @@ const Experiences = () => {
           >
             <div className="flex items-center gap-4">
               <FaLaptopCode className="text-xl sm:text-2xl text-6" />
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold">Cran US LLC</div>
+              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
+                Cran US LLC
+              </div>
             </div>
             <div className="font-semibold text-sm sm:text-base lg:text-lg">
               Software Engineer & Co-Founder
@@ -28,16 +27,19 @@ const Experiences = () => {
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
                 <li>
-                  Led Full-Cycle Development of Custom Web Solutions for Local
-                  Businesses
+                  Engineered robust RESTful APIs with Node.js and Express,
+                  integration for scalable data storage and Clerk for secure
+                  authentication.
                 </li>
                 <li>
-                  Integrated Agile Development Practices & Client Collaboration
-                  into Project Workflow
+                  Utilized Postman for thorough API testing and debugging,
+                  ensuring seamless integration across frontend and backend
+                  components.
                 </li>
                 <li>
-                  Built and Scaled a Community-Focused Tech Startup from the
-                  Ground Up
+                  Contributed to frontend development with Nextjs and Tailwind
+                  CSS, enhancing user experience through responsive design and
+                  smooth API connectivity.
                 </li>
               </ul>
             </div>
@@ -62,12 +64,12 @@ const Experiences = () => {
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
                 <li>
-                  First point of contact for visitors, boosting satisfaction
-                  through proactive communication.
+                  Streamlined workflows to improve efficiency, showcasing
+                  problem-solving and systems thinking.
                 </li>
-                <li>Enhanced customer service, improving guest experience.</li>
                 <li>
-                  Streamlined facility operations and increased efficiency.
+                  Communicated solutions clearly to users, reflecting strong
+                  technical and interpersonal skills.
                 </li>
               </ul>
             </div>
@@ -91,11 +93,15 @@ const Experiences = () => {
             </div>
             <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
               <ul className="space-y-1 list-disc pl-6">
-                <li>Supported students with basic Python and Java.</li>
-                <li>Improved Unix and Linux skills.</li>
                 <li>
-                  Simplified advanced math and statistics concepts for better
-                  understanding.
+                  Tutored Python, Java, Unix/Linux, advanced math and
+                  Statistics, reinforcing core concepts essential for software
+                  development.
+                </li>
+                <li>
+                  Simplified complex technical topics for students,
+                  demonstrating strong communication and deep understanding of
+                  computing principles.
                 </li>
               </ul>
             </div>
@@ -122,7 +128,10 @@ const Experiences = () => {
                   Managed a team of 15 employees, improving operational
                   efficiency
                 </li>
-                <li>Reduced service delay enhancing guest satisfaction.</li>
+                <li>
+                  Reduced service delays, resulting in more efficient and
+                  streamlined daily operations.
+                </li>
                 <li>
                   Streamlined inventory management and scheduling with software
                   tools.
