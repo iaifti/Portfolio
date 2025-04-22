@@ -7,6 +7,8 @@ const Tools = () => {
     { src: "tailwind", alt: "Tailwind CSS" },
     { src: "html", alt: "HTML" },
     { src: "javascript", alt: "JavaScript" },
+    { src: "typescript", alt: "TypeScript" },
+    { src: "nextjs", alt: "Next.js" },
     { src: "figma", alt: "Figma" },
     { src: "java", alt: "Java" },
     { src: "python", alt: "Python" },
@@ -24,10 +26,11 @@ const Tools = () => {
     { src: "c", alt: "C" },
     { src: "aws", alt: "AWS" },
     { src: "postman", alt: "PostMan" },
+
   ];
 
   // Split tools into 3 rows
-  const rows = [tools.slice(0, 7), tools.slice(7, 14), tools.slice(15)];
+  const rows = [tools.slice(0, 6), tools.slice(6, 12), tools.slice(12,18), tools.slice(18, 22)];
 
   return (
     <div className="font-nunito justify-center items-center py-4 md:py-16 mx-5 md:mx-auto max-w-7xl">
