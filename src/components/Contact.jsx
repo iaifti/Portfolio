@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { SiGmail } from 'react-icons/si';
+import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
-
   return (
     <div
       id="contact"
@@ -69,25 +68,26 @@ const Contact = () => {
           <SiGmail />
         </a>
       </div>
-      <div className="hidden md:flex max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
+      <div className="hidden md:flex flex-col items-center text-center max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
         <h1 className="font-caveat font-extrabold text-xl md:text-2xl lg:text-3xl mb-5">
           Thank you for visiting!
         </h1>
-        <div className="mt-10">
-          <h4 className="font-overpass font-medium text-md sm:text-lg py-5">
+
+        <div className="mt-6">
+          <h4 className="font-overpass font-medium text-md sm:text-lg py-3">
             I am open to
           </h4>
-          <p className="flex flex-wrap justify-center gap-2">
-            <span className="font-signika text-sm sm:text-md px-2 py-1 border border-orange rounded-xl">
+          <div className="flex flex-wrap justify-center gap-3">
+            <span className="font-signika text-sm sm:text-md px-3 py-1 border border-orange rounded-xl">
               Full-time
             </span>
-            <span className="font-signika text-sm sm:text-md px-2 py-1 border border-orange rounded-xl">
+            <span className="font-signika text-sm sm:text-md px-3 py-1 border border-orange rounded-xl">
               Internship
             </span>
-            <span className="font-signika text-sm sm:text-md px-2 py-1 border border-orange rounded-xl">
+            <span className="font-signika text-sm sm:text-md px-3 py-1 border border-orange rounded-xl">
               Fellowship
             </span>
-          </p>
+          </div>
         </div>
       </div>
     </div>
