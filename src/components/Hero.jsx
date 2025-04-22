@@ -21,7 +21,7 @@ const Hero = () => (
           <p className="hidden lg:block mt-6 font-overpass font-bold text-base lg:text-lg xl:text-xl">
             <span className="block text-navy py-1">
               Co-Founder at{" "}
-              <span className="text-[#cb4a3a] font-extrabold cursor-pointer">
+              <span className="text-black font-poppins font-bold cursor-pointer hover:underline hover:text-red-950">
                 <a
                   href="https://www.cran-us.com"
                   target="_blank"
