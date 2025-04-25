@@ -1,71 +1,64 @@
 import React from "react";
 
+const tools = [
+  { name: "React", icon: "react" },
+  { name: "Express", icon: "express" },
+  { name: "Tailwind CSS", icon: "tailwindcss" },
+  { name: "HTML", icon: "html5" },
+  { name: "JavaScript", icon: "javascript" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "Next.js", icon: "nextdotjs" },
+  { name: "Figma", icon: "figma" },
+  { name: "Java", icon: "java" },
+  { name: "Python", icon: "python" },
+  { name: "Linux", icon: "linux" },
+  { name: "Docker", icon: "docker" },
+  { name: "Git", icon: "git" },
+  { name: "GitHub", icon: "github" },
+  { name: "jQuery", icon: "jquery" },
+  { name: "VS Code", icon: "visualstudiocode" },
+  { name: "CSS", icon: "css3" },
+  { name: "MongoDB", icon: "mongodb" },
+  { name: "Node.js", icon: "nodedotjs" },
+  { name: "C++", icon: "cplusplus" },
+  { name: "Bootstrap", icon: "bootstrap" },
+  { name: "C", icon: "c" },
+  { name: "AWS", icon: "amazonaws" },
+  { name: "Postman", icon: "postman" },
+];
+
 const Tools = () => {
-  const tools = [
-    { src: "react", alt: "React" },
-    { src: "express", alt: "Express" },
-    { src: "tailwind", alt: "Tailwind CSS" },
-    { src: "html", alt: "HTML" },
-    { src: "javascript", alt: "JavaScript" },
-    { src: "typescript", alt: "TypeScript" },
-    { src: "nextjs", alt: "Next.js" },
-    { src: "figma", alt: "Figma" },
-    { src: "java", alt: "Java" },
-    { src: "python", alt: "Python" },
-    { src: "linux", alt: "Linux" },
-    { src: "docker", alt: "Docker" },
-    { src: "git", alt: "Git" },
-    { src: "github", alt: "GitHub" },
-    { src: "jquery", alt: "jQuery" },
-    { src: "vscode", alt: "VS Code" },
-    { src: "css", alt: "CSS" },
-    { src: "mongodb", alt: "MongoDB" },
-    { src: "nodejs", alt: "Node.js" },
-    { src: "cpp", alt: "C++" },
-    { src: "bootstrap", alt: "Bootstrap" },
-    { src: "c", alt: "C" },
-    { src: "aws", alt: "AWS" },
-    { src: "postman", alt: "PostMan" },
-
-  ];
-
-  // Split tools into 3 rows
-  const rows = [tools.slice(0, 6), tools.slice(6, 12), tools.slice(12,18), tools.slice(18, 22)];
-
   return (
-    <div className="font-nunito justify-center items-center py-4 md:py-16 mx-5 md:mx-auto max-w-7xl">
-      <h1 className="text-center font-poppins uppercase mb-10 md:mb-20 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold">
-        What I work with
-      </h1>
+    <section id="tools" className="py-20 bg-white font-nunito">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24">
+        <h2 className="text-center text-2xl md:text-4xl font-poppins font-bold text-navy mb-16">
+          What I Work With
+        </h2>
 
-      <div className="flex flex-col md:gap-10 gap-6 w-full">
-        {/* Map through rows */}
-        {rows.map((row, rowIndex) => (
-          <div
-            key={rowIndex}
-            className="flex flex-wrap justify-center gap-2 md:gap-6"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            // Add a delay for each row to create staggered animations
-          >
-            {row.map((tool) => (
-              <div
-                key={tool.src}
-                className="flex flex-col items-center transition-transform duration-300 hover:scale-125"
-                data-aos="flip-left"
-                data-aos-duration="1300"
-              >
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
+          {tools.map((tool, index) => (
+            <div
+              key={tool.icon}
+              className="flex flex-col items-center gap-2 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay={index * 50}
+            >
+              <div className="bg-gray-100 p-4 rounded-2xl shadow-md transition hover:drop-shadow-[0_5px_10px_rgba(250,204,21,0.7)]">
                 <img
-                  src={`https://skillicons.dev/icons?i=${tool.src}`}
-                  alt={tool.alt}
-                  className="w-8 h-8 sm:w-9 sm:h-19 md:w-16 md:h-16 lg:w-24 lg:h-24"
+                  src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tool.icon}.svg`}
+                  alt={tool.name}
+                  className="w-10 h-10 md:w-14 md:h-14 object-contain"
+                  style={{ filter: "invert(0%)", color: "inherit" }}
                 />
               </div>
-            ))}
-          </div>
-        ))}
+              <p className="text-sm font-medium text-gray-600 text-center">
+                {tool.name}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

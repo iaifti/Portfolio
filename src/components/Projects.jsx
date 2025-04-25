@@ -1,93 +1,101 @@
+"use client";
 import React from "react";
 import Drum from "../assets/drum.png";
 import Lazy from "../assets/Lazy.png";
-import pass from "../assets/password.png";
+import Pass from "../assets/password.png";
+import Negotiate from "../assets/Negotiation.png";
+import Cran from "../assets/cran.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
+const projectData = [
+  {
+    img: Lazy,
+    title: "Lazy Prof",
+    desc: "An AI-powered auto-grader for CS assignments, offering test case evaluation, personalized feedback, and secure sandbox execution.",
+    tech: ["react", "express", "nodejs", "mongodb", "postman", "tailwind"],
+    link: "https://github.com/iaifti/LazyProf",
+  },
+  {
+    img: Negotiate,
+    title: "Negotiation AI",
+    desc: "Negotiation AI is an intelligent coaching assistant that guides users through real-time negotiation scenarios with personalized strategies and feedback.",
+    tech: [
+      "nextjs",
+      "tailwindcss",
+      "typescript",
+      "nodejs",
+      "supabase",
+      "github",
+    ],
+    link: "https://no-ai.vercel.app/",
+  },
+  {
+    img: Cran,
+    title: "Cran US",
+    desc: "Cran US is a community-focused startup delivering tailored web and software development solutions to empower local businesses with modern digital tools.",
+    tech: ["react", "tailwindcss", "javascript", "vercel", "nodejs"],
+    link: "https://www.cran-us.com/",
+  },
+];
+
 const Projects = () => {
-  const projectData = [
-    {
-      img: Lazy,
-      title: "Lazy Prof",
-      desc: "LazyProf is a free auto-grader tool for computer science assignments with automated test cases, personalized feedback, and secure sandbox testing.",
-      tech: ["react", "express", "nodejs", "mongodb", "postman", "tailwind"],
-      link: "https://github.com/iaifti/LazyProf",
-    },
-    {
-      img: Drum,
-      title: "Drum Kit",
-      desc: "A fun interactive drum kit that responds to both clicks and keyboard events, showcasing JavaScript sound integration and event handling.",
-      tech: ["html", "css", "javascript", "vercel", "figma"],
-      link: "https://gocrazydrumkit.vercel.app/",
-    },
-    {
-      img: pass,
-      title: "Password Generator",
-      desc: "Generates secure, random passwords with options for length and character types for enhanced online safety.",
-      tech: ["html", "css", "javascript", "vercel", "figma"],
-      link: "https://basicpasswordgen.vercel.app/",
-    },
-  ];
-
   return (
-    <div
-      id="projects"
-      className="pb-16 pt-10 lg:pb-32 md:pt-40 bg-white to-navy/20"
-    >
-      <h1 className="text-3xl md:text-6xl font-poppins uppercase pb-10 md:pb-20 font-bold hover:text-navy text-center text-navy">
-        Work Studio
-      </h1>
+    <section id="projects" className="bg-white py-24 px-6 md:px-16 lg:px-32">
+      <h2 className="text-center text-2xl md:text-4xl font-bold text-navy mb-16">
+        Featured Projects
+      </h2>
 
-      <div className="flex flex-wrap justify-center gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
         {projectData.map((proj, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-3"
-            data-aos="fade-up"
+            className="relative group bg-white border border-gray-200 rounded-2xl overflow-hidden drop-shadow-2xl hover:drop-shadow-3xl transition duration-300 ease-in-out"
+            data-aos="flip-left"
+            data-aos-delay={index * 200}
             data-aos-duration="1000"
           >
-            {/* Tech Stack Above */}
-            <div className="flex flex-wrap justify-center gap-2 mb-2">
-              {proj.tech.map((tech, i) => (
-                <img
-                  key={i}
-                  src={`https://skillicons.dev/icons?i=${tech}`}
-                  alt={tech}
-                  className="w-8 h-8 md:w-10 md:h-10"
-                />
-              ))}
+            <img
+              src={proj.img}
+              alt={`${proj.title} preview`}
+              className="w-full h-56 object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+
+            <div className="p-6 flex flex-col justify-between h-[250px]">
+              <div>
+                <h3 className="text-xl font-bold text-black mb-2">
+                  {proj.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {proj.desc}
+                </p>
+              </div>
+
+              <div className="mt-6 flex flex-wrap items-center gap-2">
+                {proj.tech.map((tech, i) => (
+                  <img
+                    key={i}
+                    src={`https://skillicons.dev/icons?i=${tech}`}
+                    alt={`${tech} icon`}
+                    className="w-7 h-7"
+                  />
+                ))}
+              </div>
             </div>
 
-            {/* Card */}
-            <div
-              className="relative group w-[320px] h-[240px] md:w-[400px] md:h-[300px] overflow-hidden rounded-3xl shadow-2xl"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <img
-                src={proj.img}
-                alt="project"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/75 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6 text-center">
-                <h2 className="text-white text-xl font-bold mb-2">
-                  {proj.title}
-                </h2>
-                <p className="text-white text-sm mb-4">{proj.desc}</p>
-                <a
-                  href={proj.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-yellow-300/35 text-white px-4 py-2 rounded hover:bg-navy transition"
-                >
-                  Learn More <FaExternalLinkAlt className="inline ml-1" />
-                </a>
-              </div>
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a
+                href={proj.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-600 bg-white px-5 py-2 rounded-full flex items-center gap-2 hover:bg-offwhite transition"
+              >
+                View Project <FaExternalLinkAlt />
+              </a>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

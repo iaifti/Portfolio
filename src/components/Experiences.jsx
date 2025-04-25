@@ -1,147 +1,92 @@
 import React from "react";
-import { FaUsers, FaCode, FaUtensils, FaLaptopCode } from "react-icons/fa";
+
+const experiences = [
+  {
+    title: "Cran US LLC",
+    role: "Software Engineer & Co-Founder",
+    bullets: [
+      "Engineered scalable RESTful APIs with Node.js, Express, Clerk authentication, and database integration.",
+      "Utilized Postman for API testing, ensuring seamless frontend-backend communication.",
+      "Contributed to responsive frontend development with Next.js and Tailwind CSS.",
+    ],
+  },
+  {
+    title: "SEMO Recreation Center",
+    role: "Office Assistant",
+    bullets: [
+      "Streamlined workflows and improved operational efficiency through systems thinking.",
+      "Enhanced user support by communicating technical solutions clearly.",
+    ],
+  },
+  {
+    title: "SEMO Tutorial Program",
+    role: "Computer Science Tutor",
+    bullets: [
+      "Tutored Python, Java, Unix/Linux, advanced math, and statistics.",
+      "Simplified complex computing concepts to strengthen student understanding.",
+    ],
+  },
+  {
+    title: "SEMO Dining Services",
+    role: "Supervisor",
+    bullets: [
+      "Managed a 15-member team to boost operational performance and service flow.",
+      "Reduced service delays and optimized inventory and scheduling systems.",
+    ],
+  },
+];
 
 const Experiences = () => {
   return (
-    <div id="experience" className="bg-white font-signika pt-10 md:pt-20 pb-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-poppins uppercase pb-5 md:pb-10 font-bold text-center mb-12">
-          Professional Experiences
+    <section
+      id="experience"
+      className="py-24 bg-gradient-to-b from-white via-yellow-300/35 to-white  relative font-signika"
+    >
+      <div className="container mx-auto px-6 md:px-12 lg:px-24">
+        <h2 className="text-center text-4xl md:text-6xl font-poppins font-bold text-navy mb-20 tracking-tight">
+          Professional Experience
         </h2>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 gap-6 lg:gap-8">
-          <div
-            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="flex items-center gap-4">
-              <FaLaptopCode className="text-xl sm:text-2xl text-6" />
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
-                Cran US LLC
-              </div>
-            </div>
-            <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Software Engineer & Co-Founder
-            </div>
-            <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
-              <ul className="space-y-1 list-disc pl-6">
-                <li>
-                  Engineered robust RESTful APIs with Node.js and Express,
-                  integration for scalable data storage and Clerk for secure
-                  authentication.
-                </li>
-                <li>
-                  Utilized Postman for thorough API testing and debugging,
-                  ensuring seamless integration across frontend and backend
-                  components.
-                </li>
-                <li>
-                  Contributed to frontend development with Nextjs and Tailwind
-                  CSS, enhancing user experience through responsive design and
-                  smooth API connectivity.
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          {/* Row 1 */}
-          <div
-            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="flex items-center gap-4">
-              <FaUsers className="text-xl sm:text-2xl text-6" />
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
-                SEMO Recreation Center
-              </div>
-            </div>
-            <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Office Assistant
-            </div>
-            <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
-              <ul className="space-y-1 list-disc pl-6">
-                <li>
-                  Streamlined workflows to improve efficiency, showcasing
-                  problem-solving and systems thinking.
-                </li>
-                <li>
-                  Communicated solutions clearly to users, reflecting strong
-                  technical and interpersonal skills.
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="relative max-w-6xl mx-auto">
+          {/* Timeline Line */}
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-300 via-orange-300 to-yellow-400 z-0 rounded-full"></div>
 
-          {/* Row 2 */}
-          <div
-            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
-            data-aos="fade-up"
-            data-aos-duration="1400"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="flex items-center gap-4">
-              <FaCode className="text-xl sm:text-2xl text-6" />
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
-                SEMO Tutorial Program
-              </div>
-            </div>
-            <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Computer Science Tutor
-            </div>
-            <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
-              <ul className="space-y-1 list-disc pl-6">
-                <li>
-                  Tutored Python, Java, Unix/Linux, advanced math and
-                  Statistics, reinforcing core concepts essential for software
-                  development.
-                </li>
-                <li>
-                  Simplified complex technical topics for students,
-                  demonstrating strong communication and deep understanding of
-                  computing principles.
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* Row 3 */}
-          <div
-            className="grid grid-row-1 p-4 lg:grid-row-3 gap-6 lg:gap-8 items-center border-2 border-yellow-300 backdrop-blur-sm rounded-lg shadow-sm transform transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:rotate-[0.3deg]"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="flex items-center gap-4">
-              <FaUtensils className="text-xl sm:text-2xl text-6" />
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold">
-                SEMO Dining Services
-              </div>
-            </div>
-            <div className="font-semibold text-sm sm:text-base lg:text-lg">
-              Supervisor
-            </div>
-            <div className="text-gray-700 text-xs sm:text-sm lg:text-base">
-              <ul className="space-y-1 list-disc pl-6">
-                <li>
-                  Managed a team of 15 employees, improving operational
-                  efficiency
-                </li>
-                <li>
-                  Reduced service delays, resulting in more efficient and
-                  streamlined daily operations.
-                </li>
-                <li>
-                  Streamlined inventory management and scheduling with software
-                  tools.
-                </li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-24 md:gap-y-32">
+            {experiences.map((exp, index) => {
+              const isLeft = index % 2 === 0;
+
+              return (
+                <div
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 80}
+                  data-aos-duration="700"
+                  className={`relative z-10 ${
+                    isLeft
+                      ? "md:col-start-1 pr-8 md:pr-20"
+                      : "md:col-start-2 pl-8 md:pl-20"
+                  } ${index % 2 !== 0 ? "mt-20 md:mt-32" : ""}`}
+                >
+                  <div className="bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.015]">
+                    <h3 className="text-xl md:text-2xl font-bold text-navy mb-1">
+                      {exp.title}
+                    </h3>
+                    <p className="text-sm md:text-base font-medium text-gray-700 mb-3">
+                      {exp.role}
+                    </p>
+                    <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-600">
+                      {exp.bullets.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

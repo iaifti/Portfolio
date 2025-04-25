@@ -1,31 +1,33 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <div
+    <section
       id="contact"
-      className="font-nunito py-20 bg-navy bg-opacity-15 text-center px-4 sm:px-8"
+      className="font-nunito py-20 px-4 sm:px-8 bg-offWhite text-center"
     >
+      {/* Title */}
       <h2
-        className="text-lg sm:text-xl lg:text-2xl font-bold mb-10 hover:text-orange"
+        className="text-3xl sm:text-4xl font-poppins font-bold mb-12 text-navy"
         data-aos="zoom-in"
-        data-aos-duration="1000"
+        data-aos-duration="800"
       >
-        Feel free to connect with me
+        Let’s Connect
       </h2>
+
+      {/* Social Links */}
       <div
-        className="flex flex-wrap justify-center space-x-2 sm:space-x-6 lg:space-x-8 gap-y-6"
-        data-aos="fade-right"
-        data-aos-duration="1900"
+        className="flex flex-wrap justify-center gap-6 sm:gap-10 md:gap-14 text-4xl sm:text-5xl"
+        data-aos="fade-up"
+        data-aos-duration="800"
       >
         <a
           href="https://www.youtube.com/@iFish0315"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl sm:text-5xl text-youtube hover:scale-125 transition-transform duration-300"
-          data-aos="flip-left"
-          data-aos-duration="1600"
+          className="text-[#FF0000] hover:scale-125 transition-transform duration-300"
+          aria-label="YouTube"
         >
           <i className="fab fa-youtube"></i>
         </a>
@@ -33,9 +35,8 @@ const Contact = () => {
           href="https://www.linkedin.com/in/ahmedmdistiaq"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl sm:text-5xl text-linkedin hover:scale-125 transition-transform duration-300 hover:text-blue-500"
-          data-aos="flip-left"
-          data-aos-duration="1300"
+          className="text-[#0077B5] hover:scale-125 transition-transform duration-300"
+          aria-label="LinkedIn"
         >
           <i className="fab fa-linkedin"></i>
         </a>
@@ -43,9 +44,8 @@ const Contact = () => {
           href="https://github.com/iaifti"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl sm:text-5xl text-github hover:scale-125 transition-transform duration-300 hover:text-gray-600"
-          data-aos="flip-left"
-          data-aos-duration="1000"
+          className="text-[#333] hover:scale-125 transition-transform duration-300"
+          aria-label="GitHub"
         >
           <i className="fab fa-github"></i>
         </a>
@@ -53,44 +53,46 @@ const Contact = () => {
           href="https://www.instagram.com/iftii._/"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl sm:text-5xl text-instagram hover:scale-125 transition-transform duration-300 hover:text-pink-400"
-          data-aos="flip-left"
-          data-aos-duration="800"
+          className="text-[#E1306C] hover:scale-125 transition-transform duration-300"
+          aria-label="Instagram"
         >
           <i className="fab fa-instagram"></i>
         </a>
         <a
           href="mailto:mdistiaqahmed0@gmail.com"
-          className="text-3xl sm:text-5xl text-green-900 hover:scale-125 transition-transform duration-300 hover:text-black"
-          data-aos="flip-left"
-          data-aos-duration="500"
+          className="text-[#D14836] hover:scale-125 transition-transform duration-300"
+          aria-label="Email"
         >
           <SiGmail />
         </a>
       </div>
-      <div className="hidden md:flex flex-col items-center text-center max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto font-overpass bg-offwhite p-6 sm:p-8 md:p-10 rounded-lg shadow-md mt-10 md:mt-20">
-        <h1 className="font-caveat font-extrabold text-xl md:text-2xl lg:text-3xl mb-5">
-          Thank you for visiting!
-        </h1>
 
-        <div className="mt-6">
-          <h4 className="font-overpass font-medium text-md sm:text-lg py-3">
-            I am open to
-          </h4>
-          <div className="flex flex-wrap justify-center gap-3">
-            <span className="font-signika text-sm sm:text-md px-3 py-1 border border-orange rounded-xl">
-              Full-time
+      {/* Message Box */}
+      <div
+        className="mt-16 bg-white/80 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg max-w-xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h3 className="font-caveat text-2xl sm:text-3xl font-bold text-navy mb-4">
+          Thanks for visiting!
+        </h3>
+        <p className="font-overpass text-md sm:text-lg text-gray-700">
+          I’m currently open to opportunities including:
+        </p>
+
+        {/* Opportunity Tags */}
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          {["Full-time", "Internship", "Fellowship"].map((type, idx) => (
+            <span
+              key={idx}
+              className="text-sm sm:text-md px-4 py-1 rounded-full border border-yellow-500 text-navy font-signika hover:bg-yellow-400/20 transition"
+            >
+              {type}
             </span>
-            <span className="font-signika text-sm sm:text-md px-3 py-1 border border-orange rounded-xl">
-              Internship
-            </span>
-            <span className="font-signika text-sm sm:text-md px-3 py-1 border border-orange rounded-xl">
-              Fellowship
-            </span>
-          </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
