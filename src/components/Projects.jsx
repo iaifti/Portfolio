@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-import Drum from "../assets/drum.png";
 import Lazy from "../assets/Lazy.png";
-import Pass from "../assets/password.png";
 import Negotiate from "../assets/Negotiation.png";
-import Cran from "../assets/cran.png";
+import Cran from "../assets/Cran.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projectData = [
