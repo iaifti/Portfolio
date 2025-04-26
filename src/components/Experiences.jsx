@@ -40,7 +40,7 @@ const Experiences = () => {
   return (
     <section
       id="experience"
-      className="py-24 bg-gradient-to-b from-white via-yellow-300/35 to-white  relative font-signika"
+      className="py-24 bg-gradient-to-b from-white via-yellow-300/35 to-white relative font-signika"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <h2 className="text-center text-4xl md:text-6xl font-poppins font-bold text-navy mb-20 tracking-tight">
@@ -51,7 +51,7 @@ const Experiences = () => {
           {/* Timeline Line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-300 via-orange-300 to-yellow-400 z-0 rounded-full"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-24 md:gap-y-32">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-y-32">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
 
@@ -61,13 +61,13 @@ const Experiences = () => {
                   data-aos="fade-up"
                   data-aos-delay={index * 80}
                   data-aos-duration="700"
-                  className={`relative z-10 ${
+                  className={`relative z-10 w-full ${
                     isLeft
-                      ? "md:col-start-1 pr-8 md:pr-20"
-                      : "md:col-start-2 pl-8 md:pl-20"
-                  } ${index % 2 !== 0 ? "mt-20 md:mt-32" : ""}`}
+                      ? "md:col-start-1 md:pr-20"
+                      : "md:col-start-2 md:pl-20"
+                  } ${index % 2 !== 0 ? "md:mt-32" : ""} flex justify-center md:block`}
                 >
-                  <div className="bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.015]">
+                  <div className="bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.015] w-full max-w-md">
                     <h3 className="text-xl md:text-2xl font-bold text-navy mb-1">
                       {exp.title}
                     </h3>
