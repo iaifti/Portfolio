@@ -7,7 +7,7 @@ const About = () => {
       className="py-16 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite font-nunito"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-poppins font-bold uppercase text-navy mb-12">
+        <h2 className="text-center text-3xl md:text-4xl font-poppins font-bold uppercase text-navy mb-12">
           About Me
         </h2>
 

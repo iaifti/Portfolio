@@ -43,7 +43,7 @@ const Experiences = () => {
       className="py-24 bg-gradient-to-b from-white via-yellow-300/35 to-white relative font-signika"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-4xl md:text-6xl font-poppins font-bold text-navy mb-20 tracking-tight">
+        <h2 className="text-center text-2xl md:text-4xl font-poppins font-bold text-navy mb-20 tracking-tight">
           Professional Experience
         </h2>
 
