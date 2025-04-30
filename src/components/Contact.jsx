@@ -9,7 +9,7 @@ const Contact = () => {
     >
       {/* Title */}
       <h2
-        className="text-2xl sm:text-4xl font-poppins font-bold mb-12 text-navy"
+        className="text-2xl md:text-4xl font-poppins font-bold mb-12 text-navy"
         data-aos="zoom-in"
         data-aos-duration="800"
       >
