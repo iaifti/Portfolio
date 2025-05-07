@@ -10,18 +10,11 @@ const projectData = [
 
   {
     img: ComingSoon,
-    title: "InscriptAI",
+    title: "Inscript AI",
     desc: "InscriptAI is a web-based platform that generates content for various social media platforms using AI, allowing users to create posts, captions, and hashtags effortlessly just by entering a topic.",
     tech: ["nextjs", "tailwindcss","typescript", "nodejs", "postgresql", "github"],
     link: "https://inscriptai.vercel.app/",
 
-  },
-  {
-    img: Lazy,
-    title: "Lazy Prof",
-    desc: "An AI-powered auto-grader for CS assignments, offering test case evaluation, personalized feedback, and secure sandbox execution.",
-    tech: ["react", "express", "nodejs", "mongodb", "postman", "tailwind"],
-    link: "https://github.com/iaifti/LazyProf",
   },
   {
     img: Negotiate,
@@ -43,6 +36,13 @@ const projectData = [
     desc: "Cran US is a community-focused startup delivering tailored web and software development solutions to empower local businesses with modern digital tools.",
     tech: ["react", "tailwindcss", "javascript", "vercel", "nodejs"],
     link: "https://www.cran-us.com/",
+  },
+  {
+    img: Lazy,
+    title: "LazyProf",
+    desc: "An AI-powered auto-grader for CS assignments, offering test case evaluation, personalized feedback, and secure sandbox execution.",
+    tech: ["react", "express", "nodejs", "mongodb", "postman", "tailwind"],
+    link: "https://github.com/iaifti/LazyProf",
   },
 ];
 
