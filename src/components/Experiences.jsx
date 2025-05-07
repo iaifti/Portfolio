@@ -49,7 +49,7 @@ const Experiences = () => {
 
         <div className="relative max-w-6xl mx-auto">
           {/* Timeline Line */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-navy/70 z-0 rounded-full"></div>
+          <div className="hidden md:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-navy/70 z-0 rounded-full"></div>
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-y-32">
             {experiences.map((exp, index) => {
@@ -58,14 +58,14 @@ const Experiences = () => {
               return (
                 <div
                   key={index}
-                  data-aos="fade-up"
+                  data-aos={isLeft ? "fade-right" : "fade-left"}
                   data-aos-delay={index * 80}
                   data-aos-duration="700"
                   className={`relative z-10 w-full ${
                     isLeft
                       ? "md:col-start-1 md:pr-20"
                       : "md:col-start-2 md:pl-20"
-                  } ${index % 2 !== 0 ? "md:mt-32" : ""} flex justify-center md:block`}
+                  } ${!isLeft ? "md:mt-32" : ""} flex justify-center md:block`}
                 >
                   <div className="bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.015] w-full max-w-md">
                     <h3 className="text-xl md:text-2xl font-bold text-navy mb-1">

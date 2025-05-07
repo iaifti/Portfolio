@@ -14,7 +14,7 @@ import Tools from "./components/tools";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* <Header /> */}
       <Hero />
       {/* <Tran /> */}
@@ -25,7 +25,7 @@ const App = () => {
       <About />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

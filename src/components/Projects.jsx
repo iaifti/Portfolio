@@ -65,7 +65,7 @@ const Projects = () => {
             <img
               src={proj.img}
               alt={`${proj.title} preview`}
-              className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-56 object-fit lg:object-cover group-hover:scale-105 transition-transform duration-500"
             />
 
             <div className="p-6 flex flex-col justify-between h-[250px]">

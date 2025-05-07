@@ -7,7 +7,7 @@ const About = () => {
       className="py-24 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite font-nunito"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-3xl md:text-4xl font-overpass font-bold uppercase text-navy mb-12">
+        <h2 className="text-center text-3xl md:text-4xl font-overpass font-bold text-navy mb-12">
           About Me
         </h2>
 
@@ -18,13 +18,17 @@ const About = () => {
             data-aos-duration="1000"
             className="text-left lg:sticky top-24 hidden lg:block"
           >
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-3xl shadow-md p-8">
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-xl shadow-md p-8">
               <p className="text-lg font-signika text-gray-700 leading-relaxed">
-                👋 Hey! I’m <span className="font-bold">Istiaq Ahmed</span>, a{" "}
+                👋 Hi! I’m <span className="font-bold">Istiaq Ahmed</span>, a{" "}
                 <span className="font-bold text-yellow-600">
-                  Software developer
-                </span>{" "}
-                and{" "}
+                  software developer
+                </span>
+                ,{" "}
+                <span className="font-bold text-yellow-600">
+                  generative AI developer
+                </span>
+                , and{" "}
                 <span className="font-bold text-yellow-600">co-founder</span> of{" "}
                 <a
                   href="https://www.cran-us.com"
@@ -34,7 +38,7 @@ const About = () => {
                 >
                   Cran US LLC
                 </a>
-                . I build tailored digital solutions for modern web platforms.
+                . I build tailored digital solutions for modern web and AI platforms.
               </p>
             </div>
           </div>
@@ -50,12 +54,12 @@ const About = () => {
               <span className="font-semibold text-navy">
                 user-centered applications
               </span>{" "}
-              using modern web technologies, I’ve led the development of custom
+              using modern web and AI technologies, I’ve led the development of custom
               solutions spanning{" "}
               <span className="font-medium">backend infrastructure</span> and{" "}
               <span className="font-medium">frontend design</span> through my
               work at{" "}
-              <span className="font-semibold text-navy">Cran US LLC</span>.
+              <span className="text-navy">Cran US LLC</span>.
             </p>
 
             <p
@@ -65,8 +69,8 @@ const About = () => {
             >
               I specialize in{" "}
               <span className="font-semibold">full-stack development</span>,{" "}
-              <span className="font-semibold">data-driven systems</span>, and
-              crafting seamless user experiences. I work within{" "}
+              <span className="font-semibold">generative AI applications</span>,{" "}
+              and crafting seamless user experiences. I work within{" "}
               <span className="font-medium">agile teams</span> to deliver
               scalable, production-ready software.
             </p>
@@ -76,8 +80,8 @@ const About = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
             >
-              While pursuing a{" "}
-              <span className="font-medium">degree in Computer Science</span>, I
+              While pursuing{" "}
+              <span className="font-semibold">Bachelor's</span> in Computer Science at Southeast Missouri State University, I
               contribute to <span className="font-medium">open-source</span>,
               build side projects, and enjoy collaborating in fast-paced
               development environments.
@@ -93,7 +97,7 @@ const About = () => {
               <span className="font-semibold text-navy">
                 {" "}
                 Connect with me{" "}
-              </span>{" "}
+              </span>
               — whether you’re building something exciting or just want to chat.
             </p>
           </div>
