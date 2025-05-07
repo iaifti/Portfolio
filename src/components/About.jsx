@@ -4,10 +4,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite font-nunito"
+      className="py-24 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite font-nunito"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-3xl md:text-4xl font-poppins font-bold uppercase text-navy mb-12">
+        <h2 className="text-center text-3xl md:text-4xl font-overpass font-bold uppercase text-navy mb-12">
           About Me
         </h2>
 
@@ -22,9 +22,10 @@ const About = () => {
               <p className="text-lg font-signika text-gray-700 leading-relaxed">
                 👋 Hey! I’m <span className="font-bold">Istiaq Ahmed</span>, a{" "}
                 <span className="font-bold text-yellow-600">
-                  full-stack developer
+                  Software developer
                 </span>{" "}
-                and <span className="font-bold text-yellow-600">co-founder</span> of{" "}
+                and{" "}
+                <span className="font-bold text-yellow-600">co-founder</span> of{" "}
                 <a
                   href="https://www.cran-us.com"
                   target="_blank"
@@ -45,11 +46,16 @@ const About = () => {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
             >
-              Focused on building <span className="font-semibold text-navy">user-centered applications</span> using
-              modern web technologies. As a <span className="font-semibold text-navy">software engineer</span> and{" "}
-              <span className="font-semibold text-navy">co-founder</span> of Cran US LLC, I’ve led the
-              development of custom solutions — from <span className="font-medium">backend infrastructure</span> to{" "}
-              <span className="font-medium">frontend design</span>.
+              Focused on creating{" "}
+              <span className="font-semibold text-navy">
+                user-centered applications
+              </span>{" "}
+              using modern web technologies, I’ve led the development of custom
+              solutions spanning{" "}
+              <span className="font-medium">backend infrastructure</span> and{" "}
+              <span className="font-medium">frontend design</span> through my
+              work at{" "}
+              <span className="font-semibold text-navy">Cran US LLC</span>.
             </p>
 
             <p
@@ -57,10 +63,11 @@ const About = () => {
               data-aos-duration="900"
               data-aos-easing="ease-in-out"
             >
-              Skilled in <span className="font-semibold">full-stack development</span>,{" "}
-              <span className="font-semibold">data-driven systems</span>, and delivering
-              seamless user experiences. I collaborate using{" "}
-              <span className="">agile methodologies</span> to ship
+              I specialize in{" "}
+              <span className="font-semibold">full-stack development</span>,{" "}
+              <span className="font-semibold">data-driven systems</span>, and
+              crafting seamless user experiences. I work within{" "}
+              <span className="font-medium">agile teams</span> to deliver
               scalable, production-ready software.
             </p>
 
@@ -69,9 +76,11 @@ const About = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
             >
-              Currently pursuing a <span className="font-medium">Computer Science degree</span> while contributing to
-              <span className="font-medium"> open-source</span>, building side projects, and working in
-              collaborative development environments.
+              While pursuing a{" "}
+              <span className="font-medium">degree in Computer Science</span>, I
+              contribute to <span className="font-medium">open-source</span>,
+              build side projects, and enjoy collaborating in fast-paced
+              development environments.
             </p>
 
             <p
@@ -79,9 +88,13 @@ const About = () => {
               data-aos-duration="1100"
               data-aos-easing="ease-in-out"
             >
-              Outside of engineering, I enjoy mentoring peers, exploring new tech
-              stacks, and turning ideas into real products — typically with{" "}
-              <span className="font-semibold">coffee in hand ☕</span>.
+              I’m always exploring new ways to solve real-world problems with
+              technology.
+              <span className="font-semibold text-navy">
+                {" "}
+                Connect with me{" "}
+              </span>{" "}
+              — whether you’re building something exciting or just want to chat.
             </p>
           </div>
         </div>

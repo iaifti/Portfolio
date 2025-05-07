@@ -31,7 +31,7 @@ const Tools = () => {
   return (
     <section id="tools" className="py-20 bg-white font-nunito">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-2xl md:text-4xl font-poppins font-bold text-navy mb-16">
+        <h2 className="text-center text-2xl md:text-4xl font-overpass font-bold text-navy mb-16">
           What I Work With
         </h2>
 
@@ -51,7 +51,7 @@ const Tools = () => {
                   style={{ filter: "invert(0%)", color: "inherit" }}
                 />
               </div>
-              <p className="text-sm font-medium text-gray-600 text-center">
+              <p className="text-sm font-medium font-signika text-gray-600 text-center">
                 {tool.name}
               </p>
             </div>

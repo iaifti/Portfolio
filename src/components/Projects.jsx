@@ -2,10 +2,20 @@
 import React from "react";
 import Lazy from "../assets/Lazy.png";
 import Negotiate from "../assets/Negotiation.png";
+import ComingSoon from "../assets/comingsoon.jpg";
 import Cran from "../assets/Cran.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projectData = [
+
+  {
+    img: ComingSoon,
+    title: "InscriptAI",
+    desc: "InscriptAI is a web-based platform that generates content for various social media platforms using AI, allowing users to create posts, captions, and hashtags effortlessly just by entering a topic.",
+    tech: ["nextjs", "tailwindcss","typescript", "nodejs", "postgresql", "github"],
+    link: "https://inscriptai.vercel.app/",
+
+  },
   {
     img: Lazy,
     title: "Lazy Prof",
@@ -39,7 +49,7 @@ const projectData = [
 const Projects = () => {
   return (
     <section id="projects" className="bg-white py-24 px-6 md:px-16 lg:px-32">
-      <h2 className="text-center text-2xl md:text-4xl font-bold text-navy mb-16">
+      <h2 className="text-center font-overpass text-2xl md:text-4xl font-bold text-navy mb-16">
         Featured Projects
       </h2>
 
@@ -55,7 +65,7 @@ const Projects = () => {
             <img
               src={proj.img}
               alt={`${proj.title} preview`}
-              className="w-full h-56 object-contain group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
             />
 
             <div className="p-6 flex flex-col justify-between h-[250px]">

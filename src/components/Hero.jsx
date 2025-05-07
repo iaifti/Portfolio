@@ -5,7 +5,7 @@ import { HiDownload } from "react-icons/hi";
 import resume from "../assets/_Resume.pdf";
 
 const Hero = () => (
-  <div className="font-nunito bg-gradient-to-b from-offwhite via-yellow-300/35 to-white min-h-screen flex flex-col pt-4 mb-8">
+  <div className="font-nunito bg-gradient-to-b from-offwhite via-yellow-300/20 to-white min-h-screen flex flex-col pt-4 mb-8">
     <Header />
     <div className="flex-1 container mx-auto flex flex-col lg:flex-row items-center px-6 md:px-10 py-0 relative z-10">
       {/* Left Side */}
@@ -18,7 +18,7 @@ const Hero = () => (
             <br />
             Istiaq Ahmed
           </h2>
-          <p className="hidden lg:block mt-6 font-overpass font-bold text-base lg:text-lg xl:text-xl">
+          <p className="hidden lg:block mt-6 font-signika font-bold text-base lg:text-lg xl:text-xl">
             <span className="block text-navy py-1">
               Co-Founder at{" "}
               <span className="text-black font-poppins font-bold cursor-pointer hover:underline hover:text-red-950">
@@ -105,7 +105,7 @@ const Hero = () => (
           href={resume}
           target="_blank"
           rel="noreferrer"
-          className="btn animate-bounce mt-8 lg:mt-12 flex gap-2 px-5 py-3 text-base lg:text-lg font-medium text-navy border-2 border-gray-600 rounded hover:bg-orange/55 shadow-2xl"
+          className="btn animate-bounce mt-8 lg:mt-12 flex gap-2 px-5 py-3 text-base font-signika lg:text-lg font-medium text-navy border-2 border-gray-600 rounded hover:bg-orange/55 shadow-2xl"
         >
           <HiDownload className="text-2xl" /> Resume
         </a>

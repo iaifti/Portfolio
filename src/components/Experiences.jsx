@@ -40,16 +40,16 @@ const Experiences = () => {
   return (
     <section
       id="experience"
-      className="py-24 bg-gradient-to-b from-white via-yellow-300/35 to-white relative font-signika"
+      className="py-24 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite relative font-signika"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-2xl md:text-4xl font-poppins font-bold text-navy mb-20 tracking-tight">
+        <h2 className="text-center text-2xl md:text-4xl font-overpass font-bold text-navy mb-20 tracking-tight">
           Professional Experience
         </h2>
 
         <div className="relative max-w-6xl mx-auto">
           {/* Timeline Line */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-300 via-orange-300 to-yellow-400 z-0 rounded-full"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-navy/70 z-0 rounded-full"></div>
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-y-32">
             {experiences.map((exp, index) => {
@@ -71,7 +71,7 @@ const Experiences = () => {
                     <h3 className="text-xl md:text-2xl font-bold text-navy mb-1">
                       {exp.title}
                     </h3>
-                    <p className="text-sm md:text-base font-medium text-gray-700 mb-3">
+                    <p className="text-sm md:text-base font-medium text-yellow-600 mb-3">
                       {exp.role}
                     </p>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-600">

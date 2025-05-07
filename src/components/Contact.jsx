@@ -8,16 +8,16 @@ const Contact = () => {
       className="font-nunito py-20 px-4 sm:px-8 bg-offWhite text-center"
     >
       {/* Title */}
-      <h2
+      {/* <h2
         className="text-2xl md:text-4xl font-poppins font-bold mb-12 text-navy"
         data-aos="zoom-in"
         data-aos-duration="800"
       >
         Let’s Connect
-      </h2>
+      </h2> */}
 
       {/* Social Links */}
-      <div
+      {/* <div
         className="flex flex-wrap justify-center gap-6 sm:gap-10 md:gap-14 text-4xl sm:text-5xl"
         data-aos="fade-up"
         data-aos-duration="800"
@@ -65,24 +65,24 @@ const Contact = () => {
         >
           <SiGmail />
         </a>
-      </div>
+      </div> */}
 
       {/* Message Box */}
       <div
-        className="mt-16 bg-white/80 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg max-w-xl mx-auto"
+        className="bg-white/80 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg max-w-xl mx-auto"
         data-aos="fade-up"
         data-aos-delay="300"
       >
         <h3 className="font-caveat text-2xl sm:text-3xl font-bold text-navy mb-4">
           Thanks for visiting!
         </h3>
-        <p className="font-overpass text-md sm:text-lg text-gray-700">
+        <p className="font-signika text-md sm:text-lg text-gray-700">
           I’m currently open to opportunities including:
         </p>
 
         {/* Opportunity Tags */}
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          {["Full-time", "Internship", "Fellowship"].map((type, idx) => (
+          {["Full-time", "Internship", "Collaboration"].map((type, idx) => (
             <span
               key={idx}
               className="text-sm sm:text-md px-4 py-1 rounded-full border border-yellow-500 text-navy font-signika hover:bg-yellow-400/20 transition"
