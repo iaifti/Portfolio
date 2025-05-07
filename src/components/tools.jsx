@@ -12,18 +12,22 @@ const tools = [
   { name: "Java", icon: "java" },
   { name: "Python", icon: "python" },
   { name: "Linux", icon: "linux" },
+  { name: "C", icon: "c" },
+  { name: "C++", icon: "cplusplus" },
   { name: "Docker", icon: "docker" },
   { name: "Git", icon: "git" },
   { name: "GitHub", icon: "github" },
   { name: "jQuery", icon: "jquery" },
   { name: "VS Code", icon: "visualstudiocode" },
+  { name: "Supabase", icon: "supabase" },
+  { name: "Clerk", icon: "clerk" },
+  { name: "drizzle", icon: "drizzle" },
   { name: "CSS", icon: "css3" },
   { name: "MongoDB", icon: "mongodb" },
   { name: "Node.js", icon: "nodedotjs" },
-  { name: "C++", icon: "cplusplus" },
-  { name: "Bootstrap", icon: "bootstrap" },
-  { name: "C", icon: "c" },
+  { name: "PostgreSQL", icon: "postgresql" },
   { name: "AWS", icon: "amazonaws" },
+  { name: "Vercel", icon: "vercel" },
   { name: "Postman", icon: "postman" },
 ];
 
@@ -35,7 +39,7 @@ const Tools = () => {
           What I Work With
         </h2>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
+        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
           {tools.map((tool, index) => (
             <div
               key={tool.icon}
