@@ -86,7 +86,7 @@ const Hero = () => (
         </div>
         <div className="mt-6 lg:hidden text-center">
           <p className="font-overpass text-base sm:text-lg">
-          <span className="block text-navy py-1">
+          {/* <span className="block text-navy py-1">
               Co-Founder at{" "}
               <span className="cursor-pointer">
                 <a
@@ -96,8 +96,8 @@ const Hero = () => (
                 >
                   CRAN
                 </a>
-              </span>
-            </span>
+              </span> */}
+            {/* </span> */}
             <span className="block text-navy py-1">Software Engineer</span>
             <span className="block text-navy py-1">Generative AI Developer</span>
           </p>
