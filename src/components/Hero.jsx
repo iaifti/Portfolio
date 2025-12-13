@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import Istiaq from "../assets/istiaqremovebg.png";
 import { HiDownload } from "react-icons/hi";
