@@ -2,7 +2,7 @@ import Header from "./Header";
 import Istiaq from "../assets/istiaqremovebg.png";
 import { HiDownload } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
-import resume from "../assets/_Resume.pdf";
+import resume from "../assets/MdIstiaqAhmedResume.pdf";
 
 const Hero = () => (
   <div className="font-nunito bg-gradient-to-b from-offwhite via-yellow-300/20 to-white min-h-screen flex flex-col pt-4 mb-8">
@@ -20,19 +20,19 @@ const Hero = () => (
           </h2>
           <p className="hidden lg:block mt-6 font-signika text-base lg:text-lg xl:text-xl">
             <span className="block text-navy py-1">
-              Co-Founder at{" "}
+              Former Co-Founder and Developer at{" "}
               <span className="text-black font-poppins cursor-pointer hover:underline hover:text-red-950">
                 <a
                   href="https://www.cran-us.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  CRAN
+                  CRAN{" "}US
                 </a>
               </span>
             </span>
             <span className="block text-navy py-1">Software Engineer</span>
-            <span className="block text-navy py-1">Generative AI Developer</span>
+            {/* <span className="block text-navy py-1">Generative AI Developer</span> */}
           </p>
         </div>
       </div>
