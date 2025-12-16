@@ -2,7 +2,7 @@ import Header from "./Header";
 import Istiaq from "../assets/istiaqremovebg.png";
 import { HiDownload } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
-import resume from "../assets/MdIstiaqAhmedResume.pdf";
+import resume from "../assets/Md_Istiaq_Resume.pdf";
 
 const Hero = () => (
   <div className="font-nunito bg-gradient-to-b from-offwhite via-yellow-300/20 to-white min-h-screen flex flex-col pt-4 mb-8">
