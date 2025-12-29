@@ -1,19 +1,18 @@
 "use client";
-import React from "react";
 import Lazy from "../assets/Lazy.png";
 import Negotiate from "../assets/Negotiation.png";
-import ComingSoon from "../assets/comingsoon.jpg";
+import DataAnalysis from "../assets/DataAnalysis.png";
 import Cran from "../assets/Cran.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projectData = [
 
   {
-    img: ComingSoon,
-    title: "Inscript AI",
-    desc: "InscriptAI is a web-based platform that generates content for various social media platforms using AI, allowing users to create posts, captions, and hashtags effortlessly just by entering a topic.",
-    tech: ["nextjs", "tailwindcss","typescript", "nodejs", "postgresql", "github"],
-    link: "https://inscriptai.vercel.app/",
+    img: DataAnalysis,
+    title: "Stripe dbt Analytics",
+    desc: "Analysis of stripe user data using sql. Used Snowflake as data warehouse and dbt as transformation.",
+    tech: ["git", "github",],
+    link: "https://github.com/iaifti/Stripe_dbt_analysis",
 
   },
   {

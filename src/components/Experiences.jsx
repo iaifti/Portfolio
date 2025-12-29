@@ -5,33 +5,32 @@ const experiences = [
     title: "Cran US LLC",
     role: "Software Engineer & Co-Founder",
     bullets: [
-      "Engineered scalable RESTful APIs with Node.js, Express, Clerk authentication, and database integration.",
-      "Utilized Postman for API testing, ensuring seamless frontend-backend communication.",
-      "Contributed to responsive frontend development with Next.js and Tailwind CSS.",
+      "Co-founded SaaS startup serving paying customers; owned full development lifecycle from requirements gathering to production deployment and post-launch iteration.",
+      "Partnered directly with early customers to understand business problems and prioritize feature development, requiring rapid translation of qualitative feedback into technical solutions.",
+      "Built data infrastructure supporting operational reporting, enabling visibility into user behavior and feature adoption for early customers.",
     ],
   },
   {
     title: "SEMO Recreation Center",
-    role: "Office Assistant",
+    role: "Data Entry Assistant",
     bullets: [
-      "Streamlined workflows and improved operational efficiency through systems thinking.",
-      "Enhanced user support by communicating technical solutions clearly.",
+      "Managed patron records in CRM system, ensuring data quality and consistency; created Excel-based tracking tools for scheduling coordination and workflow optimization.",
+      "Contributed to workflow improvements and assisted users with clear communication and problem-solving support.",
     ],
   },
   {
     title: "SEMO Tutorial Program",
     role: "Computer Science Tutor",
     bullets: [
-      "Tutored Python, Java, Unix/Linux, advanced math, and statistics.",
-      "Simplified complex computing concepts to strengthen student understanding.",
+      "Tutored Python, Java, and Unix/Linux fundamentals in 1:1 and small group settings, developing skills in explaining technical concepts to non-technical audiences.",
+      "Helped students debug logic errors and strengthen problem-solving approaches, building experience in translating abstract problems into structured solutions.",
     ],
   },
   {
     title: "SEMO Dining Services",
     role: "Supervisor",
     bullets: [
-      "Managed a 15-member team to boost operational performance and service flow.",
-      "Reduced service delays and optimized inventory and scheduling systems.",
+      "Managed daily operations across 15-person team, coordinating shift scheduling, food production workflows, and inventory tracking to maintain service quality during high-volume periods.",
     ],
   },
 ];

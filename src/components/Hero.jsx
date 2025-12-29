@@ -31,7 +31,7 @@ const Hero = () => (
                 </a>
               </span>
             </span>
-            <span className="block text-navy py-1">Software Engineer</span>
+            <span className="block text-navy py-1">Analytics Engineer</span>
             {/* <span className="block text-navy py-1">Generative AI Developer</span> */}
           </p>
         </div>
@@ -97,8 +97,8 @@ const Hero = () => (
                 </a>
               </span> */}
             {/* </span> */}
-            <span className="block text-navy py-1">Software Engineer</span>
-            <span className="block text-navy py-1">Generative AI Developer</span>
+            <span className="block text-navy py-1">Analytics Engineer</span>
+            <span className="block text-navy py-1">Data Analyst</span>
           </p>
         </div>
         <a
