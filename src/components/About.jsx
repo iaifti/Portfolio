@@ -20,18 +20,15 @@ const About = () => {
           >
             <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-xl shadow-md p-8">
               <p className="text-lg font-signika text-gray-700 leading-relaxed">
-                👋 Hi! I’m <span className="font-bold">Istiaq Ahmed</span>, a{" "}
+                👋 Hi! I’m <span className="font-bold">Istiaq Ahmed</span>, an{" "}
                 <span className="font-bold text-yellow-600">
                   Analytic Engineer
                 </span>
                 ,{" "}
                 <span className="font-bold text-yellow-600">Data Analyst</span>,
                 and{" "}
-                <span className="font-bold text-yellow-600">Ex Co-Founder</span>{" "}
-                at Cran US LLC . I build tailored digital solutions for real
-                customers, business metrics to drive growth, and seamless user
-                experiences.
-              </p>
+                <span className="font-bold text-yellow-600">Former Co-Founder</span>{" "}
+                at Cran US LLC . I build data infrastructure that turns raw business data into reliable metrics, designing dimensional models, defining consistent logic, and enabling teams to make confident decisions.
             </div>
           </div>
 
