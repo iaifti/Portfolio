@@ -27,8 +27,9 @@ const About = () => {
                 ,{" "}
                 <span className="font-bold text-yellow-600">Data Analyst</span>,
                 and{" "}
-                <span className="font-bold text-yellow-600">Former Co-Founder</span>{" "}
+                <span className="font-bold text-yellow-600">Ex Co-Founder</span>{" "}
                 at Cran US LLC . I build data infrastructure that turns raw business data into reliable metrics, designing dimensional models, defining consistent logic, and enabling teams to make confident decisions.
+              </p>
             </div>
           </div>
 
