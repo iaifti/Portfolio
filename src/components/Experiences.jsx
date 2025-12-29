@@ -1,4 +1,3 @@
-import React from "react";
 
 const experiences = [
   {
@@ -28,7 +27,7 @@ const experiences = [
   },
   {
     title: "SEMO Dining Services",
-    role: "Supervisor",
+    role: "Operations Supervisor",
     bullets: [
       "Managed daily operations across 15-person team, coordinating shift scheduling, food production workflows, and inventory tracking to maintain service quality during high-volume periods.",
     ],
@@ -68,10 +67,10 @@ const Experiences = () => {
                 >
                   <div className="bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.015] w-full max-w-md">
                     <h3 className="text-xl md:text-2xl font-bold text-navy mb-1">
-                      {exp.title}
+                      {exp.role}
                     </h3>
                     <p className="text-sm md:text-base font-medium text-yellow-600 mb-3">
-                      {exp.role}
+                      {exp.title}
                     </p>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-600">
                       {exp.bullets.map((point, i) => (
