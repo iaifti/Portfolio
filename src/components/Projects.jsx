@@ -9,8 +9,8 @@ const projectData = [
 
   {
     img: DataAnalysis,
-    title: "Stripe Payment Analytics",
-    desc: "Analysis of stripe user payment data using sql. Used Snowflake as data warehouse and dbt as transformation.",
+    title: "SaaS Payment Analytics",
+    desc: "Analysis of SaaS user payment data using sql. Used Snowflake as data warehouse and dbt as transformation.",
     tech: ["git", "github",],
     link: "https://github.com/iaifti/Stripe_dbt_analysis",
 
