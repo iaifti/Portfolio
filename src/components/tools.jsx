@@ -82,7 +82,7 @@ const Tools = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.04 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="group flex flex-col items-center gap-3"
               data-aos="zoom-in"
               data-aos-delay={index * 50}
