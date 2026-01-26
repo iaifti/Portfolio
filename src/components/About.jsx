@@ -20,7 +20,7 @@ const About = () => {
           >
             <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-xl shadow-md p-8">
               <p className="text-lg font-signika text-gray-700 leading-relaxed">
-                👋 Hi! I’m <span className="font-bold">Istiaq Ahmed</span>, an{" "}
+                Hey! I am <span className="font-bold">Istiaq Ahmed</span>, an{" "}
                 <span className="font-bold text-yellow-600">
                   Analytics Engineer
                 </span>
