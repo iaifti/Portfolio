@@ -18,7 +18,7 @@ const experiences = [
     ],
   },
   {
-    title: "SEMO Tutorial Program",
+    title: "Learning Assistant Program",
     role: "Computer Science Tutor",
     bullets: [
       "Tutored Python, Java, and Unix/Linux fundamentals in 1:1 and small group settings, developing skills in explaining technical concepts to non-technical audiences.",
@@ -38,7 +38,7 @@ const Experiences = () => {
   return (
     <section
       id="experience"
-      className="py-24 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite relative font-signika"
+      className="py-24 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite relative"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <h2 className="text-center text-2xl md:text-4xl font-overpass font-bold text-navy mb-20 tracking-tight">
@@ -47,7 +47,7 @@ const Experiences = () => {
 
         <div className="relative max-w-6xl mx-auto">
           {/* Timeline Line */}
-          <div className="hidden md:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-navy/70 z-0 rounded-full"></div>
+          <div className="hidden md:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-black z-0 rounded-full"></div>
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-y-32">
             {experiences.map((exp, index) => {
@@ -66,13 +66,13 @@ const Experiences = () => {
                   } ${!isLeft ? "md:mt-32" : ""} flex justify-center md:block`}
                 >
                   <div className="bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.015] w-full max-w-md">
-                    <h3 className="text-xl md:text-2xl font-bold text-navy mb-1">
+                    <h3 className="font-nunito text-xl md:text-2xl font-bold text-navy mb-1">
                       {exp.role}
                     </h3>
-                    <p className="text-sm md:text-base font-medium text-yellow-600 mb-3">
+                    <p className="font-overpass text-sm md:text-base font-medium text-yellow-600 mb-3">
                       {exp.title}
                     </p>
-                    <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-600">
+                    <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-900">
                       {exp.bullets.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}

@@ -5,65 +5,6 @@ const Contact = () => {
       id="contact"
       className="font-nunito py-20 px-4 sm:px-8 bg-offWhite text-center"
     >
-      {/* Title */}
-      {/* <h2
-        className="text-2xl md:text-4xl font-poppins font-bold mb-12 text-navy"
-        data-aos="zoom-in"
-        data-aos-duration="800"
-      >
-        Let’s Connect
-      </h2> */}
-
-      {/* Social Links */}
-      {/* <div
-        className="flex flex-wrap justify-center gap-6 sm:gap-10 md:gap-14 text-4xl sm:text-5xl"
-        data-aos="fade-up"
-        data-aos-duration="800"
-      >
-        <a
-          href="https://www.youtube.com/@iFish0315"
-          target="_blank"
-          rel="noreferrer"
-          className="text-[#FF0000] hover:scale-125 transition-transform duration-300"
-          aria-label="YouTube"
-        >
-          <i className="fab fa-youtube"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ahmedmdistiaq"
-          target="_blank"
-          rel="noreferrer"
-          className="text-[#0077B5] hover:scale-125 transition-transform duration-300"
-          aria-label="LinkedIn"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a
-          href="https://github.com/iaifti"
-          target="_blank"
-          rel="noreferrer"
-          className="text-[#333] hover:scale-125 transition-transform duration-300"
-          aria-label="GitHub"
-        >
-          <i className="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/iftii._/"
-          target="_blank"
-          rel="noreferrer"
-          className="text-[#E1306C] hover:scale-125 transition-transform duration-300"
-          aria-label="Instagram"
-        >
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a
-          href="mailto:mdistiaqahmed0@gmail.com"
-          className="text-[#D14836] hover:scale-125 transition-transform duration-300"
-          aria-label="Email"
-        >
-          <SiGmail />
-        </a>
-      </div> */}
 
       {/* Message Box */}
       <div

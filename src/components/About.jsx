@@ -18,8 +18,8 @@ const About = () => {
             data-aos-duration="1000"
             className="text-left lg:sticky top-24 hidden lg:block"
           >
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-xl shadow-md p-8">
-              <p className="text-lg font-signika text-gray-700 leading-relaxed">
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-xl shadow-md p-8 hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.01]">
+              <p className="text-lg font-nunito text-gray-700 leading-relaxed">
                 Hey! I am <span className="font-bold">Istiaq Ahmed</span>, an{" "}
                 <span className="font-bold text-yellow-600">
                   Analytics Engineer
@@ -34,7 +34,7 @@ const About = () => {
           </div>
 
           {/* Right - Main content */}
-          <div className="text-gray-800 text-md md:text-lg lg:text-xl space-y-8 font-signika leading-relaxed">
+          <div className="text-gray-800 text-md md:text-lg space-y-8 font-overpass leading-relaxed">
             <p
               data-aos="fade-up"
               data-aos-duration="800"

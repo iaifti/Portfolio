@@ -79,12 +79,12 @@ const Tools = () => {
           {dataEngineeringTools.map((tool, index) => (
             <motion.div
               key={tool.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.04 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, y: 20 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.4, delay: index * 0.04 }}
+              // viewport={{ once: true }}
               className="group flex flex-col items-center gap-3"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay={index * 50}
               data-aos-anchor-placement="top-bottom"
             >
@@ -125,12 +125,12 @@ const Tools = () => {
           {versionControlAndDatabaseTools.map((tool, index) => (
             <motion.div
               key={tool.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.04 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, y: 20 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.4, delay: index * 0.04 }}
+              // viewport={{ once: true }}
               className="group flex flex-col items-center gap-3"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay={index * 50}
               data-aos-anchor-placement="top-bottom"
             >
@@ -171,12 +171,12 @@ const Tools = () => {
           {softwareEngineeringTools.map((tool, index) => (
             <motion.div
               key={tool.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.04 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, y: 20 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.4, delay: index * 0.04 }}
+              // viewport={{ once: true }}
               className="group flex flex-col items-center gap-3"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay={index * 50}
               data-aos-anchor-placement="top-bottom"
             >

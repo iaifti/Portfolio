@@ -88,9 +88,9 @@ const Projects = () => {
   useEffect(() => {
     AOS.init({
       duration: 900,
-      easing: "ease-in-out-cubic",
+      easing: "ease-in-out",
       once: false,
-      offset: 20,
+      offset: 10,
     });
   }, []);
 
@@ -99,7 +99,6 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-4xl font-bold text-center text-gray-900 mb-12"
-          data-aos="fade-up"
         >
           Featured Projects
         </h2>
@@ -108,10 +107,10 @@ const Projects = () => {
           {projectData.map((proj, index) => (
             <motion.div
               key={proj.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, y: 20 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.4, delay: index * 0.1 }}
+              // viewport={{ once: true }}
               className="
                 bg-white rounded-xl
                 shadow-md hover:shadow-xl
@@ -129,7 +128,7 @@ const Projects = () => {
 
               <div className="p-6 flex flex-col flex-grow">
                 <h3
-                  className="text-xl font-semibold text-gray-900 mb-2"
+                  className="text-xl font-nunito font-semibold text-gray-900 mb-2"
                   data-aos="fade-up"
                   data-aos-delay={index * 120 + 150}
                 >
@@ -138,7 +137,7 @@ const Projects = () => {
 
                 <p
                   className="text-gray-600 text-sm mb-4"
-                  data-aos="fade-up"
+                  data-aos="zoom-in"
                   data-aos-delay={index * 120 + 250}
                 >
                   {proj.desc}
@@ -146,23 +145,20 @@ const Projects = () => {
 
                 <div
                   className="flex flex-wrap gap-3 mb-6"
-                  data-aos="fade-up"
+                  data-aos="zoom-out"
                   data-aos-delay={index * 120 + 350}
                 >
                   {proj.tech.map((tech, i) => (
                     <div
                       key={tech.name}
-                      className="flex items-center gap-2 bg-none p-2 rounded-md shadow-sm hover:shadow-md transition-all"
+                      className="flex items-center gap-1 bg-none p-1 rounded-md hover:scale-110 transition-all"
                     >
                       <img
                         src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tech.name}.svg`}
                         alt={tech.name}
-                        className="w-6 h-6"
+                        className="w-5 h-5"
                         style={{ filter: "invert(0%)", color: "inherit" }}
                       />
-                      {/* <span className="text-sm font-medium text-gray-700">
-                        {tech.name}
-                      </span> */}
                     </div>
                   ))}
                 </div>
