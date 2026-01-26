@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 import Lazy from "../assets/Lazy.png";
 import Negotiate from "../assets/Negotiation.png";
@@ -16,10 +17,13 @@ const projectData = [
     title: "Github Activity Pipeline",
     desc: "Built a data pipeline to analyze GitHub data using dbt for transformation and Snowflake as the data warehouse. From ELT to ETL transformation to meaningful insights.",
     tech: [
-      { name: "github", color: "181717" },
-      { name: "snowflake", color: "29B5E8" },
       { name: "python", color: "3776AB" },
+      { name: "dbt", icon: "dbt" },
+      {name: "amazonaws"},
+      { name: "snowflake", color: "29B5E8" },
       { name: "apacheairflow", color: "017CEE" },
+      { name: "docker", color: "2496ED" },
+      { name: "github", color: "181717" },
     ],
     link: "https://github.com/iaifti/Github-activity-analytics-pipeline",
   },
@@ -28,9 +32,12 @@ const projectData = [
     title: "SaaS Payment Analytics",
     desc: "Analysis of synthetic SaaS user payment data using SQL using Snowflake and dbt. Includes data modeling, transformation, and visualization of key metrics like MRR, churn, and Cohort Retention.",
     tech: [
+      { name: "dbt", icon: "dbt" },
+      { name: "powerbi"},
+      { name: "snowflake", color: "29B5E8" },
       { name: "git", color: "F05032" },
       { name: "github", color: "181717" },
-      { name: "snowflake", color: "29B5E8" },
+
     ],
     link: "https://github.com/iaifti/Stripe_dbt_analysis",
   },
@@ -76,6 +83,7 @@ const projectData = [
     link: "https://github.com/iaifti/LazyProf",
   },
 ];
+
 const Projects = () => {
   useEffect(() => {
     AOS.init({
@@ -87,7 +95,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
+    <div id="projects" className="min-h-screen bg-gradient-to-b from-white via-yellow-300/20 to-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-4xl font-bold text-center text-gray-900 mb-12"
@@ -96,18 +104,21 @@ const Projects = () => {
           Featured Projects
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projectData.map((proj, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 120}
+            <motion.div
+              key={proj.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="
                 bg-white rounded-xl
                 shadow-md hover:shadow-xl
                 transition-all duration-300
                 overflow-hidden
                 flex flex-col
+                border border-gray-200
               "
             >
               <img
@@ -139,12 +150,20 @@ const Projects = () => {
                   data-aos-delay={index * 120 + 350}
                 >
                   {proj.tech.map((tech, i) => (
-                    <img
-                      key={i}
-                      src={`https://cdn.simpleicons.org/${tech.name}/${tech.color}`}
-                      alt={tech.name}
-                      className="w-7 h-7"
-                    />
+                    <div
+                      key={tech.name}
+                      className="flex items-center gap-2 bg-none p-2 rounded-md shadow-sm hover:shadow-md transition-all"
+                    >
+                      <img
+                        src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tech.name}.svg`}
+                        alt={tech.name}
+                        className="w-6 h-6"
+                        style={{ filter: "invert(0%)", color: "inherit" }}
+                      />
+                      {/* <span className="text-sm font-medium text-gray-700">
+                        {tech.name}
+                      </span> */}
+                    </div>
                   ))}
                 </div>
 
@@ -169,10 +188,10 @@ const Projects = () => {
                   "
                 >
                   View Project
-                  <FaExternalLinkAlt className="w-3 h-3 opacity-70" />
+                  <FaExternalLinkAlt className="w-3 h-3" />
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

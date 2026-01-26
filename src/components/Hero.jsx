@@ -20,7 +20,7 @@ const Hero = () => (
           </h2>
           <p className="hidden lg:block mt-6 font-signika text-base lg:text-lg xl:text-xl">
             <span className="block text-navy py-1">
-              Former Co-Founder and Developer at{" "}
+              Former Co-Founder and Engineer at{" "}
               <span className="text-black font-poppins cursor-pointer hover:underline hover:text-red-950">
                 <a
                   href="https://www.cran-us.com"
@@ -32,7 +32,7 @@ const Hero = () => (
               </span>
             </span>
             <span className="block text-navy py-1">Analytics Engineer</span>
-            {/* <span className="block text-navy py-1">Generative AI Developer</span> */}
+            <span className="block text-navy py-1">Data Engineer</span>
           </p>
         </div>
       </div>
@@ -98,7 +98,7 @@ const Hero = () => (
               </span> */}
             {/* </span> */}
             <span className="block text-navy py-1">Analytics Engineer</span>
-            <span className="block text-navy py-1">Data Analyst</span>
+            <span className="block text-navy py-1">Data Engineer</span>
           </p>
         </div>
         <a

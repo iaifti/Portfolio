@@ -22,10 +22,10 @@ const About = () => {
               <p className="text-lg font-signika text-gray-700 leading-relaxed">
                 👋 Hi! I’m <span className="font-bold">Istiaq Ahmed</span>, an{" "}
                 <span className="font-bold text-yellow-600">
-                  Analytic Engineer
+                  Analytics Engineer
                 </span>
                 ,{" "}
-                <span className="font-bold text-yellow-600">Data Analyst</span>,
+                <span className="font-bold text-yellow-600">Data Engineer</span>,
                 and{" "}
                 <span className="font-bold text-yellow-600">Ex Co-Founder</span>{" "}
                 at Cran US LLC . I build data infrastructure that turns raw business data into reliable metrics, designing dimensional models, defining consistent logic, and enabling teams to make confident decisions.
@@ -72,11 +72,11 @@ const About = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
             >
-              While pursuing a{" "}
+              While I pursued my {" "}
               <span className="font-semibold">
                 Bachelor’s in Computer Science
               </span>{" "}
-              at Southeast Missouri State University, I build analytics-focused
+              at Southeast Missouri State University, I built analytics-focused
               projects, work with modern data tools, and collaborate in
               fast-paced environments where{" "}
               <span className="font-medium">

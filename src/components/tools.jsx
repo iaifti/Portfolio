@@ -1,64 +1,206 @@
-import React from "react";
+"use client";
 
-const tools = [
+import React from "react";
+import { motion } from "framer-motion";
+
+// Data Engineering–focused tools
+const dataEngineeringTools = [
+  // Programming & Query Languages
+  { name: "SQL", icon: "mysql" },
+  { name: "Python", icon: "python" },
+  { name: "pandas", icon: "pandas" },
+  { name: "Bash", icon: "gnubash" },
+
+  // Data Processing & Streaming
+  { name: "Apache Spark", icon: "apachespark" },
+  { name: "Hadoop", icon: "apachehadoop" },
+  { name: "Kafka", icon: "apachekafka" },
+  { name: "Airflow", icon: "apacheairflow" },
+  { name: "dbt", icon: "dbt" },
+  { name: "Power BI", icon: "powerbi" },
+
+  // Cloud Platforms
+  { name: "AWS", icon: "amazonaws" },
+  { name: "Azure", icon: "microsoftazure" },
+  { name: "Google Cloud", icon: "googlecloud" },
+
+  // Data Warehouses & Lakehouse
+  { name: "Snowflake", icon: "snowflake" },
+  { name: "Databricks", icon: "databricks" },
+  { name: "BigQuery", icon: "googlebigquery" },
+  { name: "Redshift", icon: "amazonredshift" },
+];
+
+// Version Control and Database tools
+const versionControlAndDatabaseTools = [
+  { name: "Excel", icon: "microsoftexcel" },
+  { name: "PostgreSQL", icon: "postgresql" },
+  { name: "MongoDB", icon: "mongodb" },
+  { name: "Docker", icon: "docker" },
+  { name: "Git", icon: "git" },
+  { name: "GitHub", icon: "github" },
+];
+
+// Software Engineering–focused tools
+const softwareEngineeringTools = [
   { name: "React", icon: "react" },
   { name: "Express", icon: "express" },
   { name: "Tailwind CSS", icon: "tailwindcss" },
-  { name: "HTML", icon: "html5" },
   { name: "JavaScript", icon: "javascript" },
   { name: "TypeScript", icon: "typescript" },
   { name: "Next.js", icon: "nextdotjs" },
   { name: "Figma", icon: "figma" },
-  { name: "Java", icon: "java" },
-  { name: "Python", icon: "python" },
   { name: "Linux", icon: "linux" },
-  { name: "C", icon: "c" },
-  { name: "C++", icon: "cplusplus" },
-  { name: "Docker", icon: "docker" },
-  { name: "Git", icon: "git" },
-  { name: "GitHub", icon: "github" },
-  { name: "jQuery", icon: "jquery" },
   { name: "VS Code", icon: "visualstudiocode" },
   { name: "Supabase", icon: "supabase" },
   { name: "Clerk", icon: "clerk" },
-  { name: "drizzle", icon: "drizzle" },
-  { name: "CSS", icon: "css3" },
-  { name: "MongoDB", icon: "mongodb" },
   { name: "Node.js", icon: "nodedotjs" },
-  { name: "PostgreSQL", icon: "postgresql" },
-  { name: "AWS", icon: "amazonaws" },
   { name: "Vercel", icon: "vercel" },
   { name: "Postman", icon: "postman" },
 ];
 
 const Tools = () => {
   return (
-    <section id="tools" className="py-20 bg-white font-nunito">
+    <section
+      id="tools"
+      className="py-24 bg-white font-nunito"
+    >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-2xl md:text-4xl font-overpass font-bold text-navy mb-16">
-          What I Work With
-        </h2>
-
-        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
-          {tools.map((tool, index) => (
-            <div
-              key={tool.icon}
-              className="flex flex-col items-center gap-2 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg"
+        {/* Data Engineering Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy font-overpass">
+            Data Engineering Toolkit
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Technologies and platforms I use to design scalable pipelines,
+            process large datasets, and deliver reliable analytics systems.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
+          {dataEngineeringTools.map((tool, index) => (
+            <motion.div
+              key={tool.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.04 }}
+              viewport={{ once: true }}
+              className="group flex flex-col items-center gap-3"
               data-aos="zoom-in"
               data-aos-delay={index * 50}
+              data-aos-anchor-placement="top-bottom"
             >
-              <div className="bg-gray-100 p-4 rounded-2xl shadow-md transition hover:drop-shadow-[0_5px_10px_rgba(250,204,21,0.7)]">
+              <div
+                className="
+                bg-gray-100 p-5 rounded-2xl shadow-sm
+                  transition-all duration-300
+                  group-hover:scale-110
+                  group-hover:shadow-lg
+                group-hover:shadow-yellow-400/60
+              
+                "
+              >
                 <img
                   src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tool.icon}.svg`}
                   alt={tool.name}
-                  className="w-10 h-10 md:w-14 md:h-14 object-contain"
-                  style={{ filter: "invert(0%)", color: "inherit" }}
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
                 />
               </div>
-              <p className="text-sm font-medium font-signika text-gray-600 text-center">
+
+              <p className="text-sm text-gray-700 font-medium text-center group-hover:text-navy transition">
                 {tool.name}
               </p>
-            </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Version Control and Database Section */}
+        <div className="my-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy font-overpass">
+            Version Control & Database Tools
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Tools that are essential for both data engineering and software development workflows.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
+          {versionControlAndDatabaseTools.map((tool, index) => (
+            <motion.div
+              key={tool.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.04 }}
+              viewport={{ once: true }}
+              className="group flex flex-col items-center gap-3"
+              data-aos="zoom-in"
+              data-aos-delay={index * 50}
+              data-aos-anchor-placement="top-bottom"
+            >
+              <div
+                className="
+                  bg-gray-100 p-5 rounded-2xl shadow-sm
+                  transition-all duration-300
+                  group-hover:scale-110
+                  group-hover:shadow-lg
+                 group-hover:shadow-yellow-400/60
+                "
+              >
+                <img
+                  src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tool.icon}.svg`}
+                  alt={tool.name}
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                />
+              </div>
+
+              <p className="text-sm text-gray-700 font-medium text-center group-hover:text-navy transition">
+                {tool.name}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Software Engineering Section */}
+        <div className="my-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy font-overpass">
+            Software Engineering Toolkit
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Tools and technologies I use for software development, including web
+            development and programming languages
+          </p>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
+          {softwareEngineeringTools.map((tool, index) => (
+            <motion.div
+              key={tool.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.04 }}
+              viewport={{ once: true }}
+              className="group flex flex-col items-center gap-3"
+              data-aos="zoom-in"
+              data-aos-delay={index * 50}
+              data-aos-anchor-placement="top-bottom"
+            >
+              <div
+                className="
+                  bg-gray-100 p-5 rounded-2xl shadow-sm
+                  transition-all duration-300
+                  group-hover:scale-110
+                  group-hover:shadow-lg
+                  group-hover:shadow-yellow-400/60
+                "
+              >
+                <img
+                  src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tool.icon}.svg`}
+                  alt={tool.name}
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                />
+              </div>
+
+              <p className="text-sm text-gray-700 font-medium text-center group-hover:text-navy transition">
+                {tool.name}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>
