@@ -30,7 +30,7 @@ const projectData = [
   {
     img: Dashboard,
     title: "SaaS Payment Analytics",
-    desc: "Analysis of synthetic SaaS user payment data using SQL using Snowflake and dbt. Includes data modeling, transformation, and visualization of key metrics like MRR, churn, and Cohort Retention.",
+    desc: "Analysis of synthetic SaaS user payment data using SQL using Snowflake and dbt. Created dashboards to visualize key metrics and trends.",
     tech: [
       { name: "dbt", icon: "dbt" },
       { name: "powerbi"},
@@ -156,7 +156,7 @@ const Projects = () => {
                       <img
                         src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${tech.name}.svg`}
                         alt={tech.name}
-                        className="w-5 h-5"
+                        className="w-6 h-6"
                         style={{ filter: "invert(0%)", color: "inherit" }}
                       />
                     </div>
