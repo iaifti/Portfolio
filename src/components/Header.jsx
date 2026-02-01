@@ -53,7 +53,9 @@ const Header = () => {
         {/* Connect Link on the Right */}
         <div className="hidden lg:block">
           <a
-            href="#contact"
+            href="https://www.linkedin.com/in/ahmedmdistiaq"
+            target="_blank"
+            rel="noreferrer"
             className="px-3 py-2 text-navy font-semibold sm:text-sm md:text-md hover:bg-orange/10 hover:bg-opacity-30  rounded-lg transition-all transform hover:scale-110 duration-200"
           >
             Connect
