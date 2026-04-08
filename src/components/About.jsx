@@ -1,100 +1,161 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const About = () => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setMounted(true), 100);
+  }, []);
+
+  const fadeUp = (delay) => ({
+    opacity: mounted ? 1 : 0,
+    transform: mounted ? "none" : "translateY(20px)",
+    transition: `all 0.7s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
+  });
+
   return (
     <section
       id="about"
-      className="py-24 bg-gradient-to-b from-white via-yellow-300/20 to-offwhite font-nunito"
+      style={{
+        minHeight: "100vh",
+        background: "#111008",
+        position: "relative",
+        padding: "6rem clamp(1.5rem,7vw,7rem)",
+        fontFamily: "'DM Sans', sans-serif",
+        overflow: "hidden",
+      }}
     >
-      <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-center text-3xl md:text-4xl font-overpass font-bold text-navy mb-12">
-          About Me
-        </h2>
+      {/* subtle divider line */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: 1,
+          background: "rgba(245,158,11,0.08)",
+        }}
+      />
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          {/* Left - Short Summary block */}
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="text-left lg:sticky top-24 hidden lg:block"
+      {/* Header */}
+      <div style={{ marginBottom: "3rem", ...fadeUp(0.1) }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ width: 28, height: 2, background: "#f59e0b" }} />
+          <span
+            style={{
+              fontFamily: "'DM Mono', monospace",
+              fontSize: 11,
+              letterSpacing: "0.22em",
+              color: "#f59e0b",
+              textTransform: "uppercase",
+            }}
           >
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200 rounded-xl shadow-md p-8 hover:shadow-[0_0_25px_rgba(251,191,36,0.3)] transition-all hover:scale-[1.01]">
-              <p className="text-lg font-nunito text-gray-700 leading-relaxed">
-                Hey! I am <span className="font-bold">Istiaq Ahmed</span>, an{" "}
-                <span className="font-bold text-yellow-600">
-                  Analytics Engineer
-                </span>
-                ,{" "}
-                <span className="font-bold text-yellow-600">Data Engineer</span>,
-                and{" "}
-                <span className="font-bold text-yellow-600">Ex Co-Founder</span>{" "}
-                at Cran US LLC . I build data infrastructure that turns raw business data into reliable metrics, designing dimensional models, defining consistent logic, and enabling teams to make confident decisions.
-              </p>
-            </div>
+            About
+          </span>
+        </div>
+
+        <h2
+          style={{
+            marginTop: "1rem",
+            fontSize: "clamp(2rem,4vw,3rem)",
+            color: "#fff",
+            fontWeight: 500,
+          }}
+        >
+          Building clarity from complexity
+        </h2>
+      </div>
+
+      {/* Main Grid */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "3rem",
+        }}
+      >
+        {/* LEFT — PROFILE CARD */}
+        <div style={{ ...fadeUp(0.2) }}>
+          <div
+            style={{
+              border: "1px solid rgba(245,158,11,0.15)",
+              background: "rgba(245,158,11,0.04)",
+              padding: "2rem",
+              borderRadius: 8,
+            }}
+          >
+            <p
+              style={{
+                color: "rgba(255,240,180,0.65)",
+                fontSize: 15,
+                lineHeight: 1.9,
+                marginBottom: "1.5rem",
+              }}
+            >
+              Hey — I’m <strong style={{ color: "#fff" }}>Istiaq Ahmed</strong>,
+              a{" "}
+              <span style={{ color: "#f59e0b" }}>
+                Data & Analytics Engineer
+              </span>{" "}
+              and former co-founder at CRAN US.
+            </p>
+
+            <p
+              style={{
+                color: "rgba(255,240,180,0.45)",
+                fontSize: 14,
+                lineHeight: 1.9,
+              }}
+            >
+              I design data systems that transform raw, messy business data into
+              structured, reliable models—helping teams understand what’s
+              happening, why it matters, and what to do next.
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT — DETAILS */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+          {/* Block 1 */}
+          <div style={fadeUp(0.3)}>
+            <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.9 }}>
+              My work focuses on turning{" "}
+              <span style={{ color: "#f59e0b" }}>
+                product and business data
+              </span>{" "}
+              into clean, trustworthy analytics layers. I’ve built dimensional
+              models, defined metrics, and supported reporting across key SaaS
+              KPIs like MRR, churn, and retention.
+            </p>
           </div>
 
-          {/* Right - Main content */}
-          <div className="text-gray-800 text-md md:text-lg space-y-8 font-overpass leading-relaxed">
-            <p
-              data-aos="fade-up"
-              data-aos-duration="800"
-              data-aos-easing="ease-in-out"
-            >
-              I focus on turning{" "}
-              <span className="font-semibold text-navy">
-                messy product and business data
-              </span>{" "}
-              into clear, actionable insights. Through my work at{" "}
-              <span className="text-navy">Cran US LLC</span>, I’ve owned
-              data-driven problem solving end-to-end—from understanding real
-              customer questions to designing reliable analytics solutions.
+          {/* Block 2 */}
+          <div style={fadeUp(0.4)}>
+            <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.9 }}>
+              I’ve worked end-to-end from understanding real business problems
+              to designing pipelines and delivering insights that teams actually
+              use.
             </p>
+          </div>
 
-            <p
-              data-aos="fade-up"
-              data-aos-duration="900"
-              data-aos-easing="ease-in-out"
-            >
-              My experience spans{" "}
-              <span className="font-semibold">analytics engineering</span> and{" "}
-              <span className="font-semibold">applied analytics</span>,
-              including building dimensional data models, writing{" "}
-              <span className="font-medium">SQL</span>, and enabling reporting
-              for key SaaS metrics like{" "}
-              <span className="font-medium">
-                MRR, churn, and cohort retention
-              </span>
-              .
+          {/* Block 3 */}
+          <div style={fadeUp(0.5)}>
+            <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.9 }}>
+              A Computer Science graduate from Southeast Missouri
+              State University building projects with modern data tools
+              like dbt, Snowflake, and Spark.
             </p>
+          </div>
 
+          {/* CTA */}
+          <div style={fadeUp(0.6)}>
             <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              style={{
+                color: "rgba(255,240,180,0.5)",
+                fontSize: 14,
+              }}
             >
-              While I pursued my {" "}
-              <span className="font-semibold">
-                Bachelor’s in Computer Science
-              </span>{" "}
-              at Southeast Missouri State University, I built analytics-focused
-              projects, work with modern data tools, and collaborate in
-              fast-paced environments where{" "}
-              <span className="font-medium">
-                clarity, scalability, and data accuracy
-              </span>{" "}
-              matter.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease-in-out"
-            >
-              I’m driven by using data to explain what’s happening, why it
-              matters, and what to do next.
-              <span className="font-semibold text-navy"> Connect with me </span>
-              — whether you’re building something data-driven or just want to
-              chat.
+              If you're building something data-driven — or just want to talk
+              data — let’s connect.
             </p>
           </div>
         </div>
