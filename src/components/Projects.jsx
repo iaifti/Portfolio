@@ -21,11 +21,11 @@ const projectData = [
   },
   {
     img: Dashboard,
-    title: "SaaS Payment Analytics",
+    title: "SaaS Metrics Data Warehouse",
     tag: "Analytics",
     desc: "Analysis of synthetic SaaS user payment data using SQL with Snowflake and dbt. Created dashboards to visualize key metrics and trends.",
     tech: ["dbt", "powerbi", "snowflake", "git", "github"],
-    link: "https://github.com/iaifti/Stripe_dbt_analysis",
+    link: "https://github.com/iaifti/Synthetic-Data-Modelling",
   },
   {
     img: Negotiate,
