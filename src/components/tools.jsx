@@ -32,26 +32,26 @@ const versionControlAndDatabaseTools = [
 ];
 
 const softwareEngineeringTools = [
-  { name: "React", icon: "react" },
-  { name: "Express", icon: "express" },
-  { name: "Tailwind CSS", icon: "tailwindcss" },
-  { name: "JavaScript", icon: "javascript" },
-  { name: "TypeScript", icon: "typescript" },
   { name: "Next.js", icon: "nextdotjs" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "Tailwind CSS", icon: "tailwindcss" },
+  { name: "React", icon: "react" },
+  { name: "Node.js", icon: "nodedotjs" },
+  { name: "Express", icon: "express" },
+  { name: "JavaScript", icon: "javascript" },
   { name: "Figma", icon: "figma" },
   { name: "Linux", icon: "linux" },
   { name: "VS Code", icon: "visualstudiocode" },
   { name: "Supabase", icon: "supabase" },
   { name: "Clerk", icon: "clerk" },
-  { name: "Node.js", icon: "nodedotjs" },
   { name: "Vercel", icon: "vercel" },
   { name: "Postman", icon: "postman" },
 ];
 
 const sections = [
-  { label: "Data Engineering", eyebrow: "Primary Stack", desc: "Technologies and platforms I use to design scalable pipelines, process large datasets, and deliver reliable analytics systems.", tools: dataEngineeringTools },
-  { label: "Version Control & DB", eyebrow: "Foundations", desc: "Tools essential to both data engineering and software development workflows — from source control to database management.", tools: versionControlAndDatabaseTools },
   { label: "Software Engineering", eyebrow: "Web & Dev", desc: "Tools and technologies I use for software development, including web applications and full-stack engineering.", tools: softwareEngineeringTools },
+  { label: "Data Engineering", eyebrow: "Primary Stack", desc: "Technologies and platforms I use to design scalable pipelines, process large datasets, and deliver reliable analytics systems.", tools: dataEngineeringTools },
+  { label: "Version Control & DB", eyebrow: "Foundations", desc: "Tools essential to both data engineering and software development workflows — from source control to database management.", tools: versionControlAndDatabaseTools }
 ];
 
 const containerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.04 } } };
