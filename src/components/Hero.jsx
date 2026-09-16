@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Header from "./Header";
 import Istiaq from "../assets/istiaqremovebg.png";
 
-const ROLES = ["Data Engineer", "Analytics Engineer", "Pipeline Architect"];
+const ROLES = ["Software Engineering", "Data Engineering"];
 
 const LinkedInIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
@@ -190,7 +190,7 @@ const Hero = () => {
           {/* LEFT */}
           <div>
             {/* Eyebrow */}
-            <div
+            {/* <div
               style={{
                 ...fadeUp(0.1),
                 display: "flex",
@@ -218,7 +218,7 @@ const Hero = () => {
               >
                 Available for hire
               </span>
-            </div>
+            </div> */}
 
             {/* Name */}
             <div style={fadeUp(0.2)}>
@@ -261,15 +261,26 @@ const Hero = () => {
                   letterSpacing: "0.08em",
                 }}
               >
-                $ role —
+                $ scope —
               </span>
               <RoleTyper />
             </div>
 
             {/* Bio */}
             <div
-              style={{ marginTop: "1.75rem", ...fadeUp(0.55), maxWidth: 480 }}
+              style={{ marginTop: "1.75rem", ...fadeUp(0.55), maxWidth: 480, display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "rgba(255,255,255,0.6)" }}
             >
+              <p
+              style={{
+                  color: "rgba(255,240,180,0.45)",
+                  fontSize: 15,
+                  lineHeight: 1.9,
+                  margin: 0,
+                  fontWeight: 300,
+                }}
+              >
+                <span>Software Engineer at PROSERA</span>
+              </p>
               <p
                 style={{
                   color: "rgba(255,240,180,0.45)",
@@ -279,9 +290,9 @@ const Hero = () => {
                   fontWeight: 300,
                 }}
               >
-                Former Co-Founder & Engineer at{" "}
-                <span className="hero-cran">CRAN US</span> Building data
-                infrastructure that turns raw pipelines into business clarity.
+
+                <span>Former Co-Founder at{" "}
+                CRAN US</span> 
               </p>
             </div>
 
@@ -295,7 +306,7 @@ const Hero = () => {
                 gap: 8,
               }}
             >
-              {["Python", "SQL", "dbt", "Snowflake", "Airflow"].map((t) => (
+              {["Nextjs", "TypeScript", "AzureDevOps", ".NET", "dbt", "Snowflake"].map((t) => (
                 <span key={t} className="stack-tag">
                   {t}
                 </span>
@@ -305,8 +316,7 @@ const Hero = () => {
             {/* Divider */}
             <div
               style={{
-                marginTop: "2rem",
-                marginBottom: "1.75rem",
+                marginTop: "1.75rem",
                 height: 1,
                 background: "rgba(245,158,11,0.12)",
                 ...fadeUp(0.7),
@@ -320,6 +330,7 @@ const Hero = () => {
                 display: "flex",
                 gap: 10,
                 flexWrap: "wrap",
+                padding: "1.5rem 0 ",
               }}
             >
               <a
@@ -484,9 +495,9 @@ const Hero = () => {
               }}
             >
               {[
-                ["", ""],
-                ["∞", "Pipelines"],
-                ["dbt", "SQL"],
+                ["2+", "Years Experience"],
+                ["Optimized", "Pipelines"],
+                ["99%", "Data Accuracy"],
               ].map(([v, l]) => (
                 <div
                   key={l}

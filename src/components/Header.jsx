@@ -98,15 +98,15 @@ const Header = () => {
         backdropFilter: scrolled ? "blur(14px)" : "none",
         transition: "all 0.3s ease",
       }}>
-        <div style={{ maxWidth: 1400, margin: "0 auto", padding: "0 clamp(1.5rem,7vw,7rem)", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto", padding: "0 clamp(1.5rem,7vw,7rem)", height: 64, display: "flex", alignItems: "center", justifyContent: "right" }}>
 
           {/* Logo */}
-          <a href="#" style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.5rem", letterSpacing:"0.08em", color:"#fff", textDecoration:"none", transition:"color 0.2s" }}
+          {/* <a href="#" style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.5rem", letterSpacing:"0.08em", color:"#fff", textDecoration:"none", transition:"color 0.2s" }}
             onMouseEnter={e => e.target.style.color="#f59e0b"}
             onMouseLeave={e => e.target.style.color="#fff"}
           >
             Ahmed<span style={{ color:"#f59e0b" }}>.</span>
-          </a>
+          </a> */}
 
           {/* Desktop */}
           <div className="hdr-desktop" style={{ alignItems:"center", gap:"2.5rem" }}>

@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Prosera LLC",
+    role: "Software Engineer",
+    period: "Present",
+    bullets: [
+      "Design and develop full-stack features for ProSync, spanning Next.js frontend applications, backend services, APIs, and data-layer integrations.","Build and maintain REST APIs and data pipelines that support application workflows, system integrations, and reliable data movement across services.","Collaborate across engineering and product teams to architect, implement, and optimize production-ready solutions with a focus on scalability, reliability, and maintainability.", "Contribute to cloud infrastructure, CI/CD pipelines, deployment automation, and DevOps practices to improve application delivery and operational reliability."
+    ]
+  },
+  
+  {
     title: "Cran US LLC",
     role: "Software Engineer & Co-Founder",
     period: "2023 — 2024",
@@ -21,7 +30,7 @@ const experiences = [
     ],
   },
   {
-    title: "Learning Assistant Program",
+    title: "SEMO Learning Assistant Program",
     role: "Computer Science Tutor",
     period: "2022 — 2023",
     bullets: [
