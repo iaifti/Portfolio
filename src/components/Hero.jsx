@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./Header";
-import Istiaq from "../assets/istiaqremovebg.png";
 
 const ROLES = ["Software Engineering", "Data Engineering"];
 
@@ -280,19 +279,6 @@ const Hero = () => {
                 }}
               >
                 <span>Software Engineer at PROSERA</span>
-              </p>
-              <p
-                style={{
-                  color: "rgba(255,240,180,0.45)",
-                  fontSize: 15,
-                  lineHeight: 1.9,
-                  margin: 0,
-                  fontWeight: 300,
-                }}
-              >
-
-                <span>Former Co-Founder at{" "}
-                CRAN US</span> 
               </p>
             </div>
 

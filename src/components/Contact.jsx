@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
   const [mounted, setMounted] = useState(false);
@@ -82,14 +82,12 @@ const Contact = () => {
             }}
           >
             I’m currently open to{" "}
-            <span style={{ color: "#f59e0b" }}>
-              full-time roles, internships, and collaborations
-            </span>{" "}
-            where I can help design and scale data systems.
+            <span style={{ color: "#f59e0b" }}> collaborations</span> where I
+            can help design and scale full-stack applications and data systems.
           </p>
 
           {/* TAGS */}
-          <div
+          {/* <div
             style={{
               marginTop: "1.5rem",
               display: "flex",
@@ -114,9 +112,8 @@ const Contact = () => {
                 {item}
               </span>
             ))}
-          </div>
+          </div> */}
 
-          {/* CTA */}
           <div style={{ marginTop: "2rem" }}>
             <a
               href="mailto:mdistiaqahmed0@gmail.com"

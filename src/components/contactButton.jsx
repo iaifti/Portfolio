@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactButton = () => (
   <a
     href="https://www.linkedin.com/in/ahmedmdistiaq/"

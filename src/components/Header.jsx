@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import HB from "../components/hb";
 
 const NAV_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
   { label: "About", href: "#about" },
 ];
 

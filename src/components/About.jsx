@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const About = () => {
   const [mounted, setMounted] = useState(false);
@@ -108,13 +108,8 @@ const About = () => {
                 marginBottom: "1.5rem",
               }}
             >
-              Hey — I’m{" "}
-              <strong style={{ color: "#fff" }}>Istiaq Ahmed</strong>, a{" "}
-              <span style={{ color: "#f59e0b" }}>
-                Software Engineer
-              </span>{" "}
-              working on production software at Prosera, currently focused on
-              the ProSync platform.
+              Hey — I’m <strong style={{ color: "#fff" }}>Istiaq Ahmed</strong>,
+              a <span style={{ color: "#f59e0b" }}>Software Engineer</span>{" "} at Prosera, working for development of industrial production grade software solutions. 
             </p>
 
             <p
@@ -124,9 +119,9 @@ const About = () => {
                 lineHeight: 1.9,
               }}
             >
-              My background started in data and backend systems, so I naturally
-              think beyond the UI. I care about how a feature moves through
-              the stack — from the interface and API layer to the data,
+              My background started in software engineering and data, so I naturally
+              think beyond the UI. I care about how a feature moves through the
+              stack — from the interface and API layer to the data,
               infrastructure, and deployment behind it.
             </p>
           </div>
@@ -148,14 +143,10 @@ const About = () => {
                 lineHeight: 1.9,
               }}
             >
-              At ProSync, I work across the{" "}
-              <span style={{ color: "#f59e0b" }}>
-                application stack
-              </span>
-              , building frontend experiences, backend services, APIs, and the
-              integrations that connect them. I’m particularly interested in
-              the engineering decisions underneath a feature — state,
-              data flow, service boundaries, performance, and reliability.
+              At Prosera, I work across the{" "}
+              <span style={{ color: "#f59e0b" }}>full application stack</span>:
+              frontend, APIs, integrations, and the DevOps practices that keep
+              everything running in production.
             </p>
           </div>
 
@@ -167,14 +158,11 @@ const About = () => {
                 lineHeight: 1.9,
               }}
             >
-              I enjoy taking something from{" "}
-              <span style={{ color: "#f59e0b" }}>
-                “this needs to exist”
-              </span>{" "}
-              to a working piece of software. That means figuring out the
-              architecture, implementing the feature, connecting the data,
-              handling the edge cases, and making sure it survives outside
-              of a local development environment.
+              Most of my attention goes to the decisions that don't show up in a
+              demo: where state lives, how data moves between services, and what
+              happens when a dependency is slow or unavailable. I prefer to own
+              a feature from the first design discussion through to{" "}
+              <span style={{ color: "#f59e0b" }}>release and monitoring</span>.
             </p>
           </div>
 
@@ -186,12 +174,10 @@ const About = () => {
                 lineHeight: 1.9,
               }}
             >
-              My Computer Science background and experience with tools like
-              Next.js, React, Node.js, Python, SQL, Snowflake, Spark, and
-              cloud infrastructure give me a strong foundation across both
-              software and data systems. I’m continuing to go deeper into
-              distributed systems, backend engineering, and cloud-native
-              development.
+              I hold a degree in Computer Science and work primarily with
+              Next.js, React, Node.js, and Python, alongside SQL, Snowflake, and
+              Spark on the data side. I'm currently focused on backend
+              architecture, distributed systems, and cloud infrastructure.
             </p>
           </div>
 
@@ -203,9 +189,8 @@ const About = () => {
                 fontSize: 14,
               }}
             >
-              I like working on problems where there’s more to solve than
-              what’s visible on the screen. If you’re building something
-              interesting, let’s talk.
+              If you're working on something with real technical depth, I'd like
+              to hear about it.
             </p>
           </div>
         </div>
@@ -215,4 +200,3 @@ const About = () => {
 };
 
 export default About;
-
