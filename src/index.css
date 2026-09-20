@@ -19,6 +19,50 @@ html {
 body {
     overflow-x: hidden;
   }
+
+  .about-section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      min-height: auto;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .about-grid {
+      grid-template-columns: 1fr !important;
+      gap: 1.5rem !important;
+    }
+
+    .about-left,
+    .about-right {
+      width: 100%;
+    }
+
+    .about-card {
+      padding: 1.25rem !important;
+    }
+
+    .about-secondary-copy {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-section {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
   
 
   

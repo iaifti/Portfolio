@@ -19,6 +19,7 @@ const About = () => {
   return (
     <section
       id="about"
+      className="about-section"
       style={{
         minHeight: "100vh",
         background: "#111008",
@@ -83,16 +84,16 @@ const About = () => {
       </div>
 
       {/* Main Grid */}
-      <div
-        style={{
+      <div className="about-grid" style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "3rem",
         }}
       >
         {/* LEFT — PROFILE */}
-        <div style={{ ...fadeUp(0.2) }}>
+        <div className="about-left" style={{ ...fadeUp(0.2) }}>
           <div
+            className="about-card"
             style={{
               border: "1px solid rgba(245,158,11,0.15)",
               background: "rgba(245,158,11,0.04)",
@@ -129,6 +130,7 @@ const About = () => {
 
         {/* RIGHT — DETAILS */}
         <div
+          className="about-right"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -136,7 +138,9 @@ const About = () => {
           }}
         >
           {/* Block 1 */}
-          <div style={fadeUp(0.3)}>
+          <div 
+          className="about-secondary-copy"
+          style={fadeUp(0.3)}>
             <p
               style={{
                 color: "rgba(255,255,255,0.7)",
@@ -151,7 +155,9 @@ const About = () => {
           </div>
 
           {/* Block 2 */}
-          <div style={fadeUp(0.4)}>
+          <div 
+          className="about-secondary-copy"
+          style={fadeUp(0.4)}>
             <p
               style={{
                 color: "rgba(255,255,255,0.7)",
@@ -167,7 +173,9 @@ const About = () => {
           </div>
 
           {/* Block 3 */}
-          <div style={fadeUp(0.5)}>
+          <div 
+          className="about-secondary-copy"
+          style={fadeUp(0.5)}>
             <p
               style={{
                 color: "rgba(255,255,255,0.7)",

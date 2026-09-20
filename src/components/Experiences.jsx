@@ -15,7 +15,7 @@ const experiences = [
 
   {
     title: "SEMO Recreation Center",
-    role: "Data Entry Assistant",
+    role: "Operation Center Assistant",
     period: "Sep. 24 — Dec. 25",
     bullets: [
       "Managed patron records in CRM system, ensuring data quality and consistency; created Excel-based tracking tools for scheduling coordination and workflow optimization.",
