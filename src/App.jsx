@@ -1,5 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from '@vercel/analytics/react';
 // import Header from './components/Header';
 import Hero from "./components/Hero";
 import Experiences from "./components/Experiences";
@@ -25,6 +26,7 @@ const App = () => {
       <About />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 };
